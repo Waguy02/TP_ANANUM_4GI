@@ -1,6 +1,7 @@
 package auto_tester.data_parser;
 
 import auto_tester.GlobalConfig;
+import auto_tester.Tools;
 import auto_tester.models.GlobalTest;
 import auto_tester.models.SingleTest;
 import auto_tester.models.TestData;
@@ -20,7 +21,7 @@ public class Reader {
 
     public static GlobalTest read(String file_name){
 
-        String path=GlobalConfig.TEST_DATASET_FOLDER+"\\"+file_name;
+        String path=GlobalConfig.TEST_DATASET_FOLDER+"\\"+Tools.parseFilename(file_name);
         final File file = new File(path);
         Workbook workbook = null;
         GlobalTest result=new GlobalTest();
