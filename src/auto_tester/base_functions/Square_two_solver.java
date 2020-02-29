@@ -11,8 +11,10 @@ public class Square_two_solver implements IBaseFunction {
 
 
         ArrayList<Number> result = new ArrayList<>();
-        result.add(1);
-        result.add(2);
+        if(result.get(0).doubleValue()>=0){
+        result.add(Math.sqrt((double) result.get(0)));
+        }
+      
         return result;
     }
 }
