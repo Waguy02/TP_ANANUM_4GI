@@ -6,7 +6,7 @@ import java.util.List;
  * IBaseFunction matérialise une function à tester
  * la méthode runBase permet d'exécuter cette fonction
  */
-public interface IBaseFunction  {
+public interface  IBaseFunction  {
 
 
 

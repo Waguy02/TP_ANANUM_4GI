@@ -8,11 +8,10 @@ import java.util.List;
 public class Square_two_solver implements IBaseFunction {
     @Override
     public List<Number> runBase(List<Number> params) {
-
+            //Resolution de l'équation de degré 2
 
         ArrayList<Number> result = new ArrayList<>();
-        result.add(1);
-        result.add(2);
+
         return result;
     }
 }
