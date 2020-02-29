@@ -10,14 +10,11 @@ public class equation_second_degre implements ITestFunction {
 
     @java.lang.Override
 
-    public List<Number> runTest(List<Number> outputs) {
-        return null;
-    }
-
     double a,b,c,delta=0,x1,x2;
 
-    public double equation(double a, double b, double c)
-    {
+
+    public List<Number> runTest(List<Number> outputs) {
+
 
         System.out.println("Entrez les valeurs de a,b,c tel que ax\u00FD+bx+c=0\n\n");
 
@@ -52,6 +49,8 @@ public class equation_second_degre implements ITestFunction {
             x2 = (-b+Math.sqrt(delta))/(2*a);
             System.out.println("\n\nLes racines sont x1 = " + x1 + " et x2 = " +x2);
         }
-        return 0;
+        return null;
     }
+
+
 }

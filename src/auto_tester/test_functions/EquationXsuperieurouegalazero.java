@@ -7,15 +7,9 @@ import auto_tester.interfaces.ITestFunction;
  */
 public class EquationXsuperieurouegalazero implements ITestFunction {
     @java.lang.Override
-    public List<Number> runTest(List<Number> outputs) {
-        return null;
-    }
-
     private double a,x;
-
-    public double equation(double a){
-
-        Scanner sc = new Scanner(System.in);
+    public List<Number> runTest(List<Number> outputs) {
+        canner sc = new Scanner(System.in);
         System.out.println("Entrez a:");
         a = sc.nextFloat();
 
@@ -26,7 +20,10 @@ public class EquationXsuperieurouegalazero implements ITestFunction {
             x = 0/b;
         }
         System.out.println("la solution de l'équation est:" + x);
-
-        return 0;
+        return null;
     }
+
+
+
+
 }

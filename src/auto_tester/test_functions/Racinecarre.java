@@ -10,14 +10,8 @@ import java.util.Scanner;
 public class Racinecarre implements ITestFunction {
 
     @java.lang.Override
-    public List<Number> runTest(List<Number> outputs) {
-        return null;
-    }
-
     private double n, r;
-
-    public double racinecarre(double n){
-
+    public List<Number> runTest(List<Number> outputs) {
         Scanner sc = new Scanner(System.in);
         System.out.println("Entrez n:");
         n = sc.nextFloat();
@@ -28,9 +22,9 @@ public class Racinecarre implements ITestFunction {
         else{
             System.out.println("la racine carré de n est:" + Math.sqrt(n));
         }
-
-        return 0;
+        return null;
     }
+
 
 
 }

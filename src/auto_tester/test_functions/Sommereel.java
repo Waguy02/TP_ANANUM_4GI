@@ -7,30 +7,24 @@ import auto_tester.interfaces.ITestFunction;
  */
 public class Sommereel implements ITestFunction {
     @java.lang.Override
-    public List<Number> runTest(List<Number> outputs) {
-        return null;
-    }
-
     private double x,y,s;
-
-    public double somme(double x, double y){
+    public List<Number> runTest(List<Number> outputs) {
 
         System.out.println("entrez la premiere valeur");
 
         System.out.println("x = ");
-          x = Double.valueOf(lecture()).doubleValue();
+        x = Double.valueOf(lecture()).doubleValue();
 
         System.out.println("entrez la deuxieme valeur");
 
         System.out.println("\ny = ");
-         y = Double.valueOf(lecture()).doubleValue();
+        y = Double.valueOf(lecture()).doubleValue();
 
-         s = x + y ;
+        s = x + y ;
 
         System.out.println(" la sommme des deux nombres est : " +  s);
 
-
-        return 0;
+        return null;
     }
 
 

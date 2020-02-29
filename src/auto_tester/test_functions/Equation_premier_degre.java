@@ -8,13 +8,9 @@ import auto_tester.interfaces.ITestFunction;
 public class Equation_premier_degre implements ITestFunction {
 
     @java.lang.Override
-    public List<Number> runTest(List<Number> outputs) {
-        return null;
-    }
 
     private double a,b, x;
-    public double equation(double a, double b){
-
+    public List<Number> runTest(List<Number> outputs) {
         Scanner sc = new Scanner(System.in);
         System.out.println("Entrez a:");
         a = sc.nextFloat();
@@ -33,8 +29,7 @@ public class Equation_premier_degre implements ITestFunction {
         if(a!=0){
             System.out.println("la solution est :" +x);
         }
-
-        return 0;
+        return null;
     }
 
 }
