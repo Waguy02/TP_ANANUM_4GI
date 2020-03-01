@@ -41,7 +41,7 @@ public class Reader {
 
 
         Sheet sheet=workbook.getSheetAt(0);
-
+        sheet.setDefaultColumnWidth(20);
         int nbRow =sheet.getLastRowNum();
 
 

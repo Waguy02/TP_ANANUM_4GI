@@ -12,11 +12,11 @@ public interface INorm {
 
     /***
      *
-     * 
+     *
      * @param number_1
      * @param number_2
      * @return
      */
-    public Number run(List<Number> number_1, List<Number> number_2);
+    public Double run(List<Double> number_1, List<Double> number_2);
 
 }

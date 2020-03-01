@@ -10,10 +10,13 @@ public class Tools {
     public static String VALUE_SEPARATOR = ";";
 
 
-    public static ArrayList<Number> parseInputData(String data) {
+    public static ArrayList<Double> parseInputData(String data) {
 
 
-        ArrayList<Number> result = new ArrayList<>();
+         if(data.trim().equals(NULL_STR))return null;
+        ArrayList<Double> result = new ArrayList<>();
+
+
 
         for (String value : data.split(VALUE_SEPARATOR)) {
 
@@ -26,13 +29,13 @@ public class Tools {
     }
 
 
-    public static String stringifyOutputData(List<Number> list) {
+    public static String NULL_STR="null";
+    public static String stringifyOutputData(List<Double> list) {
 
         String result = "";
 
-
-        for (Number number : list) {
-
+        if(list==null) return  NULL_STR;
+        for (Double number : list) {
 
             result = result + number.toString() + ";";
         }

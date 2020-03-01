@@ -35,7 +35,7 @@ public class ValueBag {
      * @param key
      * @return Double
      */
-    private static Double getQuadraticValue(String key){
+    public static Double getQuadraticValue(String key){
         switch (key.toCharArray()[0]){
             case 'a':
                 return 0d;
@@ -48,9 +48,9 @@ public class ValueBag {
             case 'e':
                 return -2d;
             case 'f':
-                return Double.NEGATIVE_INFINITY;
+                return -10E100;
             case 'g':
-                return Double.POSITIVE_INFINITY;
+                return 10E100;
         }
         return 0d;
     }
@@ -60,7 +60,7 @@ public class ValueBag {
      * @param key
      * @return
      */
-    private static Double getLinearValue(String key){
+    public static Double getLinearValue(String key){
         switch (key.toCharArray()[0]){
             case 'a':
                 return 0d;
@@ -73,9 +73,9 @@ public class ValueBag {
             case 'e':
                 return -2d;
             case 'f':
-                return Double.NEGATIVE_INFINITY;
+                return -10E100;
             case 'g':
-                return Double.POSITIVE_INFINITY;
+                return 10E100;
         }
         return 0d;
     }
@@ -86,7 +86,7 @@ public class ValueBag {
      * @param key
      * @return
      */
-    private static Double getSquareRootValue(String key){
+    public static Double getSquareRootValue(String key){
         switch (key.toCharArray()[0]){
             case 'a':
                 return 0d;
@@ -99,9 +99,9 @@ public class ValueBag {
             case 'e':
                 return -2d;
             case 'f':
-                return Double.NEGATIVE_INFINITY;
+                return -10E100;
             case 'g':
-                return Double.POSITIVE_INFINITY;
+                return 10E100;
         }
         return 0d;
     }
@@ -111,7 +111,7 @@ public class ValueBag {
      * @param key
      * @return
      */
-    private static Double getSumValue(String key){
+    public static Double getSumValue(String key){
         switch (key.toCharArray()[0]){
             case 'a':
                 return 0d;
@@ -124,9 +124,9 @@ public class ValueBag {
             case 'e':
                 return -2d;
             case 'f':
-                return Double.NEGATIVE_INFINITY;
+                return -10E100;
             case 'g':
-                return Double.POSITIVE_INFINITY;
+                return 10E100;
         }
         return 0d;
     }
@@ -136,7 +136,7 @@ public class ValueBag {
      * @param key
      * @return
      */
-    private static Double getInequalityValue(String key){
+    public static Double getInequalityValue(String key){
         switch (key.toCharArray()[0]){
             case 'a':
                 return 0d;
@@ -149,9 +149,9 @@ public class ValueBag {
             case 'e':
                 return -2d;
             case 'f':
-                return Double.NEGATIVE_INFINITY;
+                return -10E300;
             case 'g':
-                return Double.POSITIVE_INFINITY;
+                return 10E300;
         }
         return 0d;
     }

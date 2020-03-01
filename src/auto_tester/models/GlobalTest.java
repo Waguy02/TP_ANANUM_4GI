@@ -11,10 +11,13 @@ public class GlobalTest {
 
     public void execute_all(){
 
+        int counter=0;
         for (SingleTest singleTest:this.getTests()){
-
+            counter++;
+            System.out.println("\n Test :=N°" +counter);
             singleTest.run();
-            System.out.println(singleTest.getResult());
+            System.out.println("Résultat du test: "+ singleTest.getResult());
+
         }
     }
 

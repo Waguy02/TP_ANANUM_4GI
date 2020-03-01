@@ -1,0 +1,1110 @@
+Index: src/auto_tester/base_functions/Check_positive.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- src/auto_tester/base_functions/Check_positive.java	(date 1583042446682)
++++ src/auto_tester/base_functions/Check_positive.java	(date 1583042446682)
+@@ -0,0 +1,32 @@
++/*
++ * To change this license header, choose License Headers in Project Properties.
++ * To change this template file, choose Tools | Templates
++ * and open the template in the editor.
++ */
++package auto_tester.base_functions;
++
++import auto_tester.interfaces.IBaseFunction;
++import java.util.ArrayList;
++import java.util.List;
++
++/**
++ *
++ * @author Tedonze
++ */
++public class Check_positive implements IBaseFunction{
++
++    @Override
++    public List<Number> runBase(List<Number> params) {
++                ArrayList<Number> result = new ArrayList<>();
++                if(params.get(0).doubleValue()>=0)
++                { result.add(1);
++                }
++                else{
++                result.add(0);
++                }
++                return result;
++                
++                
++    }
++    
++}
+Index: src/auto_tester/base_functions/Linear_solver.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- src/auto_tester/base_functions/Linear_solver.java	(date 1583042446682)
++++ src/auto_tester/base_functions/Linear_solver.java	(date 1583042446682)
+@@ -0,0 +1,42 @@
++/*
++ * To change this license header, choose License Headers in Project Properties.
++ * To change this template file, choose Tools | Templates
++ * and open the template in the editor.
++ */
++package auto_tester.base_functions;
++
++import auto_tester.interfaces.IBaseFunction;
++import java.util.ArrayList;
++import java.util.List;
++
++/**
++ *
++ * @author Tedonze
++ */
++public class Linear_solver implements IBaseFunction {
++
++    @Override
++    public List<Number> runBase(List<Number> params) {
++                 ArrayList<Number> result = new ArrayList<>();
++        if(params.get(0).doubleValue()==0){
++        
++           if(params.get(1).doubleValue()==0){
++               return null;
++                        }
++           else{
++               return result;
++           }
++           
++        
++        }
++        else{
++        
++        double res= params.get(1).doubleValue()/params.get(0).doubleValue();
++        result.add(res);
++        }
++
++        
++        return result;
++    }
++    
++}
+Index: src/auto_tester/base_functions/readme.txt
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- src/auto_tester/base_functions/readme.txt	(date 1583042447046)
++++ src/auto_tester/base_functions/readme.txt	(date 1583042447046)
+@@ -0,0 +1,8 @@
++Toutes ces fonctions sont naives......
++la fonction Check_positive retourne 1 si oui et 0 sinon dans une liste (c'est vrai c'est con fallait un booléen)
++les autres fonctions return null si infinité de solution et une liste vide si pas de solution
++Je viens de piger un truc il faut que tous ces fonctions de base soit connécté de telle sorte que améliorer la méthode qui
++calcule la racine carrée ou verifie qu'un réel est positif ameliore automatiquement celle que resoud l'equation de second dégrés
++j'ai essaye de faire ainsi dans mon code mais sans trop insister dessus je pourrais interconnécté plustard toutes les classes pour
++l'instant je crois le but d'abord c'est les test .On doit envisager de changer la l'interface Ibasefunction pour gerer les booleans 
++par exemple mais ca convient bien pour le moment.......
+Index: src/auto_tester/base_functions/Square_two_solver.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>package auto_tester.base_functions;\n\nimport auto_tester.interfaces.IBaseFunction;\n\nimport java.util.ArrayList;\nimport java.util.List;\n\npublic class Square_two_solver implements IBaseFunction {\n    @Override\n    public List<Number> runBase(List<Number> params) {\n            //Resolution de l'équation de degré 2\n\n        ArrayList<Number> result = new ArrayList<>();\n\n        return result;\n    }\n}\n
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- src/auto_tester/base_functions/Square_two_solver.java	(date 1583042422000)
++++ src/auto_tester/base_functions/Square_two_solver.java	(date 1583042447473)
+@@ -11,7 +11,14 @@
+             //Resolution de l'équation de degré 2
+ 
+         ArrayList<Number> result = new ArrayList<>();
++<<<<<<< HEAD
+ 
++=======
++        if(result.get(0).doubleValue()>=0){
++        result.add(Math.sqrt((double) result.get(0)));
++        }
++      
++>>>>>>> d332bab19c9f6d14cf5ab1d922b0cacd624c4ad1
+         return result;
+     }
+ }
+Index: .idea/workspace.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+><?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<project version=\"4\">\n  <component name=\"BookmarkManager\">\n    <bookmark url=\"file://$PROJECT_DIR$/src/auto_tester/interfaces/INorm.java\" line=\"19\" mnemonic=\"1\" />\n  </component>\n  <component name=\"ChangeListManager\">\n    <list default=\"true\" id=\"77ae64ca-3a76-4283-ac77-ce7ae13268db\" name=\"Default\" comment=\"Interfaces prêtes\">\n      <change beforePath=\"$PROJECT_DIR$/.idea/workspace.xml\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/.idea/workspace.xml\" afterDir=\"false\" />\n      <change beforePath=\"$PROJECT_DIR$/src/auto_tester/data_generation/Generator.java\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/src/auto_tester/data_generation/Generator.java\" afterDir=\"false\" />\n      <change beforePath=\"$PROJECT_DIR$/src/auto_tester/data_parser/Reader.java\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/src/auto_tester/data_parser/Reader.java\" afterDir=\"false\" />\n      <change beforePath=\"$PROJECT_DIR$/src/auto_tester/data_parser/Saver.java\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/src/auto_tester/data_parser/Saver.java\" afterDir=\"false\" />\n      <change beforePath=\"$PROJECT_DIR$/src/auto_tester/interfaces/INorm.java\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/src/auto_tester/interfaces/INorm.java\" afterDir=\"false\" />\n      <change beforePath=\"$PROJECT_DIR$/src/auto_tester/models/TestData.java\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/src/auto_tester/models/TestData.java\" afterDir=\"false\" />\n    </list>\n    <ignored path=\"$PROJECT_DIR$/out/\" />\n    <option name=\"EXCLUDED_CONVERTED_TO_IGNORED\" value=\"true\" />\n    <option name=\"TRACKING_ENABLED\" value=\"true\" />\n    <option name=\"SHOW_DIALOG\" value=\"false\" />\n    <option name=\"HIGHLIGHT_CONFLICTS\" value=\"true\" />\n    <option name=\"HIGHLIGHT_NON_ACTIVE_CHANGELIST\" value=\"false\" />\n    <option name=\"LAST_RESOLUTION\" value=\"IGNORE\" />\n  </component>\n  <component name=\"DatabaseView\">\n    <option name=\"SHOW_INTERMEDIATE\" value=\"true\" />\n    <option name=\"GROUP_DATA_SOURCES\" value=\"true\" />\n    <option name=\"GROUP_SCHEMA\" value=\"true\" />\n    <option name=\"GROUP_CONTENTS\" value=\"false\" />\n    <option name=\"SORT_POSITIONED\" value=\"false\" />\n    <option name=\"SHOW_EMPTY_GROUPS\" value=\"false\" />\n    <option name=\"AUTO_SCROLL_FROM_SOURCE\" value=\"false\" />\n    <option name=\"HIDDEN_KINDS\">\n      <set />\n    </option>\n    <expand />\n    <select />\n  </component>\n  <component name=\"FileEditorManager\">\n    <leaf SIDE_TABS_SIZE_LIMIT_KEY=\"300\">\n      <file leaf-file-name=\"INorm.java\" pinned=\"false\" current-in-tab=\"false\">\n        <entry file=\"file://$PROJECT_DIR$/src/auto_tester/interfaces/INorm.java\">\n          <provider selected=\"true\" editor-type-id=\"text-editor\">\n            <state relative-caret-position=\"238\">\n              <caret line=\"14\" column=\"7\" selection-start-line=\"14\" selection-start-column=\"7\" selection-end-line=\"14\" selection-end-column=\"7\" />\n            </state>\n          </provider>\n        </entry>\n      </file>\n      <file leaf-file-name=\"ValueBag.java\" pinned=\"false\" current-in-tab=\"false\">\n        <entry file=\"file://$PROJECT_DIR$/src/auto_tester/data_generation/ValueBag.java\">\n          <provider selected=\"true\" editor-type-id=\"text-editor\">\n            <state relative-caret-position=\"622\">\n              <caret line=\"50\" column=\"39\" selection-start-line=\"50\" selection-start-column=\"39\" selection-end-line=\"50\" selection-end-column=\"39\" />\n            </state>\n          </provider>\n        </entry>\n      </file>\n      <file leaf-file-name=\"ITestFunction.java\" pinned=\"false\" current-in-tab=\"false\">\n        <entry file=\"file://$PROJECT_DIR$/src/auto_tester/interfaces/ITestFunction.java\">\n          <provider selected=\"true\" editor-type-id=\"text-editor\">\n            <state relative-caret-position=\"340\">\n              <caret line=\"20\" column=\"27\" selection-start-line=\"20\" selection-start-column=\"27\" selection-end-line=\"20\" selection-end-column=\"27\" />\n            </state>\n          </provider>\n        </entry>\n      </file>\n      <file leaf-file-name=\"TestData.java\" pinned=\"false\" current-in-tab=\"false\">\n        <entry file=\"file://$PROJECT_DIR$/src/auto_tester/models/TestData.java\">\n          <provider selected=\"true\" editor-type-id=\"text-editor\">\n            <state relative-caret-position=\"214\">\n              <caret line=\"157\" column=\"50\" selection-start-line=\"157\" selection-start-column=\"50\" selection-end-line=\"157\" selection-end-column=\"50\" />\n              <folding>\n                <element signature=\"imports\" expanded=\"true\" />\n                <element signature=\"e#721#722#0\" expanded=\"true\" />\n                <element signature=\"e#752#753#0\" expanded=\"true\" />\n                <element signature=\"e#800#801#0\" expanded=\"true\" />\n                <element signature=\"e#840#841#0\" expanded=\"true\" />\n                <element signature=\"e#883#884#0\" expanded=\"true\" />\n                <element signature=\"e#916#917#0\" expanded=\"true\" />\n                <element signature=\"e#980#981#0\" expanded=\"true\" />\n                <element signature=\"e#1024#1025#0\" expanded=\"true\" />\n                <element signature=\"e#1061#1062#0\" expanded=\"true\" />\n                <element signature=\"e#1100#1101#0\" expanded=\"true\" />\n                <element signature=\"e#1164#1165#0\" expanded=\"true\" />\n                <element signature=\"e#1220#1221#0\" expanded=\"true\" />\n                <element signature=\"e#1267#1268#0\" expanded=\"true\" />\n                <element signature=\"e#1303#1304#0\" expanded=\"true\" />\n                <element signature=\"e#1368#1369#0\" expanded=\"true\" />\n                <element signature=\"e#1418#1419#0\" expanded=\"true\" />\n                <element signature=\"e#1470#1471#0\" expanded=\"true\" />\n                <element signature=\"e#1506#1507#0\" expanded=\"true\" />\n                <element signature=\"e#1570#1571#0\" expanded=\"true\" />\n                <element signature=\"e#1620#1621#0\" expanded=\"true\" />\n                <element signature=\"e#1645#1646#0\" expanded=\"true\" />\n                <element signature=\"e#1684#1685#0\" expanded=\"true\" />\n                <element signature=\"e#1748#1749#0\" expanded=\"true\" />\n                <element signature=\"e#1804#1805#0\" expanded=\"true\" />\n                <element signature=\"e#1851#1852#0\" expanded=\"true\" />\n                <element signature=\"e#1887#1888#0\" expanded=\"true\" />\n                <element signature=\"e#1952#1953#0\" expanded=\"true\" />\n                <element signature=\"e#2002#2003#0\" expanded=\"true\" />\n                <element signature=\"e#2038#2039#0\" expanded=\"true\" />\n                <element signature=\"e#2070#2071#0\" expanded=\"true\" />\n                <element signature=\"e#2120#2121#0\" expanded=\"true\" />\n                <element signature=\"e#2162#2163#0\" expanded=\"true\" />\n                <element signature=\"e#2205#2206#0\" expanded=\"true\" />\n                <element signature=\"e#2244#2245#0\" expanded=\"true\" />\n                <element signature=\"e#2308#2309#0\" expanded=\"true\" />\n                <element signature=\"e#2364#2365#0\" expanded=\"true\" />\n                <element signature=\"e#2403#2404#0\" expanded=\"true\" />\n                <element signature=\"e#2439#2440#0\" expanded=\"true\" />\n                <element signature=\"e#2496#2497#0\" expanded=\"true\" />\n                <element signature=\"e#2546#2547#0\" expanded=\"true\" />\n                <element signature=\"method#runTest#0;class#TestData#0\" />\n              </folding>\n            </state>\n          </provider>\n        </entry>\n      </file>\n      <file leaf-file-name=\"Reader.java\" pinned=\"false\" current-in-tab=\"false\">\n        <entry file=\"file://$PROJECT_DIR$/src/auto_tester/data_parser/Reader.java\">\n          <provider selected=\"true\" editor-type-id=\"text-editor\">\n            <state relative-caret-position=\"102\">\n              <caret line=\"6\" column=\"35\" lean-forward=\"true\" selection-start-line=\"6\" selection-start-column=\"35\" selection-end-line=\"6\" selection-end-column=\"35\" />\n            </state>\n          </provider>\n        </entry>\n      </file>\n      <file leaf-file-name=\"Saver.java\" pinned=\"false\" current-in-tab=\"false\">\n        <entry file=\"file://$PROJECT_DIR$/src/auto_tester/data_parser/Saver.java\">\n          <provider selected=\"true\" editor-type-id=\"text-editor\">\n            <state relative-caret-position=\"204\">\n              <caret line=\"12\" column=\"32\" selection-start-line=\"12\" selection-start-column=\"32\" selection-end-line=\"12\" selection-end-column=\"32\" />\n              <folding>\n                <element signature=\"imports\" expanded=\"true\" />\n              </folding>\n            </state>\n          </provider>\n        </entry>\n      </file>\n      <file leaf-file-name=\"GlobalTest.java\" pinned=\"false\" current-in-tab=\"false\">\n        <entry file=\"file://$PROJECT_DIR$/src/auto_tester/models/GlobalTest.java\">\n          <provider selected=\"true\" editor-type-id=\"text-editor\">\n            <state relative-caret-position=\"68\">\n              <caret line=\"4\" column=\"13\" selection-start-line=\"4\" selection-start-column=\"13\" selection-end-line=\"4\" selection-end-column=\"13\" />\n            </state>\n          </provider>\n        </entry>\n      </file>\n      <file leaf-file-name=\"EquationType.java\" pinned=\"false\" current-in-tab=\"true\">\n        <entry file=\"file://$PROJECT_DIR$/src/auto_tester/data_generation/EquationType.java\">\n          <provider selected=\"true\" editor-type-id=\"text-editor\">\n            <state relative-caret-position=\"153\">\n              <caret line=\"9\" column=\"6\" selection-start-line=\"9\" selection-start-column=\"6\" selection-end-line=\"9\" selection-end-column=\"6\" />\n            </state>\n          </provider>\n        </entry>\n      </file>\n      <file leaf-file-name=\"Generator.java\" pinned=\"false\" current-in-tab=\"false\">\n        <entry file=\"file://$PROJECT_DIR$/src/auto_tester/data_generation/Generator.java\">\n          <provider selected=\"true\" editor-type-id=\"text-editor\">\n            <state relative-caret-position=\"836\">\n              <caret line=\"75\" column=\"5\" lean-forward=\"true\" selection-start-line=\"75\" selection-start-column=\"5\" selection-end-line=\"75\" selection-end-column=\"5\" />\n            </state>\n          </provider>\n        </entry>\n      </file>\n      <file leaf-file-name=\"IBaseFunction.java\" pinned=\"false\" current-in-tab=\"false\">\n        <entry file=\"file://$PROJECT_DIR$/src/auto_tester/interfaces/IBaseFunction.java\">\n          <provider selected=\"true\" editor-type-id=\"text-editor\">\n            <state relative-caret-position=\"136\">\n              <caret line=\"8\" column=\"18\" selection-start-line=\"8\" selection-start-column=\"18\" selection-end-line=\"8\" selection-end-column=\"18\" />\n            </state>\n          </provider>\n        </entry>\n      </file>\n    </leaf>\n  </component>\n  <component name=\"FileTemplateManagerImpl\">\n    <option name=\"RECENT_TEMPLATES\">\n      <list>\n        <option value=\"Interface\" />\n        <option value=\"Class\" />\n      </list>\n    </option>\n  </component>\n  <component name=\"FindInProjectRecents\">\n    <findStrings>\n      <find>Function</find>\n      <find>Funcion</find>\n      <find>Number[]</find>\n      <find>norm</find>\n      <find>runBase</find>\n      <find>.parse</find>\n      <find>e.getM</find>\n      <find>parse()</find>\n      <find>;</find>\n      <find>e.get</find>\n      <find>donn</find>\n      <find>read</find>\n      <find>parse</find>\n      <find>split</find>\n      <find>xls</find>\n      <find>expex</find>\n      <find>exêx</find>\n      <find>runTest</find>\n    </findStrings>\n    <replaceStrings>\n      <replace>Fun</replace>\n      <replace>List&lt;Number&gt;</replace>\n      <replace>solve</replace>\n      <replace>Function</replace>\n    </replaceStrings>\n    <dirStrings>\n      <dir>B:\\Docs\\ENSP\\4GI\\Semestre2\\Analyse Numérique 2\\TP_GROUPE\\src\\auto_tester\\data_generation</dir>\n    </dirStrings>\n  </component>\n  <component name=\"Git.Settings\">\n    <option name=\"RECENT_GIT_ROOT_PATH\" value=\"$PROJECT_DIR$\" />\n  </component>\n  <component name=\"IdeDocumentHistory\">\n    <option name=\"CHANGED_PATHS\">\n      <list>\n        <option value=\"$PROJECT_DIR$/src/auto_tester/test_functions.java\" />\n        <option value=\"$PROJECT_DIR$/src/auto_tester/test_functions/Square_two.java\" />\n        <option value=\"$PROJECT_DIR$/src/auto_tester/models/TestResult.java\" />\n        <option value=\"$PROJECT_DIR$/src/auto_tester/test_functions/Square_two_test.java\" />\n        <option value=\"$PROJECT_DIR$/src/auto_tester/models/Test.java\" />\n        <option value=\"$PROJECT_DIR$/src/auto_tester/interfaces/ITestFunction.java\" />\n        <option value=\"$PROJECT_DIR$/src/auto_tester/data_parser/Tools.java\" />\n        <option value=\"$PROJECT_DIR$/src/auto_tester/Main.java\" />\n        <option value=\"$PROJECT_DIR$/src/auto_tester/GlobalConfig.java\" />\n        <option value=\"$PROJECT_DIR$/src/auto_tester/models/GlobalTest.java\" />\n        <option value=\"$PROJECT_DIR$/src/auto_tester/models/SingleTest.java\" />\n        <option value=\"$PROJECT_DIR$/src/auto_tester/Tools.java\" />\n        <option value=\"$PROJECT_DIR$/src/auto_tester/norms/Relative_error.java\" />\n        <option value=\"$PROJECT_DIR$/src/auto_tester/base_functions/Square_two_solver.java\" />\n        <option value=\"$PROJECT_DIR$/src/auto_tester/interfaces/IBaseFunction.java\" />\n        <option value=\"$PROJECT_DIR$/src/auto_tester/interfaces/INorm.java\" />\n        <option value=\"$PROJECT_DIR$/src/auto_tester/data_generation/ValueBag.java\" />\n        <option value=\"$PROJECT_DIR$/src/auto_tester/data_generation/Generator.java\" />\n        <option value=\"$PROJECT_DIR$/src/auto_tester/models/TestData.java\" />\n        <option value=\"$PROJECT_DIR$/src/auto_tester/data_parser/Reader.java\" />\n        <option value=\"$PROJECT_DIR$/src/auto_tester/data_parser/Saver.java\" />\n      </list>\n    </option>\n  </component>\n  <component name=\"JsBuildToolGruntFileManager\" detection-done=\"true\" sorting=\"DEFINITION_ORDER\" />\n  <component name=\"JsBuildToolPackageJson\" detection-done=\"true\" sorting=\"DEFINITION_ORDER\" />\n  <component name=\"JsGulpfileManager\">\n    <detection-done>true</detection-done>\n    <sorting>DEFINITION_ORDER</sorting>\n  </component>\n  <component name=\"MavenProjectNavigator\">\n    <treeState>\n      <expand />\n      <select />\n    </treeState>\n  </component>\n  <component name=\"NodePackageJsonFileManager\">\n    <packageJsonPaths />\n  </component>\n  <component name=\"ProjectId\" id=\"1YTP0ahP3KVHgjsaIySFTAzIUOH\" />\n  <component name=\"ProjectLevelVcsManager\" settingsEditedManually=\"true\">\n    <ConfirmationsSetting value=\"2\" id=\"Add\" />\n  </component>\n  <component name=\"ProjectView\">\n    <navigator proportions=\"\" version=\"1\">\n      <foldersAlwaysOnTop value=\"true\" />\n    </navigator>\n    <panes>\n      <pane id=\"Scope\" />\n      <pane id=\"AndroidView\" />\n      <pane id=\"ProjectPane\">\n        <subPane>\n          <expand>\n            <path>\n              <item name=\"TP_ANANUM\" type=\"b2602c69:ProjectViewProjectNode\" />\n              <item name=\"TP_GROUPE\" type=\"462c0819:PsiDirectoryNode\" />\n            </path>\n            <path>\n              <item name=\"TP_ANANUM\" type=\"b2602c69:ProjectViewProjectNode\" />\n              <item name=\"TP_GROUPE\" type=\"462c0819:PsiDirectoryNode\" />\n              <item name=\"out\" type=\"462c0819:PsiDirectoryNode\" />\n            </path>\n            <path>\n              <item name=\"TP_ANANUM\" type=\"b2602c69:ProjectViewProjectNode\" />\n              <item name=\"TP_GROUPE\" type=\"462c0819:PsiDirectoryNode\" />\n              <item name=\"out\" type=\"462c0819:PsiDirectoryNode\" />\n              <item name=\"production\" type=\"462c0819:PsiDirectoryNode\" />\n            </path>\n            <path>\n              <item name=\"TP_ANANUM\" type=\"b2602c69:ProjectViewProjectNode\" />\n              <item name=\"TP_GROUPE\" type=\"462c0819:PsiDirectoryNode\" />\n              <item name=\"src\" type=\"462c0819:PsiDirectoryNode\" />\n            </path>\n            <path>\n              <item name=\"TP_ANANUM\" type=\"b2602c69:ProjectViewProjectNode\" />\n              <item name=\"TP_GROUPE\" type=\"462c0819:PsiDirectoryNode\" />\n              <item name=\"src\" type=\"462c0819:PsiDirectoryNode\" />\n              <item name=\"auto_tester\" type=\"462c0819:PsiDirectoryNode\" />\n            </path>\n            <path>\n              <item name=\"TP_ANANUM\" type=\"b2602c69:ProjectViewProjectNode\" />\n              <item name=\"TP_GROUPE\" type=\"462c0819:PsiDirectoryNode\" />\n              <item name=\"src\" type=\"462c0819:PsiDirectoryNode\" />\n              <item name=\"auto_tester\" type=\"462c0819:PsiDirectoryNode\" />\n              <item name=\"base_functions\" type=\"462c0819:PsiDirectoryNode\" />\n            </path>\n            <path>\n              <item name=\"TP_ANANUM\" type=\"b2602c69:ProjectViewProjectNode\" />\n              <item name=\"TP_GROUPE\" type=\"462c0819:PsiDirectoryNode\" />\n              <item name=\"src\" type=\"462c0819:PsiDirectoryNode\" />\n              <item name=\"auto_tester\" type=\"462c0819:PsiDirectoryNode\" />\n              <item name=\"data_generation\" type=\"462c0819:PsiDirectoryNode\" />\n            </path>\n            <path>\n              <item name=\"TP_ANANUM\" type=\"b2602c69:ProjectViewProjectNode\" />\n              <item name=\"TP_GROUPE\" type=\"462c0819:PsiDirectoryNode\" />\n              <item name=\"src\" type=\"462c0819:PsiDirectoryNode\" />\n              <item name=\"auto_tester\" type=\"462c0819:PsiDirectoryNode\" />\n              <item name=\"data_parser\" type=\"462c0819:PsiDirectoryNode\" />\n            </path>\n            <path>\n              <item name=\"TP_ANANUM\" type=\"b2602c69:ProjectViewProjectNode\" />\n              <item name=\"TP_GROUPE\" type=\"462c0819:PsiDirectoryNode\" />\n              <item name=\"src\" type=\"462c0819:PsiDirectoryNode\" />\n              <item name=\"auto_tester\" type=\"462c0819:PsiDirectoryNode\" />\n              <item name=\"interfaces\" type=\"462c0819:PsiDirectoryNode\" />\n            </path>\n            <path>\n              <item name=\"TP_ANANUM\" type=\"b2602c69:ProjectViewProjectNode\" />\n              <item name=\"TP_GROUPE\" type=\"462c0819:PsiDirectoryNode\" />\n              <item name=\"src\" type=\"462c0819:PsiDirectoryNode\" />\n              <item name=\"auto_tester\" type=\"462c0819:PsiDirectoryNode\" />\n              <item name=\"models\" type=\"462c0819:PsiDirectoryNode\" />\n            </path>\n            <path>\n              <item name=\"TP_ANANUM\" type=\"b2602c69:ProjectViewProjectNode\" />\n              <item name=\"TP_GROUPE\" type=\"462c0819:PsiDirectoryNode\" />\n              <item name=\"src\" type=\"462c0819:PsiDirectoryNode\" />\n              <item name=\"auto_tester\" type=\"462c0819:PsiDirectoryNode\" />\n              <item name=\"norms\" type=\"462c0819:PsiDirectoryNode\" />\n            </path>\n            <path>\n              <item name=\"TP_ANANUM\" type=\"b2602c69:ProjectViewProjectNode\" />\n              <item name=\"TP_GROUPE\" type=\"462c0819:PsiDirectoryNode\" />\n              <item name=\"src\" type=\"462c0819:PsiDirectoryNode\" />\n              <item name=\"auto_tester\" type=\"462c0819:PsiDirectoryNode\" />\n              <item name=\"test_functions\" type=\"462c0819:PsiDirectoryNode\" />\n            </path>\n          </expand>\n          <select />\n        </subPane>\n      </pane>\n      <pane id=\"PackagesPane\" />\n    </panes>\n  </component>\n  <component name=\"PropertiesComponent\">\n    <property name=\"WebServerToolWindowFactoryState\" value=\"false\" />\n    <property name=\"aspect.path.notification.shown\" value=\"true\" />\n    <property name=\"last_opened_file_path\" value=\"$PROJECT_DIR$/libs/apache_poi/xmlbeans-3.1.0.jar!/\" />\n    <property name=\"nodejs_interpreter_path.stuck_in_default_project\" value=\"undefined stuck path\" />\n    <property name=\"nodejs_npm_path_reset_for_default_project\" value=\"true\" />\n    <property name=\"project.structure.last.edited\" value=\"Libraries\" />\n    <property name=\"project.structure.proportion\" value=\"0.15\" />\n    <property name=\"project.structure.side.proportion\" value=\"0.20229885\" />\n  </component>\n  <component name=\"RunDashboard\">\n    <option name=\"ruleStates\">\n      <list>\n        <RuleState>\n          <option name=\"name\" value=\"ConfigurationTypeDashboardGroupingRule\" />\n        </RuleState>\n        <RuleState>\n          <option name=\"name\" value=\"StatusDashboardGroupingRule\" />\n        </RuleState>\n      </list>\n    </option>\n  </component>\n  <component name=\"RunManager\" selected=\"Application.GenerateData\">\n    <configuration name=\"GenerateData\" type=\"Application\" factoryName=\"Application\" temporary=\"true\" nameIsGenerated=\"true\">\n      <option name=\"MAIN_CLASS_NAME\" value=\"auto_tester.data_generation.GenerateData\" />\n      <module name=\"TP_ANANUM\" />\n      <option name=\"WORKING_DIRECTORY\" value=\"$PROJECT_DIR$\" />\n      <extension name=\"coverage\">\n        <pattern>\n          <option name=\"PATTERN\" value=\"auto_tester.data_generation.*\" />\n          <option name=\"ENABLED\" value=\"true\" />\n        </pattern>\n      </extension>\n    </configuration>\n    <configuration name=\"Main\" type=\"Application\" factoryName=\"Application\" temporary=\"true\" nameIsGenerated=\"true\">\n      <option name=\"MAIN_CLASS_NAME\" value=\"auto_tester.Main\" />\n      <module name=\"TP_ANANUM\" />\n      <option name=\"WORKING_DIRECTORY\" value=\"$PROJECT_DIR$\" />\n      <extension name=\"coverage\">\n        <pattern>\n          <option name=\"PATTERN\" value=\"auto_tester.*\" />\n          <option name=\"ENABLED\" value=\"true\" />\n        </pattern>\n      </extension>\n    </configuration>\n    <configuration default=\"true\" type=\"Application\" factoryName=\"Application\">\n      <option name=\"WORKING_DIRECTORY\" value=\"$PROJECT_DIR$\" />\n      <method>\n        <option name=\"Make\" enabled=\"true\" />\n      </method>\n    </configuration>\n    <configuration default=\"true\" type=\"JUnit\" factoryName=\"JUnit\">\n      <option name=\"ALTERNATIVE_JRE_PATH_ENABLED\" value=\"false\" />\n      <option name=\"ALTERNATIVE_JRE_PATH\" />\n      <option name=\"PACKAGE_NAME\" />\n      <option name=\"MAIN_CLASS_NAME\" />\n      <option name=\"METHOD_NAME\" />\n      <option name=\"TEST_OBJECT\" value=\"class\" />\n      <option name=\"VM_PARAMETERS\" />\n      <option name=\"PARAMETERS\" />\n      <option name=\"WORKING_DIRECTORY\" value=\"%MODULE_WORKING_DIR%\" />\n      <option name=\"PASS_PARENT_ENVS\" value=\"true\" />\n      <option name=\"TEST_SEARCH_SCOPE\">\n        <value defaultName=\"singleModule\" />\n      </option>\n      <patterns />\n      <method>\n        <option name=\"Make\" enabled=\"true\" />\n      </method>\n    </configuration>\n    <configuration default=\"true\" type=\"TestNG\" factoryName=\"TestNG\">\n      <option name=\"ALTERNATIVE_JRE_PATH_ENABLED\" value=\"false\" />\n      <option name=\"ALTERNATIVE_JRE_PATH\" />\n      <option name=\"SUITE_NAME\" />\n      <option name=\"PACKAGE_NAME\" />\n      <option name=\"MAIN_CLASS_NAME\" />\n      <option name=\"METHOD_NAME\" />\n      <option name=\"GROUP_NAME\" />\n      <option name=\"TEST_OBJECT\" value=\"CLASS\" />\n      <option name=\"VM_PARAMETERS\" />\n      <option name=\"PARAMETERS\" />\n      <option name=\"WORKING_DIRECTORY\" value=\"%MODULE_WORKING_DIR%\" />\n      <option name=\"OUTPUT_DIRECTORY\" />\n      <option name=\"PASS_PARENT_ENVS\" value=\"true\" />\n      <option name=\"TEST_SEARCH_SCOPE\">\n        <value defaultName=\"singleModule\" />\n      </option>\n      <option name=\"USE_DEFAULT_REPORTERS\" value=\"false\" />\n      <option name=\"PROPERTIES_FILE\" />\n      <properties />\n      <listeners />\n      <method>\n        <option name=\"Make\" enabled=\"true\" />\n      </method>\n    </configuration>\n    <list>\n      <item itemvalue=\"Application.GenerateData\" />\n      <item itemvalue=\"Application.Main\" />\n    </list>\n    <recent_temporary>\n      <list>\n        <item itemvalue=\"Application.GenerateData\" />\n        <item itemvalue=\"Application.Main\" />\n      </list>\n    </recent_temporary>\n  </component>\n  <component name=\"SvnConfiguration\">\n    <configuration />\n  </component>\n  <component name=\"TaskManager\">\n    <task active=\"true\" id=\"Default\" summary=\"Default task\">\n      <changelist id=\"77ae64ca-3a76-4283-ac77-ce7ae13268db\" name=\"Default\" comment=\"\" />\n      <created>1582558965594</created>\n      <option name=\"number\" value=\"Default\" />\n      <option name=\"presentableId\" value=\"Default\" />\n      <updated>1582558965594</updated>\n      <workItem from=\"1582558969539\" duration=\"1826000\" />\n      <workItem from=\"1582730217516\" duration=\"310000\" />\n      <workItem from=\"1582732565577\" duration=\"23690000\" />\n      <workItem from=\"1582978712111\" duration=\"3678000\" />\n    </task>\n    <task id=\"LOCAL-00001\" summary=\"Interfaces prêtes\">\n      <created>1582786091146</created>\n      <option name=\"number\" value=\"00001\" />\n      <option name=\"presentableId\" value=\"LOCAL-00001\" />\n      <option name=\"project\" value=\"LOCAL\" />\n      <updated>1582786091146</updated>\n    </task>\n    <option name=\"localTasksCounter\" value=\"2\" />\n    <servers />\n  </component>\n  <component name=\"TimeTrackingManager\">\n    <option name=\"totallyTimeSpent\" value=\"29504000\" />\n  </component>\n  <component name=\"ToolWindowManager\">\n    <frame x=\"-8\" y=\"-8\" width=\"1936\" height=\"1056\" extended-state=\"6\" />\n    <editor active=\"true\" />\n    <layout>\n      <window_info anchor=\"bottom\" id=\"TODO\" order=\"6\" />\n      <window_info anchor=\"right\" id=\"Palette&#9;\" order=\"7\" />\n      <window_info id=\"Image Layers\" order=\"5\" />\n      <window_info anchor=\"right\" id=\"Capture Analysis\" order=\"3\" />\n      <window_info anchor=\"bottom\" id=\"Event Log\" order=\"10\" side_tool=\"true\" />\n      <window_info anchor=\"right\" id=\"Maven Projects\" order=\"6\" weight=\"0.32995737\" />\n      <window_info anchor=\"bottom\" id=\"Database Changes\" order=\"7\" show_stripe_button=\"false\" />\n      <window_info anchor=\"bottom\" id=\"Version Control\" order=\"9\" weight=\"0.32897604\" />\n      <window_info anchor=\"bottom\" id=\"Run\" order=\"2\" weight=\"0.32897604\" />\n      <window_info anchor=\"bottom\" id=\"Terminal\" order=\"8\" weight=\"0.32897604\" />\n      <window_info id=\"Capture Tool\" order=\"3\" />\n      <window_info id=\"Designer\" order=\"2\" />\n      <window_info active=\"true\" content_ui=\"combo\" id=\"Project\" order=\"0\" visible=\"true\" weight=\"0.25799572\" />\n      <window_info anchor=\"right\" id=\"Database\" order=\"5\" weight=\"0.32995737\" />\n      <window_info anchor=\"bottom\" id=\"Find\" order=\"1\" weight=\"0.32897604\" />\n      <window_info id=\"Structure\" order=\"1\" side_tool=\"true\" weight=\"0.25\" />\n      <window_info anchor=\"right\" id=\"Ant Build\" order=\"1\" weight=\"0.25\" />\n      <window_info anchor=\"right\" id=\"Theme Preview\" order=\"4\" />\n      <window_info id=\"Favorites\" order=\"4\" side_tool=\"true\" />\n      <window_info anchor=\"bottom\" id=\"Debug\" order=\"3\" weight=\"0.4\" />\n      <window_info anchor=\"right\" content_ui=\"combo\" id=\"Hierarchy\" order=\"2\" weight=\"0.25\" />\n      <window_info anchor=\"bottom\" id=\"Inspection\" order=\"5\" weight=\"0.4\" />\n      <window_info anchor=\"right\" id=\"Commander\" internal_type=\"SLIDING\" order=\"0\" type=\"SLIDING\" weight=\"0.4\" />\n      <window_info anchor=\"right\" x=\"0\" y=\"0\" width=\"434\" height=\"856\" id=\"Documentation\" order=\"3\" side_tool=\"true\" weight=\"0.32995737\" />\n      <window_info anchor=\"bottom\" id=\"Message\" order=\"0\" />\n      <window_info anchor=\"bottom\" id=\"Cvs\" order=\"4\" weight=\"0.25\" />\n      <window_info anchor=\"bottom\" id=\"Messages\" order=\"7\" weight=\"0.32897604\" />\n    </layout>\n  </component>\n  <component name=\"TypeScriptGeneratedFilesManager\">\n    <option name=\"version\" value=\"1\" />\n  </component>\n  <component name=\"VcsContentAnnotationSettings\">\n    <option name=\"myLimit\" value=\"2678400000\" />\n  </component>\n  <component name=\"VcsManagerConfiguration\">\n    <MESSAGE value=\"PROJET DE GROUPE INITIALISE\" />\n    <MESSAGE value=\"Interfaces prêtes\" />\n    <option name=\"LAST_COMMIT_MESSAGE\" value=\"Interfaces prêtes\" />\n  </component>\n  <component name=\"WindowStateProjectService\">\n    <state x=\"363\" y=\"225\" key=\"com.intellij.ide.util.TipDialog\" timestamp=\"1582963466106\">\n      <screen x=\"49\" y=\"27\" width=\"1317\" height=\"741\" />\n    </state>\n    <state x=\"363\" y=\"225\" key=\"com.intellij.ide.util.TipDialog/49.27.1317.741@49.27.1317.741\" timestamp=\"1582963466106\" />\n  </component>\n  <component name=\"XDebuggerManager\">\n    <breakpoint-manager>\n      <option name=\"time\" value=\"3\" />\n    </breakpoint-manager>\n  </component>\n  <component name=\"editorHistoryManager\">\n    <entry file=\"file://$PROJECT_DIR$/src/auto_tester/base_functions/Square_two_solver.java\">\n      <provider selected=\"true\" editor-type-id=\"text-editor\">\n        <state relative-caret-position=\"170\">\n          <caret line=\"13\" selection-start-line=\"13\" selection-end-line=\"13\" />\n          <folding>\n            <element signature=\"imports\" expanded=\"true\" />\n          </folding>\n        </state>\n      </provider>\n    </entry>\n    <entry file=\"file://$PROJECT_DIR$/src/auto_tester/test_functions/Square_two_test.java\">\n      <provider selected=\"true\" editor-type-id=\"text-editor\">\n        <state relative-caret-position=\"170\">\n          <caret line=\"10\" column=\"23\" selection-start-line=\"10\" selection-start-column=\"23\" selection-end-line=\"10\" selection-end-column=\"23\" />\n          <folding>\n            <element signature=\"imports\" expanded=\"true\" />\n            <element signature=\"e#233#234#0\" expanded=\"true\" />\n            <element signature=\"e#260#261#0\" expanded=\"true\" />\n          </folding>\n        </state>\n      </provider>\n    </entry>\n    <entry file=\"file://$PROJECT_DIR$/src/auto_tester/interfaces/INorm.java\">\n      <provider selected=\"true\" editor-type-id=\"text-editor\">\n        <state relative-caret-position=\"136\">\n          <caret line=\"8\" column=\"16\" selection-start-line=\"8\" selection-start-column=\"16\" selection-end-line=\"8\" selection-end-column=\"16\" />\n        </state>\n      </provider>\n    </entry>\n    <entry file=\"file://$PROJECT_DIR$/src/auto_tester/norms/Relative_error.java\">\n      <provider selected=\"true\" editor-type-id=\"text-editor\">\n        <state relative-caret-position=\"136\">\n          <caret line=\"8\" column=\"21\" selection-start-line=\"8\" selection-start-column=\"21\" selection-end-line=\"8\" selection-end-column=\"21\" />\n          <folding>\n            <element signature=\"imports\" expanded=\"true\" />\n          </folding>\n        </state>\n      </provider>\n    </entry>\n    <entry file=\"file://$PROJECT_DIR$/src/auto_tester/Main.java\">\n      <provider selected=\"true\" editor-type-id=\"text-editor\">\n        <state relative-caret-position=\"289\">\n          <caret line=\"19\" column=\"22\" selection-start-line=\"19\" selection-start-column=\"22\" selection-end-line=\"19\" selection-end-column=\"22\" />\n          <folding>\n            <element signature=\"imports\" expanded=\"true\" />\n          </folding>\n        </state>\n      </provider>\n    </entry>\n    <entry file=\"file://$PROJECT_DIR$/src/auto_tester/GlobalConfig.java\">\n      <provider selected=\"true\" editor-type-id=\"text-editor\">\n        <state relative-caret-position=\"102\">\n          <caret line=\"6\" lean-forward=\"true\" selection-start-line=\"5\" selection-start-column=\"23\" selection-end-line=\"6\" />\n        </state>\n      </provider>\n    </entry>\n    <entry file=\"file://$PROJECT_DIR$/src/auto_tester/models/TestData.java\">\n      <provider selected=\"true\" editor-type-id=\"text-editor\">\n        <state relative-caret-position=\"2193\">\n          <caret line=\"129\" column=\"9\" lean-forward=\"true\" selection-start-line=\"129\" selection-start-column=\"9\" selection-end-line=\"129\" selection-end-column=\"9\" />\n          <folding>\n            <element signature=\"imports\" expanded=\"true\" />\n            <element signature=\"e#721#722#0\" expanded=\"true\" />\n            <element signature=\"e#752#753#0\" expanded=\"true\" />\n            <element signature=\"e#800#801#0\" expanded=\"true\" />\n            <element signature=\"e#840#841#0\" expanded=\"true\" />\n            <element signature=\"e#883#884#0\" expanded=\"true\" />\n            <element signature=\"e#916#917#0\" expanded=\"true\" />\n            <element signature=\"e#974#975#0\" expanded=\"true\" />\n            <element signature=\"e#1018#1019#0\" expanded=\"true\" />\n            <element signature=\"e#1061#1062#0\" expanded=\"true\" />\n            <element signature=\"e#1100#1101#0\" expanded=\"true\" />\n            <element signature=\"e#1164#1165#0\" expanded=\"true\" />\n            <element signature=\"e#1220#1221#0\" expanded=\"true\" />\n            <element signature=\"e#1267#1268#0\" expanded=\"true\" />\n            <element signature=\"e#1303#1304#0\" expanded=\"true\" />\n            <element signature=\"e#1368#1369#0\" expanded=\"true\" />\n            <element signature=\"e#1418#1419#0\" expanded=\"true\" />\n            <element signature=\"e#1458#1459#0\" expanded=\"true\" />\n            <element signature=\"e#1494#1495#0\" expanded=\"true\" />\n            <element signature=\"e#1552#1553#0\" expanded=\"true\" />\n            <element signature=\"e#1602#1603#0\" expanded=\"true\" />\n            <element signature=\"e#1645#1646#0\" expanded=\"true\" />\n            <element signature=\"e#1684#1685#0\" expanded=\"true\" />\n            <element signature=\"e#1748#1749#0\" expanded=\"true\" />\n            <element signature=\"e#1804#1805#0\" expanded=\"true\" />\n            <element signature=\"e#1851#1852#0\" expanded=\"true\" />\n            <element signature=\"e#1887#1888#0\" expanded=\"true\" />\n            <element signature=\"e#1952#1953#0\" expanded=\"true\" />\n            <element signature=\"e#2002#2003#0\" expanded=\"true\" />\n            <element signature=\"e#2038#2039#0\" expanded=\"true\" />\n            <element signature=\"e#2070#2071#0\" expanded=\"true\" />\n            <element signature=\"e#2120#2121#0\" expanded=\"true\" />\n            <element signature=\"e#2162#2163#0\" expanded=\"true\" />\n            <element signature=\"e#2205#2206#0\" expanded=\"true\" />\n            <element signature=\"e#2244#2245#0\" expanded=\"true\" />\n            <element signature=\"e#2308#2309#0\" expanded=\"true\" />\n            <element signature=\"e#2364#2365#0\" expanded=\"true\" />\n            <element signature=\"e#2403#2404#0\" expanded=\"true\" />\n            <element signature=\"e#2439#2440#0\" expanded=\"true\" />\n            <element signature=\"e#2496#2497#0\" expanded=\"true\" />\n            <element signature=\"e#2546#2547#0\" expanded=\"true\" />\n          </folding>\n        </state>\n      </provider>\n    </entry>\n    <entry file=\"file://$PROJECT_DIR$/src/auto_tester/interfaces/IBaseFunction.java\">\n      <provider selected=\"true\" editor-type-id=\"text-editor\">\n        <state relative-caret-position=\"136\">\n          <caret line=\"8\" column=\"18\" selection-start-line=\"8\" selection-start-column=\"18\" selection-end-line=\"8\" selection-end-column=\"18\" />\n        </state>\n      </provider>\n    </entry>\n    <entry file=\"jar://C:/Program Files (x86)/Java/jdk1.8.0_66/src.zip!/java/lang/String.java\">\n      <provider selected=\"true\" editor-type-id=\"text-editor\">\n        <state relative-caret-position=\"39576\">\n          <caret line=\"2328\" column=\"25\" selection-start-line=\"2328\" selection-start-column=\"20\" selection-end-line=\"2328\" selection-end-column=\"25\" />\n          <folding>\n            <element signature=\"e#94598#94599#0\" expanded=\"true\" />\n            <element signature=\"e#94636#94637#0\" expanded=\"true\" />\n          </folding>\n        </state>\n      </provider>\n    </entry>\n    <entry file=\"file://$PROJECT_DIR$/src/auto_tester/Tools.java\">\n      <provider selected=\"true\" editor-type-id=\"text-editor\">\n        <state relative-caret-position=\"476\">\n          <caret line=\"30\" column=\"27\" lean-forward=\"true\" selection-start-line=\"30\" selection-start-column=\"27\" selection-end-line=\"30\" selection-end-column=\"27\" />\n          <folding>\n            <element signature=\"imports\" expanded=\"true\" />\n          </folding>\n        </state>\n      </provider>\n    </entry>\n    <entry file=\"file://$PROJECT_DIR$/src/auto_tester/test_functions.java\" />\n    <entry file=\"file://$PROJECT_DIR$/src/auto_tester/base_functions/BaseFunctions.java\" />\n    <entry file=\"file://$PROJECT_DIR$/src/auto_tester/models/SingleTest.java\">\n      <provider selected=\"true\" editor-type-id=\"text-editor\">\n        <state relative-caret-position=\"354\">\n          <caret line=\"35\" column=\"44\" selection-start-line=\"35\" selection-start-column=\"44\" selection-end-line=\"35\" selection-end-column=\"44\" />\n          <folding>\n            <element signature=\"e#94#95#0\" expanded=\"true\" />\n            <element signature=\"e#138#139#0\" expanded=\"true\" />\n            <element signature=\"e#194#195#0\" expanded=\"true\" />\n            <element signature=\"e#248#249#0\" expanded=\"true\" />\n            <element signature=\"e#285#286#0\" expanded=\"true\" />\n            <element signature=\"e#326#327#0\" expanded=\"true\" />\n            <element signature=\"e#375#376#0\" expanded=\"true\" />\n            <element signature=\"e#423#424#0\" expanded=\"true\" />\n            <element signature=\"e#170#171#0\" expanded=\"true\" />\n            <element signature=\"e#224#225#0\" expanded=\"true\" />\n          </folding>\n        </state>\n      </provider>\n    </entry>\n    <entry file=\"jar://C:/Program Files (x86)/Java/jdk1.8.0_66/src.zip!/java/lang/String.java\">\n      <provider selected=\"true\" editor-type-id=\"text-editor\">\n        <state relative-caret-position=\"38267\">\n          <caret line=\"2328\" column=\"25\" selection-start-line=\"2328\" selection-start-column=\"20\" selection-end-line=\"2328\" selection-end-column=\"25\" />\n          <folding>\n            <element signature=\"e#94598#94599#0\" expanded=\"true\" />\n            <element signature=\"e#94636#94637#0\" expanded=\"true\" />\n          </folding>\n        </state>\n      </provider>\n    </entry>\n    <entry file=\"file://$PROJECT_DIR$/src/auto_tester/base_functions/Square_two_solver.java\">\n      <provider selected=\"true\" editor-type-id=\"text-editor\">\n        <state relative-caret-position=\"170\">\n          <caret line=\"13\" selection-start-line=\"13\" selection-end-line=\"13\" />\n          <folding>\n            <element signature=\"imports\" expanded=\"true\" />\n          </folding>\n        </state>\n      </provider>\n    </entry>\n    <entry file=\"file://$PROJECT_DIR$/src/auto_tester/test_functions/Square_two_test.java\">\n      <provider selected=\"true\" editor-type-id=\"text-editor\">\n        <state relative-caret-position=\"136\">\n          <caret line=\"10\" column=\"23\" selection-start-line=\"10\" selection-start-column=\"23\" selection-end-line=\"10\" selection-end-column=\"23\" />\n          <folding>\n            <element signature=\"imports\" expanded=\"true\" />\n            <element signature=\"e#233#234#0\" expanded=\"true\" />\n            <element signature=\"e#260#261#0\" expanded=\"true\" />\n          </folding>\n        </state>\n      </provider>\n    </entry>\n    <entry file=\"file://$PROJECT_DIR$/src/auto_tester/Main.java\">\n      <provider selected=\"true\" editor-type-id=\"text-editor\">\n        <state relative-caret-position=\"289\">\n          <caret line=\"19\" column=\"22\" selection-start-line=\"19\" selection-start-column=\"22\" selection-end-line=\"19\" selection-end-column=\"22\" />\n          <folding>\n            <element signature=\"imports\" expanded=\"true\" />\n          </folding>\n        </state>\n      </provider>\n    </entry>\n    <entry file=\"file://$PROJECT_DIR$/src/auto_tester/GlobalConfig.java\">\n      <provider selected=\"true\" editor-type-id=\"text-editor\">\n        <state relative-caret-position=\"102\">\n          <caret line=\"6\" selection-start-line=\"5\" selection-start-column=\"23\" selection-end-line=\"6\" />\n        </state>\n      </provider>\n    </entry>\n    <entry file=\"file://$PROJECT_DIR$/src/auto_tester/norms/Relative_error.java\">\n      <provider selected=\"true\" editor-type-id=\"text-editor\">\n        <state relative-caret-position=\"102\">\n          <caret line=\"8\" column=\"21\" selection-start-line=\"8\" selection-start-column=\"21\" selection-end-line=\"8\" selection-end-column=\"21\" />\n          <folding>\n            <element signature=\"imports\" expanded=\"true\" />\n          </folding>\n        </state>\n      </provider>\n    </entry>\n    <entry file=\"file://$PROJECT_DIR$/src/auto_tester/Tools.java\">\n      <provider selected=\"true\" editor-type-id=\"text-editor\">\n        <state relative-caret-position=\"309\">\n          <caret line=\"36\" column=\"33\" lean-forward=\"true\" selection-start-line=\"36\" selection-start-column=\"33\" selection-end-line=\"36\" selection-end-column=\"33\" />\n          <folding>\n            <element signature=\"imports\" expanded=\"true\" />\n          </folding>\n        </state>\n      </provider>\n    </entry>\n    <entry file=\"file://$PROJECT_DIR$/src/auto_tester/data_generation/GenerateData.java\">\n      <provider selected=\"true\" editor-type-id=\"text-editor\">\n        <state relative-caret-position=\"357\">\n          <caret line=\"22\" column=\"62\" selection-start-line=\"22\" selection-start-column=\"62\" selection-end-line=\"22\" selection-end-column=\"62\" />\n        </state>\n      </provider>\n    </entry>\n    <entry file=\"file://$PROJECT_DIR$/src/auto_tester/interfaces/IBaseFunction.java\">\n      <provider selected=\"true\" editor-type-id=\"text-editor\">\n        <state relative-caret-position=\"136\">\n          <caret line=\"8\" column=\"18\" selection-start-line=\"8\" selection-start-column=\"18\" selection-end-line=\"8\" selection-end-column=\"18\" />\n        </state>\n      </provider>\n    </entry>\n    <entry file=\"file://$PROJECT_DIR$/src/auto_tester/interfaces/ITestFunction.java\">\n      <provider selected=\"true\" editor-type-id=\"text-editor\">\n        <state relative-caret-position=\"340\">\n          <caret line=\"20\" column=\"27\" selection-start-line=\"20\" selection-start-column=\"27\" selection-end-line=\"20\" selection-end-column=\"27\" />\n        </state>\n      </provider>\n    </entry>\n    <entry file=\"file://$PROJECT_DIR$/src/auto_tester/interfaces/INorm.java\">\n      <provider selected=\"true\" editor-type-id=\"text-editor\">\n        <state relative-caret-position=\"238\">\n          <caret line=\"14\" column=\"7\" selection-start-line=\"14\" selection-start-column=\"7\" selection-end-line=\"14\" selection-end-column=\"7\" />\n        </state>\n      </provider>\n    </entry>\n    <entry file=\"jar://C:/Program Files (x86)/Java/jdk1.8.0_66/src.zip!/java/lang/Double.java\">\n      <provider selected=\"true\" editor-type-id=\"text-editor\">\n        <state>\n          <caret lean-forward=\"true\" />\n        </state>\n      </provider>\n    </entry>\n    <entry file=\"file://$PROJECT_DIR$/src/auto_tester/data_generation/Generator.java\">\n      <provider selected=\"true\" editor-type-id=\"text-editor\">\n        <state relative-caret-position=\"836\">\n          <caret line=\"75\" column=\"5\" lean-forward=\"true\" selection-start-line=\"75\" selection-start-column=\"5\" selection-end-line=\"75\" selection-end-column=\"5\" />\n        </state>\n      </provider>\n    </entry>\n    <entry file=\"file://$PROJECT_DIR$/src/auto_tester/data_generation/ValueBag.java\">\n      <provider selected=\"true\" editor-type-id=\"text-editor\">\n        <state relative-caret-position=\"622\">\n          <caret line=\"50\" column=\"39\" selection-start-line=\"50\" selection-start-column=\"39\" selection-end-line=\"50\" selection-end-column=\"39\" />\n        </state>\n      </provider>\n    </entry>\n    <entry file=\"file://$PROJECT_DIR$/src/auto_tester/models/TestData.java\">\n      <provider selected=\"true\" editor-type-id=\"text-editor\">\n        <state relative-caret-position=\"214\">\n          <caret line=\"157\" column=\"50\" selection-start-line=\"157\" selection-start-column=\"50\" selection-end-line=\"157\" selection-end-column=\"50\" />\n          <folding>\n            <element signature=\"imports\" expanded=\"true\" />\n            <element signature=\"e#721#722#0\" expanded=\"true\" />\n            <element signature=\"e#752#753#0\" expanded=\"true\" />\n            <element signature=\"e#800#801#0\" expanded=\"true\" />\n            <element signature=\"e#840#841#0\" expanded=\"true\" />\n            <element signature=\"e#883#884#0\" expanded=\"true\" />\n            <element signature=\"e#916#917#0\" expanded=\"true\" />\n            <element signature=\"e#980#981#0\" expanded=\"true\" />\n            <element signature=\"e#1024#1025#0\" expanded=\"true\" />\n            <element signature=\"e#1061#1062#0\" expanded=\"true\" />\n            <element signature=\"e#1100#1101#0\" expanded=\"true\" />\n            <element signature=\"e#1164#1165#0\" expanded=\"true\" />\n            <element signature=\"e#1220#1221#0\" expanded=\"true\" />\n            <element signature=\"e#1267#1268#0\" expanded=\"true\" />\n            <element signature=\"e#1303#1304#0\" expanded=\"true\" />\n            <element signature=\"e#1368#1369#0\" expanded=\"true\" />\n            <element signature=\"e#1418#1419#0\" expanded=\"true\" />\n            <element signature=\"e#1470#1471#0\" expanded=\"true\" />\n            <element signature=\"e#1506#1507#0\" expanded=\"true\" />\n            <element signature=\"e#1570#1571#0\" expanded=\"true\" />\n            <element signature=\"e#1620#1621#0\" expanded=\"true\" />\n            <element signature=\"e#1645#1646#0\" expanded=\"true\" />\n            <element signature=\"e#1684#1685#0\" expanded=\"true\" />\n            <element signature=\"e#1748#1749#0\" expanded=\"true\" />\n            <element signature=\"e#1804#1805#0\" expanded=\"true\" />\n            <element signature=\"e#1851#1852#0\" expanded=\"true\" />\n            <element signature=\"e#1887#1888#0\" expanded=\"true\" />\n            <element signature=\"e#1952#1953#0\" expanded=\"true\" />\n            <element signature=\"e#2002#2003#0\" expanded=\"true\" />\n            <element signature=\"e#2038#2039#0\" expanded=\"true\" />\n            <element signature=\"e#2070#2071#0\" expanded=\"true\" />\n            <element signature=\"e#2120#2121#0\" expanded=\"true\" />\n            <element signature=\"e#2162#2163#0\" expanded=\"true\" />\n            <element signature=\"e#2205#2206#0\" expanded=\"true\" />\n            <element signature=\"e#2244#2245#0\" expanded=\"true\" />\n            <element signature=\"e#2308#2309#0\" expanded=\"true\" />\n            <element signature=\"e#2364#2365#0\" expanded=\"true\" />\n            <element signature=\"e#2403#2404#0\" expanded=\"true\" />\n            <element signature=\"e#2439#2440#0\" expanded=\"true\" />\n            <element signature=\"e#2496#2497#0\" expanded=\"true\" />\n            <element signature=\"e#2546#2547#0\" expanded=\"true\" />\n            <element signature=\"method#runTest#0;class#TestData#0\" />\n          </folding>\n        </state>\n      </provider>\n    </entry>\n    <entry file=\"file://$PROJECT_DIR$/src/auto_tester/data_parser/Reader.java\">\n      <provider selected=\"true\" editor-type-id=\"text-editor\">\n        <state relative-caret-position=\"102\">\n          <caret line=\"6\" column=\"35\" lean-forward=\"true\" selection-start-line=\"6\" selection-start-column=\"35\" selection-end-line=\"6\" selection-end-column=\"35\" />\n        </state>\n      </provider>\n    </entry>\n    <entry file=\"file://$PROJECT_DIR$/src/auto_tester/data_parser/Saver.java\">\n      <provider selected=\"true\" editor-type-id=\"text-editor\">\n        <state relative-caret-position=\"204\">\n          <caret line=\"12\" column=\"32\" selection-start-line=\"12\" selection-start-column=\"32\" selection-end-line=\"12\" selection-end-column=\"32\" />\n          <folding>\n            <element signature=\"imports\" expanded=\"true\" />\n          </folding>\n        </state>\n      </provider>\n    </entry>\n    <entry file=\"file://$PROJECT_DIR$/src/auto_tester/models/GlobalTest.java\">\n      <provider selected=\"true\" editor-type-id=\"text-editor\">\n        <state relative-caret-position=\"68\">\n          <caret line=\"4\" column=\"13\" selection-start-line=\"4\" selection-start-column=\"13\" selection-end-line=\"4\" selection-end-column=\"13\" />\n        </state>\n      </provider>\n    </entry>\n    <entry file=\"file://$PROJECT_DIR$/src/auto_tester/data_generation/EquationType.java\">\n      <provider selected=\"true\" editor-type-id=\"text-editor\">\n        <state relative-caret-position=\"153\">\n          <caret line=\"9\" column=\"6\" selection-start-line=\"9\" selection-start-column=\"6\" selection-end-line=\"9\" selection-end-column=\"6\" />\n        </state>\n      </provider>\n    </entry>\n  </component>\n  <component name=\"masterDetails\">\n    <states>\n      <state key=\"ArtifactsStructureConfigurable.UI\">\n        <settings>\n          <artifact-editor />\n          <splitter-proportions>\n            <option name=\"proportions\">\n              <list>\n                <option value=\"0.20229885\" />\n              </list>\n            </option>\n          </splitter-proportions>\n        </settings>\n      </state>\n      <state key=\"FacetStructureConfigurable.UI\">\n        <settings>\n          <last-edited>No facets are configured</last-edited>\n          <splitter-proportions>\n            <option name=\"proportions\">\n              <list>\n                <option value=\"0.2\" />\n              </list>\n            </option>\n          </splitter-proportions>\n        </settings>\n      </state>\n      <state key=\"GlobalLibrariesConfigurable.UI\">\n        <settings>\n          <splitter-proportions>\n            <option name=\"proportions\">\n              <list>\n                <option value=\"0.2\" />\n              </list>\n            </option>\n          </splitter-proportions>\n        </settings>\n      </state>\n      <state key=\"JdkListConfigurable.UI\">\n        <settings>\n          <last-edited>1.8</last-edited>\n          <splitter-proportions>\n            <option name=\"proportions\">\n              <list>\n                <option value=\"0.2\" />\n              </list>\n            </option>\n          </splitter-proportions>\n        </settings>\n      </state>\n      <state key=\"ModuleStructureConfigurable.UI\">\n        <settings>\n          <last-edited>TP_ANANUM</last-edited>\n          <splitter-proportions>\n            <option name=\"proportions\">\n              <list>\n                <option value=\"0.20229885\" />\n                <option value=\"0.6\" />\n              </list>\n            </option>\n          </splitter-proportions>\n        </settings>\n      </state>\n      <state key=\"ProjectJDKs.UI\">\n        <settings>\n          <last-edited>1.8</last-edited>\n          <splitter-proportions>\n            <option name=\"proportions\">\n              <list>\n                <option value=\"0.2\" />\n              </list>\n            </option>\n          </splitter-proportions>\n        </settings>\n      </state>\n      <state key=\"ProjectLibrariesConfigurable.UI\">\n        <settings>\n          <last-edited>activation-1.1.1</last-edited>\n          <splitter-proportions>\n            <option name=\"proportions\">\n              <list>\n                <option value=\"0.20229885\" />\n              </list>\n            </option>\n          </splitter-proportions>\n        </settings>\n      </state>\n    </states>\n  </component>\n</project>
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- .idea/workspace.xml	(date 1583042422000)
++++ .idea/workspace.xml	(date 1583042447684)
+@@ -4,6 +4,7 @@
+     <bookmark url="file://$PROJECT_DIR$/src/auto_tester/interfaces/INorm.java" line="19" mnemonic="1" />
+   </component>
+   <component name="ChangeListManager">
++<<<<<<< HEAD
+     <list default="true" id="77ae64ca-3a76-4283-ac77-ce7ae13268db" name="Default" comment="Interfaces prêtes">
+       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+       <change beforePath="$PROJECT_DIR$/src/auto_tester/data_generation/Generator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/auto_tester/data_generation/Generator.java" afterDir="false" />
+@@ -11,15 +12,21 @@
+       <change beforePath="$PROJECT_DIR$/src/auto_tester/data_parser/Saver.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/auto_tester/data_parser/Saver.java" afterDir="false" />
+       <change beforePath="$PROJECT_DIR$/src/auto_tester/interfaces/INorm.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/auto_tester/interfaces/INorm.java" afterDir="false" />
+       <change beforePath="$PROJECT_DIR$/src/auto_tester/models/TestData.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/auto_tester/models/TestData.java" afterDir="false" />
++=======
++    <list default="true" id="77ae64ca-3a76-4283-ac77-ce7ae13268db" name="Default" comment="">
++      <change afterPath="$PROJECT_DIR$/src/auto_tester/norms/Absolute_error.java" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/src/auto_tester/norms/Relative_error.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/auto_tester/norms/Relative_error.java" afterDir="false" />
++>>>>>>> d332bab19c9f6d14cf5ab1d922b0cacd624c4ad1
+     </list>
+     <ignored path="$PROJECT_DIR$/out/" />
+     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+-    <option name="TRACKING_ENABLED" value="true" />
+     <option name="SHOW_DIALOG" value="false" />
+     <option name="HIGHLIGHT_CONFLICTS" value="true" />
+     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+     <option name="LAST_RESOLUTION" value="IGNORE" />
+   </component>
++<<<<<<< HEAD
+   <component name="DatabaseView">
+     <option name="SHOW_INTERMEDIATE" value="true" />
+     <option name="GROUP_DATA_SOURCES" value="true" />
+@@ -41,33 +48,76 @@
+           <provider selected="true" editor-type-id="text-editor">
+             <state relative-caret-position="238">
+               <caret line="14" column="7" selection-start-line="14" selection-start-column="7" selection-end-line="14" selection-end-column="7" />
++=======
++  <component name="DefaultGradleProjectSettings">
++    <option name="testRunner" value="GRADLE" />
++    <option name="delegatedBuild" value="true" />
++  </component>
++  <component name="FileEditorManager">
++    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
++      <file pinned="false" current-in-tab="true">
++        <entry file="file://$PROJECT_DIR$/src/auto_tester/norms/Relative_error.java">
++          <provider selected="true" editor-type-id="text-editor">
++            <state relative-caret-position="204">
++              <caret line="12" column="46" lean-forward="true" selection-start-line="12" selection-start-column="46" selection-end-line="12" selection-end-column="46" />
++              <folding>
++                <element signature="imports" expanded="true" />
++              </folding>
++>>>>>>> d332bab19c9f6d14cf5ab1d922b0cacd624c4ad1
+             </state>
+           </provider>
+         </entry>
+       </file>
++<<<<<<< HEAD
+       <file leaf-file-name="ValueBag.java" pinned="false" current-in-tab="false">
+         <entry file="file://$PROJECT_DIR$/src/auto_tester/data_generation/ValueBag.java">
+           <provider selected="true" editor-type-id="text-editor">
+             <state relative-caret-position="622">
+               <caret line="50" column="39" selection-start-line="50" selection-start-column="39" selection-end-line="50" selection-end-column="39" />
++=======
++      <file pinned="false" current-in-tab="false">
++        <entry file="file://$PROJECT_DIR$/src/auto_tester/norms/Absolute_error.java">
++          <provider selected="true" editor-type-id="text-editor">
++            <state relative-caret-position="306">
++              <caret line="18" lean-forward="true" selection-start-line="18" selection-end-line="18" />
++              <folding>
++                <element signature="imports" expanded="true" />
++              </folding>
++>>>>>>> d332bab19c9f6d14cf5ab1d922b0cacd624c4ad1
+             </state>
+           </provider>
+         </entry>
+       </file>
++<<<<<<< HEAD
+       <file leaf-file-name="ITestFunction.java" pinned="false" current-in-tab="false">
+         <entry file="file://$PROJECT_DIR$/src/auto_tester/interfaces/ITestFunction.java">
+           <provider selected="true" editor-type-id="text-editor">
+             <state relative-caret-position="340">
+               <caret line="20" column="27" selection-start-line="20" selection-start-column="27" selection-end-line="20" selection-end-column="27" />
++=======
++      <file pinned="false" current-in-tab="false">
++        <entry file="file://$PROJECT_DIR$/src/auto_tester/interfaces/INorm.java">
++          <provider selected="true" editor-type-id="text-editor">
++            <state relative-caret-position="136">
++              <caret line="8" column="68" selection-start-line="8" selection-start-column="68" selection-end-line="8" selection-end-column="68" />
++>>>>>>> d332bab19c9f6d14cf5ab1d922b0cacd624c4ad1
+             </state>
+           </provider>
+         </entry>
+       </file>
++<<<<<<< HEAD
+       <file leaf-file-name="TestData.java" pinned="false" current-in-tab="false">
+         <entry file="file://$PROJECT_DIR$/src/auto_tester/models/TestData.java">
+           <provider selected="true" editor-type-id="text-editor">
+             <state relative-caret-position="214">
+               <caret line="157" column="50" selection-start-line="157" selection-start-column="50" selection-end-line="157" selection-end-column="50" />
++=======
++      <file pinned="false" current-in-tab="false">
++        <entry file="file://$PROJECT_DIR$/src/auto_tester/data_parser/Reader.java">
++          <provider selected="true" editor-type-id="text-editor">
++            <state relative-caret-position="425">
++              <caret line="36" selection-start-line="36" selection-end-line="36" />
++>>>>>>> d332bab19c9f6d14cf5ab1d922b0cacd624c4ad1
+               <folding>
+                 <element signature="imports" expanded="true" />
+                 <element signature="e#721#722#0" expanded="true" />
+@@ -116,15 +166,27 @@
+           </provider>
+         </entry>
+       </file>
++<<<<<<< HEAD
+       <file leaf-file-name="Reader.java" pinned="false" current-in-tab="false">
+         <entry file="file://$PROJECT_DIR$/src/auto_tester/data_parser/Reader.java">
+           <provider selected="true" editor-type-id="text-editor">
+             <state relative-caret-position="102">
+               <caret line="6" column="35" lean-forward="true" selection-start-line="6" selection-start-column="35" selection-end-line="6" selection-end-column="35" />
++=======
++      <file pinned="false" current-in-tab="false">
++        <entry file="file://$PROJECT_DIR$/src/auto_tester/Tools.java">
++          <provider selected="true" editor-type-id="text-editor">
++            <state relative-caret-position="850">
++              <caret line="52" column="17" selection-start-line="52" selection-start-column="17" selection-end-line="52" selection-end-column="17" />
++              <folding>
++                <element signature="imports" expanded="true" />
++              </folding>
++>>>>>>> d332bab19c9f6d14cf5ab1d922b0cacd624c4ad1
+             </state>
+           </provider>
+         </entry>
+       </file>
++<<<<<<< HEAD
+       <file leaf-file-name="Saver.java" pinned="false" current-in-tab="false">
+         <entry file="file://$PROJECT_DIR$/src/auto_tester/data_parser/Saver.java">
+           <provider selected="true" editor-type-id="text-editor">
+@@ -132,31 +194,101 @@
+               <caret line="12" column="32" selection-start-line="12" selection-start-column="32" selection-end-line="12" selection-end-column="32" />
+               <folding>
+                 <element signature="imports" expanded="true" />
++=======
++      <file pinned="false" current-in-tab="false">
++        <entry file="file://$PROJECT_DIR$/src/auto_tester/models/TestData.java">
++          <provider selected="true" editor-type-id="text-editor">
++            <state relative-caret-position="340">
++              <caret line="26" column="17" selection-start-line="26" selection-start-column="12" selection-end-line="26" selection-end-column="17" />
++              <folding>
++                <element signature="imports" expanded="true" />
++                <element signature="e#721#722#0" expanded="true" />
++                <element signature="e#752#753#0" expanded="true" />
++                <element signature="e#800#801#0" expanded="true" />
++                <element signature="e#840#841#0" expanded="true" />
++                <element signature="e#883#884#0" expanded="true" />
++                <element signature="e#916#917#0" expanded="true" />
++                <element signature="e#974#975#0" expanded="true" />
++                <element signature="e#1018#1019#0" expanded="true" />
++                <element signature="e#1061#1062#0" expanded="true" />
++                <element signature="e#1100#1101#0" expanded="true" />
++                <element signature="e#1164#1165#0" expanded="true" />
++                <element signature="e#1220#1221#0" expanded="true" />
++                <element signature="e#1267#1268#0" expanded="true" />
++                <element signature="e#1303#1304#0" expanded="true" />
++                <element signature="e#1368#1369#0" expanded="true" />
++                <element signature="e#1418#1419#0" expanded="true" />
++                <element signature="e#1458#1459#0" expanded="true" />
++                <element signature="e#1494#1495#0" expanded="true" />
++                <element signature="e#1552#1553#0" expanded="true" />
++                <element signature="e#1602#1603#0" expanded="true" />
++                <element signature="e#1645#1646#0" expanded="true" />
++                <element signature="e#1684#1685#0" expanded="true" />
++                <element signature="e#1748#1749#0" expanded="true" />
++                <element signature="e#1804#1805#0" expanded="true" />
++                <element signature="e#1851#1852#0" expanded="true" />
++                <element signature="e#1887#1888#0" expanded="true" />
++                <element signature="e#1952#1953#0" expanded="true" />
++                <element signature="e#2002#2003#0" expanded="true" />
++                <element signature="e#2038#2039#0" expanded="true" />
++                <element signature="e#2070#2071#0" expanded="true" />
++                <element signature="e#2120#2121#0" expanded="true" />
++                <element signature="e#2162#2163#0" expanded="true" />
++                <element signature="e#2205#2206#0" expanded="true" />
++                <element signature="e#2244#2245#0" expanded="true" />
++                <element signature="e#2308#2309#0" expanded="true" />
++                <element signature="e#2364#2365#0" expanded="true" />
++                <element signature="e#2403#2404#0" expanded="true" />
++                <element signature="e#2439#2440#0" expanded="true" />
++                <element signature="e#2496#2497#0" expanded="true" />
++                <element signature="e#2546#2547#0" expanded="true" />
++>>>>>>> d332bab19c9f6d14cf5ab1d922b0cacd624c4ad1
+               </folding>
+             </state>
+           </provider>
+         </entry>
+       </file>
+-      <file leaf-file-name="GlobalTest.java" pinned="false" current-in-tab="false">
++      <file pinned="false" current-in-tab="false">
+         <entry file="file://$PROJECT_DIR$/src/auto_tester/models/GlobalTest.java">
+           <provider selected="true" editor-type-id="text-editor">
++<<<<<<< HEAD
+             <state relative-caret-position="68">
+               <caret line="4" column="13" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="13" />
++=======
++            <state relative-caret-position="272">
++              <caret line="16" column="55" selection-start-line="16" selection-start-column="55" selection-end-line="16" selection-end-column="55" />
++>>>>>>> d332bab19c9f6d14cf5ab1d922b0cacd624c4ad1
+             </state>
+           </provider>
+         </entry>
+       </file>
++<<<<<<< HEAD
+       <file leaf-file-name="EquationType.java" pinned="false" current-in-tab="true">
+         <entry file="file://$PROJECT_DIR$/src/auto_tester/data_generation/EquationType.java">
+           <provider selected="true" editor-type-id="text-editor">
+             <state relative-caret-position="153">
+               <caret line="9" column="6" selection-start-line="9" selection-start-column="6" selection-end-line="9" selection-end-column="6" />
++=======
++      <file pinned="false" current-in-tab="false">
++        <entry file="file://$PROJECT_DIR$/src/auto_tester/data_parser/Saver.java">
++          <provider selected="true" editor-type-id="text-editor">
++            <state relative-caret-position="187">
++              <caret line="17" column="13" selection-start-line="17" selection-start-column="13" selection-end-line="17" selection-end-column="13" />
++              <folding>
++                <element signature="imports" expanded="true" />
++              </folding>
++>>>>>>> d332bab19c9f6d14cf5ab1d922b0cacd624c4ad1
+             </state>
+           </provider>
+         </entry>
+       </file>
++<<<<<<< HEAD
+       <file leaf-file-name="Generator.java" pinned="false" current-in-tab="false">
+         <entry file="file://$PROJECT_DIR$/src/auto_tester/data_generation/Generator.java">
++=======
++      <file pinned="false" current-in-tab="false">
++        <entry file="file://$PROJECT_DIR$/src/auto_tester/GlobalConfig.java">
++>>>>>>> d332bab19c9f6d14cf5ab1d922b0cacd624c4ad1
+           <provider selected="true" editor-type-id="text-editor">
+             <state relative-caret-position="836">
+               <caret line="75" column="5" lean-forward="true" selection-start-line="75" selection-start-column="5" selection-end-line="75" selection-end-column="5" />
+@@ -164,11 +296,25 @@
+           </provider>
+         </entry>
+       </file>
++<<<<<<< HEAD
+       <file leaf-file-name="IBaseFunction.java" pinned="false" current-in-tab="false">
+         <entry file="file://$PROJECT_DIR$/src/auto_tester/interfaces/IBaseFunction.java">
+           <provider selected="true" editor-type-id="text-editor">
+             <state relative-caret-position="136">
+               <caret line="8" column="18" selection-start-line="8" selection-start-column="18" selection-end-line="8" selection-end-column="18" />
++=======
++      <file pinned="false" current-in-tab="false">
++        <entry file="file://$PROJECT_DIR$/src/auto_tester/models/SingleTest.java">
++          <provider selected="true" editor-type-id="text-editor">
++            <state relative-caret-position="425">
++              <caret line="35" column="44" selection-start-line="35" selection-start-column="44" selection-end-line="35" selection-end-column="44" />
++              <folding>
++                <element signature="e#94#95#0" expanded="true" />
++                <element signature="e#138#139#0" expanded="true" />
++                <element signature="e#194#195#0" expanded="true" />
++                <element signature="e#248#249#0" expanded="true" />
++              </folding>
++>>>>>>> d332bab19c9f6d14cf5ab1d922b0cacd624c4ad1
+             </state>
+           </provider>
+         </entry>
+@@ -228,11 +374,16 @@
+         <option value="$PROJECT_DIR$/src/auto_tester/interfaces/ITestFunction.java" />
+         <option value="$PROJECT_DIR$/src/auto_tester/data_parser/Tools.java" />
+         <option value="$PROJECT_DIR$/src/auto_tester/Main.java" />
++<<<<<<< HEAD
++=======
++        <option value="$PROJECT_DIR$/src/auto_tester/base_functions/Square_two_solver.java" />
++>>>>>>> d332bab19c9f6d14cf5ab1d922b0cacd624c4ad1
+         <option value="$PROJECT_DIR$/src/auto_tester/GlobalConfig.java" />
+         <option value="$PROJECT_DIR$/src/auto_tester/models/GlobalTest.java" />
+         <option value="$PROJECT_DIR$/src/auto_tester/models/SingleTest.java" />
+         <option value="$PROJECT_DIR$/src/auto_tester/Tools.java" />
+         <option value="$PROJECT_DIR$/src/auto_tester/norms/Relative_error.java" />
++<<<<<<< HEAD
+         <option value="$PROJECT_DIR$/src/auto_tester/base_functions/Square_two_solver.java" />
+         <option value="$PROJECT_DIR$/src/auto_tester/interfaces/IBaseFunction.java" />
+         <option value="$PROJECT_DIR$/src/auto_tester/interfaces/INorm.java" />
+@@ -241,14 +392,11 @@
+         <option value="$PROJECT_DIR$/src/auto_tester/models/TestData.java" />
+         <option value="$PROJECT_DIR$/src/auto_tester/data_parser/Reader.java" />
+         <option value="$PROJECT_DIR$/src/auto_tester/data_parser/Saver.java" />
++=======
++        <option value="$PROJECT_DIR$/src/auto_tester/norms/Absolute_error.java" />
++>>>>>>> d332bab19c9f6d14cf5ab1d922b0cacd624c4ad1
+       </list>
+     </option>
+-  </component>
+-  <component name="JsBuildToolGruntFileManager" detection-done="true" sorting="DEFINITION_ORDER" />
+-  <component name="JsBuildToolPackageJson" detection-done="true" sorting="DEFINITION_ORDER" />
+-  <component name="JsGulpfileManager">
+-    <detection-done>true</detection-done>
+-    <sorting>DEFINITION_ORDER</sorting>
+   </component>
+   <component name="MavenProjectNavigator">
+     <treeState>
+@@ -256,10 +404,19 @@
+       <select />
+     </treeState>
+   </component>
++<<<<<<< HEAD
+   <component name="NodePackageJsonFileManager">
+     <packageJsonPaths />
+   </component>
+   <component name="ProjectId" id="1YTP0ahP3KVHgjsaIySFTAzIUOH" />
++=======
++  <component name="ProjectFrameBounds" extendedState="6">
++    <option name="x" value="481" />
++    <option name="y" value="-17" />
++    <option name="width" value="974" />
++    <option name="height" value="1047" />
++  </component>
++>>>>>>> d332bab19c9f6d14cf5ab1d922b0cacd624c4ad1
+   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+     <ConfirmationsSetting value="2" id="Add" />
+   </component>
+@@ -268,49 +425,49 @@
+       <foldersAlwaysOnTop value="true" />
+     </navigator>
+     <panes>
++<<<<<<< HEAD
+       <pane id="Scope" />
+       <pane id="AndroidView" />
++=======
++>>>>>>> d332bab19c9f6d14cf5ab1d922b0cacd624c4ad1
+       <pane id="ProjectPane">
+         <subPane>
+           <expand>
+             <path>
+               <item name="TP_ANANUM" type="b2602c69:ProjectViewProjectNode" />
+-              <item name="TP_GROUPE" type="462c0819:PsiDirectoryNode" />
++              <item name="TP_ANANUM_4GI" type="462c0819:PsiDirectoryNode" />
+             </path>
+             <path>
+               <item name="TP_ANANUM" type="b2602c69:ProjectViewProjectNode" />
+-              <item name="TP_GROUPE" type="462c0819:PsiDirectoryNode" />
+-              <item name="out" type="462c0819:PsiDirectoryNode" />
+-            </path>
+-            <path>
+-              <item name="TP_ANANUM" type="b2602c69:ProjectViewProjectNode" />
+-              <item name="TP_GROUPE" type="462c0819:PsiDirectoryNode" />
+-              <item name="out" type="462c0819:PsiDirectoryNode" />
+-              <item name="production" type="462c0819:PsiDirectoryNode" />
++              <item name="TP_ANANUM_4GI" type="462c0819:PsiDirectoryNode" />
++              <item name="src" type="462c0819:PsiDirectoryNode" />
+             </path>
+             <path>
+               <item name="TP_ANANUM" type="b2602c69:ProjectViewProjectNode" />
+-              <item name="TP_GROUPE" type="462c0819:PsiDirectoryNode" />
++              <item name="TP_ANANUM_4GI" type="462c0819:PsiDirectoryNode" />
+               <item name="src" type="462c0819:PsiDirectoryNode" />
++              <item name="auto_tester" type="462c0819:PsiDirectoryNode" />
+             </path>
+             <path>
+               <item name="TP_ANANUM" type="b2602c69:ProjectViewProjectNode" />
+-              <item name="TP_GROUPE" type="462c0819:PsiDirectoryNode" />
++              <item name="TP_ANANUM_4GI" type="462c0819:PsiDirectoryNode" />
+               <item name="src" type="462c0819:PsiDirectoryNode" />
+               <item name="auto_tester" type="462c0819:PsiDirectoryNode" />
++              <item name="interfaces" type="462c0819:PsiDirectoryNode" />
+             </path>
+             <path>
+               <item name="TP_ANANUM" type="b2602c69:ProjectViewProjectNode" />
+-              <item name="TP_GROUPE" type="462c0819:PsiDirectoryNode" />
++              <item name="TP_ANANUM_4GI" type="462c0819:PsiDirectoryNode" />
+               <item name="src" type="462c0819:PsiDirectoryNode" />
+               <item name="auto_tester" type="462c0819:PsiDirectoryNode" />
+-              <item name="base_functions" type="462c0819:PsiDirectoryNode" />
++              <item name="models" type="462c0819:PsiDirectoryNode" />
+             </path>
+             <path>
+               <item name="TP_ANANUM" type="b2602c69:ProjectViewProjectNode" />
+-              <item name="TP_GROUPE" type="462c0819:PsiDirectoryNode" />
++              <item name="TP_ANANUM_4GI" type="462c0819:PsiDirectoryNode" />
+               <item name="src" type="462c0819:PsiDirectoryNode" />
+               <item name="auto_tester" type="462c0819:PsiDirectoryNode" />
++<<<<<<< HEAD
+               <item name="data_generation" type="462c0819:PsiDirectoryNode" />
+             </path>
+             <path>
+@@ -319,6 +476,9 @@
+               <item name="src" type="462c0819:PsiDirectoryNode" />
+               <item name="auto_tester" type="462c0819:PsiDirectoryNode" />
+               <item name="data_parser" type="462c0819:PsiDirectoryNode" />
++=======
++              <item name="norms" type="462c0819:PsiDirectoryNode" />
++>>>>>>> d332bab19c9f6d14cf5ab1d922b0cacd624c4ad1
+             </path>
+             <path>
+               <item name="TP_ANANUM" type="b2602c69:ProjectViewProjectNode" />
+@@ -352,13 +512,18 @@
+           <select />
+         </subPane>
+       </pane>
++<<<<<<< HEAD
++=======
++      <pane id="Scope" />
++>>>>>>> d332bab19c9f6d14cf5ab1d922b0cacd624c4ad1
+       <pane id="PackagesPane" />
+     </panes>
+   </component>
+   <component name="PropertiesComponent">
++    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+     <property name="WebServerToolWindowFactoryState" value="false" />
+     <property name="aspect.path.notification.shown" value="true" />
+-    <property name="last_opened_file_path" value="$PROJECT_DIR$/libs/apache_poi/xmlbeans-3.1.0.jar!/" />
++    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
+     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
+     <property name="project.structure.last.edited" value="Libraries" />
+@@ -399,20 +564,23 @@
+           <option name="ENABLED" value="true" />
+         </pattern>
+       </extension>
++      <method v="2">
++        <option name="Make" enabled="true" />
++      </method>
+     </configuration>
+     <configuration default="true" type="Application" factoryName="Application">
+       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
++<<<<<<< HEAD
+       <method>
++=======
++      <method v="2">
++>>>>>>> d332bab19c9f6d14cf5ab1d922b0cacd624c4ad1
+         <option name="Make" enabled="true" />
+       </method>
+     </configuration>
+     <configuration default="true" type="JUnit" factoryName="JUnit">
+-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+-      <option name="ALTERNATIVE_JRE_PATH" />
+-      <option name="PACKAGE_NAME" />
+-      <option name="MAIN_CLASS_NAME" />
+-      <option name="METHOD_NAME" />
+       <option name="TEST_OBJECT" value="class" />
++<<<<<<< HEAD
+       <option name="VM_PARAMETERS" />
+       <option name="PARAMETERS" />
+       <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
+@@ -422,31 +590,28 @@
+       </option>
+       <patterns />
+       <method>
++=======
++      <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
++      <method v="2">
++>>>>>>> d332bab19c9f6d14cf5ab1d922b0cacd624c4ad1
+         <option name="Make" enabled="true" />
+       </method>
+     </configuration>
+-    <configuration default="true" type="TestNG" factoryName="TestNG">
+-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+-      <option name="ALTERNATIVE_JRE_PATH" />
+-      <option name="SUITE_NAME" />
+-      <option name="PACKAGE_NAME" />
+-      <option name="MAIN_CLASS_NAME" />
+-      <option name="METHOD_NAME" />
+-      <option name="GROUP_NAME" />
++    <configuration default="true" type="TestNG">
+       <option name="TEST_OBJECT" value="CLASS" />
++<<<<<<< HEAD
+       <option name="VM_PARAMETERS" />
+       <option name="PARAMETERS" />
++=======
++>>>>>>> d332bab19c9f6d14cf5ab1d922b0cacd624c4ad1
+       <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
+-      <option name="OUTPUT_DIRECTORY" />
+-      <option name="PASS_PARENT_ENVS" value="true" />
+-      <option name="TEST_SEARCH_SCOPE">
+-        <value defaultName="singleModule" />
+-      </option>
+-      <option name="USE_DEFAULT_REPORTERS" value="false" />
+-      <option name="PROPERTIES_FILE" />
+       <properties />
+       <listeners />
++<<<<<<< HEAD
+       <method>
++=======
++      <method v="2">
++>>>>>>> d332bab19c9f6d14cf5ab1d922b0cacd624c4ad1
+         <option name="Make" enabled="true" />
+       </method>
+     </configuration>
+@@ -473,8 +638,14 @@
+       <updated>1582558965594</updated>
+       <workItem from="1582558969539" duration="1826000" />
+       <workItem from="1582730217516" duration="310000" />
++<<<<<<< HEAD
+       <workItem from="1582732565577" duration="23690000" />
+       <workItem from="1582978712111" duration="3678000" />
++=======
++      <workItem from="1582732565577" duration="20315000" />
++      <workItem from="1582908450892" duration="348000" />
++      <workItem from="1582921351212" duration="6253000" />
++>>>>>>> d332bab19c9f6d14cf5ab1d922b0cacd624c4ad1
+     </task>
+     <task id="LOCAL-00001" summary="Interfaces prêtes">
+       <created>1582786091146</created>
+@@ -487,12 +658,17 @@
+     <servers />
+   </component>
+   <component name="TimeTrackingManager">
++<<<<<<< HEAD
+     <option name="totallyTimeSpent" value="29504000" />
++=======
++    <option name="totallyTimeSpent" value="29052000" />
++>>>>>>> d332bab19c9f6d14cf5ab1d922b0cacd624c4ad1
+   </component>
+   <component name="ToolWindowManager">
+-    <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
++    <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
+     <editor active="true" />
+     <layout>
++<<<<<<< HEAD
+       <window_info anchor="bottom" id="TODO" order="6" />
+       <window_info anchor="right" id="Palette&#9;" order="7" />
+       <window_info id="Image Layers" order="5" />
+@@ -514,25 +690,57 @@
+       <window_info id="Favorites" order="4" side_tool="true" />
+       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
++=======
++      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.2632375" />
++      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
++      <window_info id="Designer" order="2" />
++      <window_info id="Capture Tool" order="3" />
++      <window_info id="Favorites" order="4" side_tool="true" />
++      <window_info id="Image Layers" order="5" />
++      <window_info id="UI Designer" order="6" />
++      <window_info anchor="bottom" id="Message" order="0" />
++      <window_info anchor="bottom" id="Find" order="1" weight="0.32897604" />
++      <window_info anchor="bottom" id="Run" order="2" weight="0.32897604" />
++      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
++      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
++>>>>>>> d332bab19c9f6d14cf5ab1d922b0cacd624c4ad1
+       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
++      <window_info anchor="bottom" id="TODO" order="6" />
++      <window_info anchor="bottom" id="Database Changes" order="7" show_stripe_button="false" />
++      <window_info anchor="bottom" id="Terminal" order="8" weight="0.32897604" />
++      <window_info anchor="bottom" id="Version Control" order="9" />
++      <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
++      <window_info anchor="bottom" id="Messages" order="11" weight="0.32897604" />
++      <window_info anchor="bottom" id="Docker" order="12" show_stripe_button="false" />
+       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
++<<<<<<< HEAD
+       <window_info anchor="right" x="0" y="0" width="434" height="856" id="Documentation" order="3" side_tool="true" weight="0.32995737" />
+       <window_info anchor="bottom" id="Message" order="0" />
+       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+       <window_info anchor="bottom" id="Messages" order="7" weight="0.32897604" />
++=======
++      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
++      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
++      <window_info anchor="right" id="Capture Analysis" order="3" />
++      <window_info anchor="right" id="Theme Preview" order="4" />
++      <window_info anchor="right" id="Database" order="5" />
++      <window_info anchor="right" id="Maven Projects" order="6" weight="0.32995737" />
++      <window_info anchor="right" id="Palette&#9;" order="7" />
++      <window_info anchor="right" x="0" y="0" width="434" height="856" id="Documentation" order="8" side_tool="true" weight="0.32995737" />
++      <window_info anchor="right" id="Maven" order="9" />
++      <window_info anchor="right" id="Palette" order="10" />
++>>>>>>> d332bab19c9f6d14cf5ab1d922b0cacd624c4ad1
+     </layout>
+   </component>
+   <component name="TypeScriptGeneratedFilesManager">
+     <option name="version" value="1" />
+   </component>
+-  <component name="VcsContentAnnotationSettings">
+-    <option name="myLimit" value="2678400000" />
+-  </component>
+   <component name="VcsManagerConfiguration">
+     <MESSAGE value="PROJET DE GROUPE INITIALISE" />
+     <MESSAGE value="Interfaces prêtes" />
+     <option name="LAST_COMMIT_MESSAGE" value="Interfaces prêtes" />
+   </component>
++<<<<<<< HEAD
+   <component name="WindowStateProjectService">
+     <state x="363" y="225" key="com.intellij.ide.util.TipDialog" timestamp="1582963466106">
+       <screen x="49" y="27" width="1317" height="741" />
+@@ -555,6 +763,11 @@
+         </state>
+       </provider>
+     </entry>
++=======
++  <component name="editorHistoryManager">
++    <entry file="file://$PROJECT_DIR$/src/auto_tester/test_functions.java" />
++    <entry file="file://$PROJECT_DIR$/src/auto_tester/base_functions/BaseFunctions.java" />
++>>>>>>> d332bab19c9f6d14cf5ab1d922b0cacd624c4ad1
+     <entry file="file://$PROJECT_DIR$/src/auto_tester/test_functions/Square_two_test.java">
+       <provider selected="true" editor-type-id="text-editor">
+         <state relative-caret-position="170">
+@@ -567,6 +780,7 @@
+         </state>
+       </provider>
+     </entry>
++<<<<<<< HEAD
+     <entry file="file://$PROJECT_DIR$/src/auto_tester/interfaces/INorm.java">
+       <provider selected="true" editor-type-id="text-editor">
+         <state relative-caret-position="136">
+@@ -575,6 +789,16 @@
+       </provider>
+     </entry>
+     <entry file="file://$PROJECT_DIR$/src/auto_tester/norms/Relative_error.java">
++=======
++    <entry file="file://$PROJECT_DIR$/src/auto_tester/interfaces/ITestFunction.java">
++      <provider selected="true" editor-type-id="text-editor">
++        <state relative-caret-position="340">
++          <caret line="20" column="27" selection-start-line="20" selection-start-column="27" selection-end-line="20" selection-end-column="27" />
++        </state>
++      </provider>
++    </entry>
++    <entry file="file://$PROJECT_DIR$/src/auto_tester/interfaces/IBaseFunction.java">
++>>>>>>> d332bab19c9f6d14cf5ab1d922b0cacd624c4ad1
+       <provider selected="true" editor-type-id="text-editor">
+         <state relative-caret-position="136">
+           <caret line="8" column="21" selection-start-line="8" selection-start-column="21" selection-end-line="8" selection-end-column="21" />
+@@ -584,16 +808,25 @@
+         </state>
+       </provider>
+     </entry>
++<<<<<<< HEAD
+     <entry file="file://$PROJECT_DIR$/src/auto_tester/Main.java">
+       <provider selected="true" editor-type-id="text-editor">
+         <state relative-caret-position="289">
+           <caret line="19" column="22" selection-start-line="19" selection-start-column="22" selection-end-line="19" selection-end-column="22" />
++=======
++    <entry file="jar://C:/Program Files (x86)/Java/jdk1.8.0_66/src.zip!/java/lang/String.java" />
++    <entry file="file://$PROJECT_DIR$/src/auto_tester/base_functions/Square_two_solver.java">
++      <provider selected="true" editor-type-id="text-editor">
++        <state relative-caret-position="204">
++          <caret line="15" column="22" selection-start-line="15" selection-start-column="22" selection-end-line="15" selection-end-column="22" />
++>>>>>>> d332bab19c9f6d14cf5ab1d922b0cacd624c4ad1
+           <folding>
+             <element signature="imports" expanded="true" />
+           </folding>
+         </state>
+       </provider>
+     </entry>
++<<<<<<< HEAD
+     <entry file="file://$PROJECT_DIR$/src/auto_tester/GlobalConfig.java">
+       <provider selected="true" editor-type-id="text-editor">
+         <state relative-caret-position="102">
+@@ -605,6 +838,12 @@
+       <provider selected="true" editor-type-id="text-editor">
+         <state relative-caret-position="2193">
+           <caret line="129" column="9" lean-forward="true" selection-start-line="129" selection-start-column="9" selection-end-line="129" selection-end-column="9" />
++=======
++    <entry file="file://$PROJECT_DIR$/src/auto_tester/Main.java">
++      <provider selected="true" editor-type-id="text-editor">
++        <state relative-caret-position="289">
++          <caret line="19" column="22" selection-start-line="19" selection-start-column="22" selection-end-line="19" selection-end-column="22" />
++>>>>>>> d332bab19c9f6d14cf5ab1d922b0cacd624c4ad1
+           <folding>
+             <element signature="imports" expanded="true" />
+             <element signature="e#721#722#0" expanded="true" />
+@@ -651,6 +890,7 @@
+         </state>
+       </provider>
+     </entry>
++<<<<<<< HEAD
+     <entry file="file://$PROJECT_DIR$/src/auto_tester/interfaces/IBaseFunction.java">
+       <provider selected="true" editor-type-id="text-editor">
+         <state relative-caret-position="136">
+@@ -737,12 +977,19 @@
+       <provider selected="true" editor-type-id="text-editor">
+         <state relative-caret-position="289">
+           <caret line="19" column="22" selection-start-line="19" selection-start-column="22" selection-end-line="19" selection-end-column="22" />
++=======
++    <entry file="file://$PROJECT_DIR$/src/auto_tester/data_parser/Reader.java">
++      <provider selected="true" editor-type-id="text-editor">
++        <state relative-caret-position="425">
++          <caret line="36" selection-start-line="36" selection-end-line="36" />
++>>>>>>> d332bab19c9f6d14cf5ab1d922b0cacd624c4ad1
+           <folding>
+             <element signature="imports" expanded="true" />
+           </folding>
+         </state>
+       </provider>
+     </entry>
++<<<<<<< HEAD
+     <entry file="file://$PROJECT_DIR$/src/auto_tester/GlobalConfig.java">
+       <provider selected="true" editor-type-id="text-editor">
+         <state relative-caret-position="102">
+@@ -764,6 +1011,12 @@
+       <provider selected="true" editor-type-id="text-editor">
+         <state relative-caret-position="309">
+           <caret line="36" column="33" lean-forward="true" selection-start-line="36" selection-start-column="33" selection-end-line="36" selection-end-column="33" />
++=======
++    <entry file="file://$PROJECT_DIR$/src/auto_tester/Tools.java">
++      <provider selected="true" editor-type-id="text-editor">
++        <state relative-caret-position="850">
++          <caret line="52" column="17" selection-start-line="52" selection-start-column="17" selection-end-line="52" selection-end-column="17" />
++>>>>>>> d332bab19c9f6d14cf5ab1d922b0cacd624c4ad1
+           <folding>
+             <element signature="imports" expanded="true" />
+           </folding>
+@@ -821,8 +1074,13 @@
+     </entry>
+     <entry file="file://$PROJECT_DIR$/src/auto_tester/models/TestData.java">
+       <provider selected="true" editor-type-id="text-editor">
++<<<<<<< HEAD
+         <state relative-caret-position="214">
+           <caret line="157" column="50" selection-start-line="157" selection-start-column="50" selection-end-line="157" selection-end-column="50" />
++=======
++        <state relative-caret-position="340">
++          <caret line="26" column="17" selection-start-line="26" selection-start-column="12" selection-end-line="26" selection-end-column="17" />
++>>>>>>> d332bab19c9f6d14cf5ab1d922b0cacd624c4ad1
+           <folding>
+             <element signature="imports" expanded="true" />
+             <element signature="e#721#722#0" expanded="true" />
+@@ -870,6 +1128,7 @@
+         </state>
+       </provider>
+     </entry>
++<<<<<<< HEAD
+     <entry file="file://$PROJECT_DIR$/src/auto_tester/data_parser/Reader.java">
+       <provider selected="true" editor-type-id="text-editor">
+         <state relative-caret-position="102">
+@@ -881,6 +1140,66 @@
+       <provider selected="true" editor-type-id="text-editor">
+         <state relative-caret-position="204">
+           <caret line="12" column="32" selection-start-line="12" selection-start-column="32" selection-end-line="12" selection-end-column="32" />
++=======
++    <entry file="file://$PROJECT_DIR$/src/auto_tester/models/GlobalTest.java">
++      <provider selected="true" editor-type-id="text-editor">
++        <state relative-caret-position="272">
++          <caret line="16" column="55" selection-start-line="16" selection-start-column="55" selection-end-line="16" selection-end-column="55" />
++        </state>
++      </provider>
++    </entry>
++    <entry file="file://$PROJECT_DIR$/src/auto_tester/data_parser/Saver.java">
++      <provider selected="true" editor-type-id="text-editor">
++        <state relative-caret-position="187">
++          <caret line="17" column="13" selection-start-line="17" selection-start-column="13" selection-end-line="17" selection-end-column="13" />
++          <folding>
++            <element signature="imports" expanded="true" />
++          </folding>
++        </state>
++      </provider>
++    </entry>
++    <entry file="file://$PROJECT_DIR$/src/auto_tester/GlobalConfig.java">
++      <provider selected="true" editor-type-id="text-editor">
++        <state relative-caret-position="119">
++          <caret line="7" column="71" selection-start-line="7" selection-start-column="71" selection-end-line="7" selection-end-column="71" />
++        </state>
++      </provider>
++    </entry>
++    <entry file="file://$PROJECT_DIR$/src/auto_tester/models/SingleTest.java">
++      <provider selected="true" editor-type-id="text-editor">
++        <state relative-caret-position="425">
++          <caret line="35" column="44" selection-start-line="35" selection-start-column="44" selection-end-line="35" selection-end-column="44" />
++          <folding>
++            <element signature="e#94#95#0" expanded="true" />
++            <element signature="e#138#139#0" expanded="true" />
++            <element signature="e#194#195#0" expanded="true" />
++            <element signature="e#248#249#0" expanded="true" />
++          </folding>
++        </state>
++      </provider>
++    </entry>
++    <entry file="file://$PROJECT_DIR$/src/auto_tester/interfaces/INorm.java">
++      <provider selected="true" editor-type-id="text-editor">
++        <state relative-caret-position="136">
++          <caret line="8" column="68" selection-start-line="8" selection-start-column="68" selection-end-line="8" selection-end-column="68" />
++        </state>
++      </provider>
++    </entry>
++    <entry file="file://$PROJECT_DIR$/src/auto_tester/norms/Absolute_error.java">
++      <provider selected="true" editor-type-id="text-editor">
++        <state relative-caret-position="306">
++          <caret line="18" lean-forward="true" selection-start-line="18" selection-end-line="18" />
++          <folding>
++            <element signature="imports" expanded="true" />
++          </folding>
++        </state>
++      </provider>
++    </entry>
++    <entry file="file://$PROJECT_DIR$/src/auto_tester/norms/Relative_error.java">
++      <provider selected="true" editor-type-id="text-editor">
++        <state relative-caret-position="204">
++          <caret line="12" column="46" lean-forward="true" selection-start-line="12" selection-start-column="46" selection-end-line="12" selection-end-column="46" />
++>>>>>>> d332bab19c9f6d14cf5ab1d922b0cacd624c4ad1
+           <folding>
+             <element signature="imports" expanded="true" />
+           </folding>
+Index: src/auto_tester/norms/Absolute_error.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- src/auto_tester/norms/Absolute_error.java	(date 1583042447046)
++++ src/auto_tester/norms/Absolute_error.java	(date 1583042447046)
+@@ -0,0 +1,25 @@
++package auto_tester.norms;
++
++import auto_tester.interfaces.INorm;
++
++import java.util.List;
++
++public class Absolute_error implements INorm {
++    @Override
++    /*Number_1 est la valeur obtenue après par la fonction de test et number_2 le RA*/
++    public Number run(List<Number> number_1, List<Number> number_2) {
++        double result=0 ;
++        for (int i=0; i<number_1.size();i++) {
++
++            if(number_2.get(i).doubleValue()!= 0) {
++
++                result =  result +Math.pow((number_1.get(i).doubleValue()-number_2.get(i).doubleValue()),2);
++
++            }
++
++        }
++        return Math.sqrt(result);
++
++    }
++
++}
+Index: src/auto_tester/norms/Relative_error.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>package auto_tester.norms;\n\nimport auto_tester.interfaces.INorm;\n\nimport java.util.List;\n\npublic class Relative_error implements INorm {\n    @Override\n    public Number run(List<Number> number_1, List<Number> number_2) {\n        //Fonction de calcul de l'érreur relative entre deux vecteurs\n\n        return 0;\n    }\n}\n
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- src/auto_tester/norms/Relative_error.java	(date 1583042422000)
++++ src/auto_tester/norms/Relative_error.java	(date 1583042447417)
+@@ -6,9 +6,29 @@
+ 
+ public class Relative_error implements INorm {
+     @Override
++    /*Number_1 est la valeur obtenue après par la fonction de test et number_2 le RA*/
+     public Number run(List<Number> number_1, List<Number> number_2) {
++<<<<<<< HEAD
+         //Fonction de calcul de l'érreur relative entre deux vecteurs
+ 
+         return 0;
++=======
++        double result=0 ;
++        double divisor=0 ;
++        for (int i=0; i<number_1.size();i++) {
++
++            if(number_2.get(i).doubleValue()!= 0) {
++
++                result =  result +Math.pow((number_1.get(i).doubleValue()-number_2.get(i).doubleValue()),2);
++                divisor  += Math.pow(number_2.get(i).doubleValue(),2);
++
++            }
++
++        }
++
++
++
++        return Math.sqrt(result/divisor);
++>>>>>>> d332bab19c9f6d14cf5ab1d922b0cacd624c4ad1
+     }
+ }
+Index: src/auto_tester/base_functions/Second_degree_solver.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- src/auto_tester/base_functions/Second_degree_solver.java	(date 1583042446683)
++++ src/auto_tester/base_functions/Second_degree_solver.java	(date 1583042446683)
+@@ -0,0 +1,69 @@
++/*
++ * To change this license header, choose License Headers in Project Properties.
++ * To change this template file, choose Tools | Templates
++ * and open the template in the editor.
++ */
++package auto_tester.base_functions;
++
++import auto_tester.interfaces.IBaseFunction;
++import java.util.ArrayList;
++import java.util.List;
++
++/**
++ *
++ * @author Tedonze
++ */
++public class Second_degree_solver implements IBaseFunction{
++
++    @Override
++    @SuppressWarnings("empty-statement")
++    public List<Number> runBase(List<Number> params) {
++           ArrayList<Number> result = new ArrayList<>();
++           double a=params.get(0).doubleValue();
++            double b=params.get(0).doubleValue();
++             double c=params.get(0).doubleValue();
++           
++           if(params.get(0).doubleValue()==0){
++           
++                      Linear_solver linear=new Linear_solver();
++                      ArrayList<Number> newparams = new ArrayList<>();
++                      newparams.add(params.get(1));
++                      newparams.add(params.get(2));
++                      result=(ArrayList<Number>) linear.runBase(newparams);
++           
++           
++           }
++           
++           else{
++               double dis;
++                dis=b*b-4*a*c;
++                Square_two_solver square=new Square_two_solver();
++                 ArrayList<Number> newparams = new ArrayList<>();
++                 newparams.add(dis);
++                 List<Number> racine=square.runBase(newparams);
++                 if(racine.isEmpty()){
++                 
++                 return null;
++                 }
++                 else if(racine.get(0).doubleValue()==0){
++                 
++                 result.add(b/(2*a));
++                 
++                 }
++                 else
++                 
++                 { double racinevalue=racine.get(0).doubleValue();
++                       result.add((b-racinevalue)/(2*a));
++                       result.add((b+racinevalue)/(2*a));
++                       
++                 }
++                     
++           
++           
++        
++           
++           }
++       return result;
++    }
++    
++}
+Index: src/auto_tester/base_functions/Sum_functions.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- src/auto_tester/base_functions/Sum_functions.java	(date 1583042446683)
++++ src/auto_tester/base_functions/Sum_functions.java	(date 1583042446683)
+@@ -0,0 +1,26 @@
++/*
++ * To change this license header, choose License Headers in Project Properties.
++ * To change this template file, choose Tools | Templates
++ * and open the template in the editor.
++ */
++package auto_tester.base_functions;
++
++import auto_tester.interfaces.IBaseFunction;
++import java.util.ArrayList;
++import java.util.List;
++
++/**
++ *
++ * @author Tedonze
++ */
++public class Sum_functions implements IBaseFunction{
++
++    @Override
++    public List<Number> runBase(List<Number> params) {
++        ArrayList<Number> result = new ArrayList<>();
++        result.add(params.get(0).doubleValue()+params.get(1).doubleValue());// j'ai du caster en double 
++        return result;
++
++    }
++    
++}

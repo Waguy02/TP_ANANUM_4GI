@@ -27,9 +27,10 @@ public class Saver {
         }
 
 
-        Sheet sheet=workbook.createSheet();
-
+            Sheet sheet=workbook.createSheet();
+        sheet.setDefaultColumnWidth(20);
         Row first_row=sheet.createRow(0);
+
         first_row.createCell(0);
         first_row.createCell(1);
         first_row.createCell(2);
@@ -74,7 +75,7 @@ e.printStackTrace();
         row.createCell(2);
         row.getCell(0).setCellValue(singleTest.getTest_data().getScenario());
         row.getCell(1).setCellValue(Tools.stringifyOutputData(singleTest.getTest_data().getInput_data()));
-        row.getCell(2).setCellValue(singleTest.getResult());
+        row.getCell(2).setCellValue(singleTest.getResult()?"SUCCES":"ECHEC");
     }
 
 
