@@ -19,7 +19,7 @@ public class TestData {
     private List<Number> input_data;
     private String base_function_id;
     private IBaseFunction base_function;
-    private Number expect_result;
+    private List<Number> expect_result;
     private String test_function_id;
     private ITestFunction test_function;
     private Number tolerance;
@@ -58,11 +58,11 @@ public class TestData {
         this.base_function = base_function;
     }
 
-    public Number getExpect_result() {
+    public List<Number> getExpect_result() {
         return expect_result;
     }
 
-    public void setExpect_result(Number expect_result) {
+    public void setExpect_result(List<Number> expect_result) {
         this.expect_result = expect_result;
     }
 
@@ -110,7 +110,7 @@ public class TestData {
 
 
     }
-    public TestData(String scenario, List<Number> input_data, String base_function_id, String test_function_id, Number expect_result) {
+    public TestData(String scenario, List<Number> input_data, String base_function_id, String test_function_id,List<Number> expect_result) {
         this.scenario = scenario;
         this.input_data = input_data;
         this.base_function_id = base_function_id;
@@ -161,24 +161,11 @@ public class TestData {
                 List<Number> test_value=this.test_function.runTest(base_value);
 
 
-                Number norm_value=this.norm_function.run(base_value,test_value);
+                Number norm_value=this.norm_function.run(test_value,expect_result);
 
 
 
                 return (norm_value.longValue()<this.tolerance.longValue());
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
         }

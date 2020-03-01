@@ -29,8 +29,6 @@ public class Saver {
 
         Sheet sheet=workbook.createSheet();
 
-        System.out.println("ETAT DE LA FEUILLE");
-        System.out.println(sheet);
         Row first_row=sheet.createRow(0);
         first_row.createCell(0);
         first_row.createCell(1);

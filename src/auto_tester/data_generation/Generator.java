@@ -1,5 +1,6 @@
 package auto_tester.data_generation;
 
+import auto_tester.GlobalConfig;
 import org.apache.poi.ss.usermodel.Row;
 import org.apache.poi.ss.usermodel.Sheet;
 import org.apache.poi.ss.usermodel.Workbook;
@@ -150,7 +151,7 @@ public class Generator {
             valueRow.createCell(6).setCellValue(scene.getRa());
         }
 
-        String filename = equationType.toString()+".xlsx";
+        String filename = GlobalConfig.TEST_DATASET_FOLDER+"\\"+equationType.toString()+".xlsx";
         FileOutputStream os = new FileOutputStream(new File(filename));
         book.write(os);
         os.close();
