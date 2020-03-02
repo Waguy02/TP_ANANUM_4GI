@@ -8,7 +8,7 @@ import java.util.List;
 public class Square_root_solver implements IBaseFunction {
     @Override
     public List<Double> runBase(List<Double> params) {
-            //Resolution de l'équation de degré 2
+            //Calcul de la racine carrée
 
         ArrayList<Double> result = new ArrayList<>();
 

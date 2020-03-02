@@ -13,6 +13,8 @@ public class Relative_error implements INorm {
 
         double result=0 ;
         double divisor=0 ;
+
+
         for (int i=0; i<number_1.size();i++) {
 
             if(number_2.get(i)!= 0) {

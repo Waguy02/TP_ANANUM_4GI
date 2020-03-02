@@ -4,6 +4,7 @@ import auto_tester.GlobalConfig;
 import auto_tester.Tools;
 import auto_tester.models.GlobalTest;
 import auto_tester.models.SingleTest;
+import auto_tester.models.TestData;
 import org.apache.poi.ss.usermodel.*;
 
 import java.io.FileOutputStream;
@@ -36,6 +37,7 @@ public class Saver {
         first_row.createCell(2);
         first_row.getCell(0).setCellValue("Scénario");
         first_row.getCell(1).setCellValue("Donnée d'éntrée");
+
         first_row.getCell(2).setCellValue("Résultat du test");
 
 

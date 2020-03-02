@@ -1,5 +1,8 @@
 package auto_tester.data_generation;
 
+import auto_tester.norms.Absolute_error;
+
+import java.lang.reflect.Array;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -70,12 +73,51 @@ public class GenerateData {
     }
 
     public static void generateLinearData() throws  Exception {
-        Generator generator = new Generator(EquationType.LINEAR,"linear_test","linear_solver");
+        Generator generator = new Generator(EquationType.LINEAR,"Linear_test","Linear_solver");
         List<Integer> vars = new ArrayList<>();
+
         vars.add(7);
         vars.add(7);
         generator.generateScenarios(vars);
         generator.createScenarios();
+
+        for(Scenario scenario:generator.getScens()){
+            Double a=scenario.getDe().get(1),b=scenario.getDe().get(2);
+
+            if(Math.abs(a)<scenario.getTol()){
+                if(Math.abs(b)<scenario.getTol()){
+                    scenario.setRa(null);
+                    scenario.setN("Null_error");
+                }
+                else {
+                    scenario.setRa(new ArrayList<>());
+                    scenario.setN("Empty_error");
+                }
+
+            }
+            else{
+                ArrayList<Double> ra=new ArrayList<>();
+                ra.add(-b);
+
+                scenario.setRa(ra);
+
+
+                if(Math.abs(b)<scenario.getTol()){
+
+                    scenario.setN("Absolute_error");
+
+
+                }
+                else{
+
+                    scenario.setN("Relative_error");
+
+                }
+
+
+            }
+        }
+
         generator.saveScenarios();
     }
 
@@ -85,6 +127,30 @@ public class GenerateData {
         vars.add(7);
         generator.generateScenarios(vars);
         generator.createScenarios();
+        for(Scenario scenario:generator.getScens()){
+            Double x=scenario.getDe().get(1);
+
+            if(x<0){
+                scenario.setRa(null);
+                scenario.setN("Null_error");
+            }
+            else{
+
+                ArrayList<Double> ra=new ArrayList<>();
+                ra.add(x*x);
+                scenario.setRa(ra);
+                if(Math.abs(x)<scenario.getTol()){
+                    scenario.setN("Absolute_error");
+                }
+                else{
+
+                    scenario.setN("Relative_error");
+                }
+            }
+
+
+        }
+
         generator.saveScenarios();
     }
 
@@ -92,9 +158,37 @@ public class GenerateData {
         Generator generator = new Generator(EquationType.SUM,"Sum_test","Sum_solver");
         List<Integer> vars = new ArrayList<>();
         vars.add(7);
+        vars.add(7);
         generator.generateScenarios(vars);
         generator.createScenarios();
-        generator.saveScenarios();
+        for(Scenario scenario:generator.getScens()){
+            ArrayList<Double> ra=new ArrayList<>();
+            Double x=scenario.getDe().get(1),y=scenario.getDe().get(2);
+
+
+            ra.add(x+y);
+            scenario.setRa(ra);
+            if(Math.abs(x+y)<=scenario.getTol()){
+                scenario.setN("Absolute_error");
+
+            }
+            else{
+                scenario.setN("Relative_error");
+            }
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+    }
+ generator.saveScenarios();
     }
 
     public static void generateInequalityData() throws  Exception{

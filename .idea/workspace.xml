@@ -5,51 +5,33 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="77ae64ca-3a76-4283-ac77-ce7ae13268db" name="Default" comment="Interfaces prêtes">
-      <change afterPath="$PROJECT_DIR$/.idea/shelf/Interfaces_prêtes.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/auto_tester/base_functions/Check_positive.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/auto_tester/base_functions/Linear_solver.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/auto_tester/base_functions/Square_root_solver.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/auto_tester/base_functions/Sum_functions.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/auto_tester/base_functions/readme.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/auto_tester/norms/Absolute_error.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/auto_tester/norms/Empty_error.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/auto_tester/norms/Null_error.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/auto_tester/test_functions/Linear_test.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/auto_tester/test_functions/Square_root_test.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/auto_tester/test_functions/Sum_Test.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/jenny" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/jenny.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/apache_poi.zip" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/TP_ANANUM/auto_tester/GlobalConfig.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/TP_ANANUM/auto_tester/GlobalConfig.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/TP_ANANUM/auto_tester/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/TP_ANANUM/auto_tester/Main.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/TP_ANANUM/auto_tester/Tools.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/TP_ANANUM/auto_tester/Tools.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/TP_ANANUM/auto_tester/base_functions/Square_two_solver.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/TP_ANANUM/auto_tester/base_functions/Square_two_solver.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/TP_ANANUM/auto_tester/base_functions/Linear_solver.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/TP_ANANUM/auto_tester/base_functions/Linear_solver.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/TP_ANANUM/auto_tester/base_functions/Sum_functions.class" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/TP_ANANUM/auto_tester/data_generation/GenerateData.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/TP_ANANUM/auto_tester/data_generation/GenerateData.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/TP_ANANUM/auto_tester/data_generation/Generator.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/TP_ANANUM/auto_tester/data_generation/Generator.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/TP_ANANUM/auto_tester/data_generation/Scenario.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/TP_ANANUM/auto_tester/data_generation/Scenario.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/TP_ANANUM/auto_tester/data_generation/ValueBag$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/TP_ANANUM/auto_tester/data_generation/ValueBag$1.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/TP_ANANUM/auto_tester/data_generation/ValueBag.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/TP_ANANUM/auto_tester/data_generation/ValueBag.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/TP_ANANUM/auto_tester/data_parser/Reader.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/TP_ANANUM/auto_tester/data_parser/Reader.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/TP_ANANUM/auto_tester/data_parser/Saver.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/TP_ANANUM/auto_tester/data_parser/Saver.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/TP_ANANUM/auto_tester/interfaces/IBaseFunction.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/TP_ANANUM/auto_tester/interfaces/IBaseFunction.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/TP_ANANUM/auto_tester/interfaces/INorm.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/TP_ANANUM/auto_tester/interfaces/INorm.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/TP_ANANUM/auto_tester/interfaces/ITestFunction.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/TP_ANANUM/auto_tester/interfaces/ITestFunction.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/TP_ANANUM/auto_tester/models/GlobalTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/TP_ANANUM/auto_tester/models/GlobalTest.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/TP_ANANUM/auto_tester/models/TestData.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/TP_ANANUM/auto_tester/models/TestData.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/TP_ANANUM/auto_tester/norms/Relative_error.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/TP_ANANUM/auto_tester/norms/Relative_error.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/TP_ANANUM/auto_tester/test_functions/Square_two_test.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/TP_ANANUM/auto_tester/test_functions/Square_two_test.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/auto_tester/GlobalConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/auto_tester/GlobalConfig.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/auto_tester/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/auto_tester/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/auto_tester/Tools.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/auto_tester/Tools.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/auto_tester/base_functions/Square_two_solver.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/auto_tester/base_functions/Square_two_solver.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/auto_tester/base_functions/Linear_solver.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/auto_tester/base_functions/Linear_solver.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/auto_tester/base_functions/Square_root_solver.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/auto_tester/base_functions/Square_root_solver.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/auto_tester/base_functions/Sum_functions.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/auto_tester/base_functions/Sum_solver.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/auto_tester/data_generation/GenerateData.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/auto_tester/data_generation/GenerateData.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/auto_tester/data_generation/Generator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/auto_tester/data_generation/Generator.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/auto_tester/data_generation/Scenario.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/auto_tester/data_generation/Scenario.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/auto_tester/data_generation/ValueBag.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/auto_tester/data_generation/ValueBag.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/auto_tester/data_parser/Reader.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/auto_tester/data_parser/Reader.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/auto_tester/data_parser/Saver.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/auto_tester/data_parser/Saver.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/auto_tester/interfaces/IBaseFunction.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/auto_tester/interfaces/IBaseFunction.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/auto_tester/interfaces/INorm.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/auto_tester/interfaces/INorm.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/auto_tester/interfaces/ITestFunction.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/auto_tester/interfaces/ITestFunction.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/auto_tester/models/GlobalTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/auto_tester/models/GlobalTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/auto_tester/models/TestData.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/auto_tester/models/TestData.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/auto_tester/norms/Relative_error.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/auto_tester/norms/Relative_error.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/auto_tester/test_functions/Square_two_test.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/auto_tester/test_functions/Square_two_test.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="B:\Docs\ENSP\4GI\Semestre2\Analyse Numérique 2\TP_GROUPE\.idea\shelf/" />
@@ -76,35 +58,20 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="Square_root_solver.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/auto_tester/base_functions/Square_root_solver.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="323">
-              <caret line="22" column="47" selection-start-line="22" selection-start-column="47" selection-end-line="22" selection-end-column="47" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Linear_solver.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/auto_tester/base_functions/Linear_solver.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="238">
-              <caret line="21" column="34" selection-start-line="21" selection-start-column="34" selection-end-line="21" selection-end-column="34" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Relative_error.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/auto_tester/norms/Relative_error.java">
+      <file leaf-file-name="Sum_solver.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/auto_tester/base_functions/Sum_solver.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="374">
-              <caret line="24" column="9" selection-start-line="24" selection-start-column="9" selection-end-line="24" selection-end-column="9" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
+              <caret line="29" column="22" selection-start-line="29" selection-start-column="22" selection-end-line="29" selection-end-column="22" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="GenerateData.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/auto_tester/data_generation/GenerateData.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="2822">
+              <caret line="170" column="28" selection-start-line="170" selection-start-column="28" selection-end-line="170" selection-end-column="28" />
             </state>
           </provider>
         </entry>
@@ -112,8 +79,8 @@
       <file leaf-file-name="Saver.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/auto_tester/data_parser/Saver.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="180">
-              <caret line="29" column="33" selection-start-line="29" selection-start-column="33" selection-end-line="29" selection-end-column="33" />
+            <state relative-caret-position="714">
+              <caret line="42" selection-start-line="42" selection-end-line="42" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -121,11 +88,35 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Generator.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="Main.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/auto_tester/Main.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="680">
+              <caret line="40" column="7" selection-start-line="40" selection-start-column="7" selection-end-line="40" selection-end-column="7" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ValueBag.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/auto_tester/data_generation/ValueBag.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="85">
+              <caret line="116" column="7" lean-forward="true" selection-start-line="116" selection-start-column="7" selection-end-line="116" selection-end-column="7" />
+              <folding>
+                <element signature="method#getQuadraticValue#0;class#ValueBag#0" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Generator.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/auto_tester/data_generation/Generator.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="206">
-              <caret line="182" column="27" selection-start-line="182" selection-start-column="27" selection-end-line="182" selection-end-column="27" />
+            <state relative-caret-position="2635">
+              <caret line="177" column="23" selection-start-line="177" selection-start-column="16" selection-end-line="177" selection-end-column="23" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -133,70 +124,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Reader.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/auto_tester/data_parser/Reader.java">
+      <file leaf-file-name="EquationType.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/auto_tester/data_generation/EquationType.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="170">
-              <caret line="43" column="40" selection-start-line="43" selection-start-column="40" selection-end-line="43" selection-end-column="40" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="SingleTest.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/auto_tester/models/SingleTest.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="34">
-              <caret line="2" column="25" selection-start-line="2" selection-start-column="25" selection-end-line="2" selection-end-column="25" />
-              <folding>
-                <element signature="e#94#95#0" expanded="true" />
-                <element signature="e#138#139#0" expanded="true" />
-                <element signature="e#194#195#0" expanded="true" />
-                <element signature="e#248#249#0" expanded="true" />
-                <element signature="e#286#287#0" expanded="true" />
-                <element signature="e#327#328#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="TestData.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/auto_tester/models/TestData.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="2057">
-              <caret line="167" selection-start-line="167" selection-end-line="167" />
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#980#981#0" expanded="true" />
-                <element signature="e#1024#1025#0" expanded="true" />
-                <element signature="e#1470#1471#0" expanded="true" />
-                <element signature="e#1506#1507#0" expanded="true" />
-                <element signature="e#1570#1571#0" expanded="true" />
-                <element signature="e#1620#1621#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Square_two_test.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/auto_tester/test_functions/Square_two_test.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="408">
-              <caret line="27" column="24" selection-start-line="27" selection-start-column="24" selection-end-line="27" selection-end-column="24" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Square_two_solver.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/auto_tester/base_functions/Square_two_solver.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="578">
-              <caret line="41" column="25" selection-start-line="41" selection-start-column="22" selection-end-line="41" selection-end-column="25" />
+            <state relative-caret-position="204">
+              <caret line="12" column="4" selection-start-line="12" selection-start-column="4" selection-end-line="12" selection-end-column="4" />
             </state>
           </provider>
         </entry>
@@ -213,13 +145,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>Number</find>
-      <find>save</find>
-      <find>Double.NEGATIVE_INFINITY</find>
-      <find>Double.POSITIVE_INFINITY</find>
-      <find />
-      <find>SYst</find>
-      <find>.doubleValue()</find>
       <find>.doub</find>
       <find>parse</find>
       <find>Tol</find>
@@ -229,7 +154,6 @@
       <find>TOL</find>
       <find>null</find>
       <find>-200</find>
-      <find />
       <find>createC</find>
       <find>-11</find>
       <find>==0</find>
@@ -243,6 +167,14 @@
       <find>Résul</find>
       <find>.auto</find>
       <find>n(100);</find>
+      <find>)&lt;0</find>
+      <find>Empty error</find>
+      <find>params</find>
+      <find>Linear_test</find>
+      <find>generate</find>
+      <find>createSce</find>
+      <find>saveSce</find>
+      <find>SquareRoot</find>
     </findStrings>
     <replaceStrings>
       <replace>Fun</replace>
@@ -251,13 +183,13 @@
       <replace>Function</replace>
       <replace />
       <replace>Double</replace>
-      <replace />
       <replace>&lt;GlobalConfig.DEFAULT_TOLERANCE</replace>
       <replace>if(Mat</replace>
       <replace>10E100</replace>
+      <replace>Empty_error</replace>
+      <replace>)&lt;scenario.getTol()</replace>
     </replaceStrings>
     <dirStrings>
-      <dir />
       <dir />
     </dirStrings>
   </component>
@@ -273,28 +205,32 @@
         <option value="$PROJECT_DIR$/src/auto_tester/models/Test.java" />
         <option value="$PROJECT_DIR$/src/auto_tester/data_parser/Tools.java" />
         <option value="$PROJECT_DIR$/src/auto_tester/models/SingleTest.java" />
-        <option value="$PROJECT_DIR$/src/auto_tester/interfaces/IBaseFunction.java" />
         <option value="$PROJECT_DIR$/src/auto_tester/interfaces/INorm.java" />
-        <option value="$PROJECT_DIR$/src/auto_tester/base_functions/Square_root_solver.java" />
         <option value="$PROJECT_DIR$/src/auto_tester/data_generation/Scenario.java" />
         <option value="$PROJECT_DIR$/src/auto_tester/base_functions/Check_positive.java" />
-        <option value="$PROJECT_DIR$/src/auto_tester/Main.java" />
-        <option value="$PROJECT_DIR$/src/auto_tester/data_generation/ValueBag.java" />
         <option value="$PROJECT_DIR$/src/auto_tester/interfaces/ITestFunction.java" />
         <option value="$PROJECT_DIR$/src/auto_tester/models/GlobalTest.java" />
         <option value="$PROJECT_DIR$/src/auto_tester/Tools.java" />
         <option value="$PROJECT_DIR$/src/auto_tester/norms/Null_error.java" />
         <option value="$PROJECT_DIR$/src/auto_tester/norms/Empty_error.java" />
-        <option value="$PROJECT_DIR$/src/auto_tester/data_generation/GenerateData.java" />
-        <option value="$PROJECT_DIR$/src/auto_tester/models/TestData.java" />
-        <option value="$PROJECT_DIR$/src/auto_tester/GlobalConfig.java" />
-        <option value="$PROJECT_DIR$/src/auto_tester/base_functions/Linear_solver.java" />
-        <option value="$PROJECT_DIR$/src/auto_tester/base_functions/Square_two_solver.java" />
-        <option value="$PROJECT_DIR$/src/auto_tester/norms/Relative_error.java" />
         <option value="$PROJECT_DIR$/src/auto_tester/test_functions/Square_two_test.java" />
         <option value="$PROJECT_DIR$/src/auto_tester/data_generation/Generator.java" />
         <option value="$PROJECT_DIR$/src/auto_tester/data_parser/Reader.java" />
+        <option value="$PROJECT_DIR$/src/auto_tester/base_functions/Square_two_solver.java" />
+        <option value="$PROJECT_DIR$/src/auto_tester/interfaces/IBaseFunction.java" />
+        <option value="$PROJECT_DIR$/src/auto_tester/base_functions/Linear_solver.java" />
+        <option value="$PROJECT_DIR$/src/auto_tester/test_functions/Linear_test.java" />
+        <option value="$PROJECT_DIR$/src/auto_tester/norms/Relative_error.java" />
+        <option value="$PROJECT_DIR$/src/auto_tester/models/TestData.java" />
+        <option value="$PROJECT_DIR$/src/auto_tester/base_functions/Square_root_solver.java" />
+        <option value="$PROJECT_DIR$/src/auto_tester/test_functions/Square_root_test.java" />
+        <option value="$PROJECT_DIR$/src/auto_tester/data_generation/ValueBag.java" />
+        <option value="$PROJECT_DIR$/src/auto_tester/test_functions/Sum_Test.java" />
+        <option value="$PROJECT_DIR$/src/auto_tester/GlobalConfig.java" />
+        <option value="$PROJECT_DIR$/src/auto_tester/base_functions/Sum_functions.java" />
         <option value="$PROJECT_DIR$/src/auto_tester/data_parser/Saver.java" />
+        <option value="$PROJECT_DIR$/src/auto_tester/data_generation/GenerateData.java" />
+        <option value="$PROJECT_DIR$/src/auto_tester/Main.java" />
       </list>
     </option>
   </component>
@@ -328,9 +264,9 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="AndroidView" />
-      <pane id="PackagesPane" />
       <pane id="Scope" />
+      <pane id="PackagesPane" />
+      <pane id="AndroidView" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -372,7 +308,21 @@
               <item name="TP_GROUPE" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="auto_tester" type="462c0819:PsiDirectoryNode" />
+              <item name="data_generation" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="TP_ANANUM" type="b2602c69:ProjectViewProjectNode" />
+              <item name="TP_GROUPE" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="auto_tester" type="462c0819:PsiDirectoryNode" />
               <item name="data_parser" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="TP_ANANUM" type="b2602c69:ProjectViewProjectNode" />
+              <item name="TP_GROUPE" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="auto_tester" type="462c0819:PsiDirectoryNode" />
+              <item name="interfaces" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="TP_ANANUM" type="b2602c69:ProjectViewProjectNode" />
@@ -515,6 +465,8 @@
       <workItem from="1582732565577" duration="23690000" />
       <workItem from="1582978712111" duration="3678000" />
       <workItem from="1583060958679" duration="243000" />
+      <workItem from="1583099364611" duration="13923000" />
+      <workItem from="1583162001898" duration="1268000" />
     </task>
     <task id="LOCAL-00001" summary="Interfaces prêtes">
       <created>1582786091146</created>
@@ -527,7 +479,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="46085000" />
+    <option name="totallyTimeSpent" value="61276000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
@@ -541,26 +493,55 @@
       <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
       <window_info anchor="right" id="Maven Projects" order="6" weight="0.32995737" />
       <window_info anchor="bottom" id="Database Changes" order="7" show_stripe_button="false" />
+      <window_info anchor="bottom" x="1" y="31" width="1078" height="1008" id="Run" order="2" type="WINDOWED" visible="true" weight="0.32897604" />
       <window_info anchor="bottom" id="Version Control" order="9" weight="0.32897604" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.32897604" />
       <window_info anchor="bottom" id="Terminal" order="8" weight="0.32897604" />
       <window_info id="Capture Tool" order="3" />
       <window_info id="Designer" order="2" />
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.26066098" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.26599148" />
       <window_info anchor="right" id="Database" order="5" weight="0.32995737" />
-      <window_info anchor="bottom" id="Find" order="1" weight="0.32897604" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" id="Theme Preview" order="4" />
-      <window_info id="Favorites" order="4" side_tool="true" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info id="Favorites" order="4" side_tool="true" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" x="0" y="0" width="434" height="856" id="Documentation" order="3" side_tool="true" weight="0.32995737" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.32897604" />
     </layout>
+    <layout-to-restore>
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="right" id="Capture Analysis" order="3" />
+      <window_info active="true" anchor="bottom" x="0" y="23" width="1920" height="1017" id="Run" order="2" type="WINDOWED" visible="true" weight="0.32897604" />
+      <window_info anchor="right" id="Theme Preview" order="5" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.26332623" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="bottom" id="Database Changes" order="7" show_stripe_button="false" />
+      <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info id="Image Layers" order="5" />
+      <window_info id="Designer" order="2" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.32897604" />
+      <window_info anchor="right" x="0" y="0" width="434" height="856" id="Documentation" order="4" side_tool="true" weight="0.32995737" />
+      <window_info anchor="right" id="Database" order="6" weight="0.32995737" />
+      <window_info anchor="right" id="Palette&#9;" order="8" />
+      <window_info anchor="bottom" id="Terminal" order="9" weight="0.32897604" />
+      <window_info anchor="bottom" id="Event Log" order="11" side_tool="true" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="Version Control" order="10" weight="0.32897604" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info id="Capture Tool" order="3" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Messages" order="8" weight="0.32897604" />
+      <window_info anchor="right" id="Maven Projects" order="7" weight="0.32995737" />
+      <window_info id="Favorites" order="4" side_tool="true" />
+    </layout-to-restore>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
@@ -588,35 +569,17 @@
           <properties />
           <option name="timeStamp" value="3" />
         </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/auto_tester/data_generation/GenerateData.java</url>
+          <line>75</line>
+          <properties />
+          <option name="timeStamp" value="5" />
+        </line-breakpoint>
       </breakpoints>
-      <option name="time" value="4" />
+      <option name="time" value="6" />
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/auto_tester/interfaces/INorm.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="238">
-          <caret line="14" column="7" selection-start-line="14" selection-start-column="7" selection-end-line="14" selection-end-column="7" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://C:/Program Files (x86)/Java/jdk1.8.0_66/src.zip!/java/lang/Double.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret lean-forward="true" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/auto_tester/data_generation/Generator.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="836">
-          <caret line="75" column="5" lean-forward="true" selection-start-line="75" selection-start-column="5" selection-end-line="75" selection-end-column="5" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/auto_tester/data_generation/ValueBag.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="622">
@@ -706,9 +669,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="170">
           <caret line="10" column="23" selection-start-line="10" selection-start-column="23" selection-end-line="10" selection-end-column="23" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -723,9 +683,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="136">
           <caret line="8" column="21" selection-start-line="8" selection-start-column="21" selection-end-line="8" selection-end-column="21" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -803,13 +760,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/auto_tester/data_generation/EquationType.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
-          <caret line="9" column="6" selection-start-line="9" selection-start-column="6" selection-end-line="9" selection-end-column="6" />
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://C:/Program Files (x86)/Java/jdk1.8.0_66/src.zip!/java/lang/Double.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="189">
@@ -817,26 +767,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/auto_tester/interfaces/IBaseFunction.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="323">
-          <caret line="19" column="24" selection-start-line="19" selection-start-column="24" selection-end-line="19" selection-end-column="24" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/auto_tester/models/GlobalTest.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="306">
           <caret line="18" column="52" lean-forward="true" selection-start-line="18" selection-start-column="52" selection-end-line="18" selection-end-column="52" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/auto_tester/Main.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -860,16 +794,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/auto_tester/data_generation/ValueBag.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="122">
-          <caret line="120" column="25" lean-forward="true" selection-start-line="120" selection-start-column="25" selection-end-line="120" selection-end-column="25" />
-          <folding>
-            <element signature="method#getQuadraticValue#0;class#ValueBag#0" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/auto_tester/data_generation/Scenario.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="316">
@@ -889,9 +813,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="153">
           <caret line="9" column="61" selection-start-line="9" selection-start-column="61" selection-end-line="9" selection-end-column="61" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -899,16 +820,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="170">
           <caret line="10" column="22" selection-start-line="10" selection-start-column="22" selection-end-line="10" selection-end-column="22" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/auto_tester/data_generation/GenerateData.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="281">
-          <caret line="50" selection-start-line="50" selection-end-line="50" />
         </state>
       </provider>
     </entry>
@@ -916,20 +827,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="323">
           <caret line="19" column="18" selection-start-line="19" selection-start-column="18" selection-end-line="19" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/auto_tester/GlobalConfig.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="10" column="50" selection-start-line="10" selection-start-column="50" selection-end-line="10" selection-end-column="50" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/auto_tester/base_functions/Sum_functions.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
-          <caret line="15" column="13" selection-start-line="15" selection-start-column="13" selection-end-line="15" selection-end-column="13" />
         </state>
       </provider>
     </entry>
@@ -947,10 +844,37 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/auto_tester/base_functions/Square_root_solver.java">
+    <entry file="file://$PROJECT_DIR$/src/auto_tester/data_parser/Reader.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="323">
-          <caret line="22" column="47" selection-start-line="22" selection-start-column="47" selection-end-line="22" selection-end-column="47" />
+        <state relative-caret-position="544">
+          <caret line="43" column="40" selection-start-line="43" selection-start-column="40" selection-end-line="43" selection-end-column="40" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/auto_tester/interfaces/IBaseFunction.java">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/auto_tester/models/SingleTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="442">
+          <caret line="30" selection-start-line="30" selection-end-line="30" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/auto_tester/base_functions/Linear_solver.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="578">
+          <caret line="41" selection-start-line="41" selection-end-line="41" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/auto_tester/test_functions/Linear_test.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="785">
+          <caret line="48" column="21" selection-start-line="48" selection-start-column="21" selection-end-line="48" selection-end-column="21" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -959,8 +883,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/auto_tester/models/TestData.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2057">
-          <caret line="167" selection-start-line="167" selection-end-line="167" />
+        <state relative-caret-position="222">
+          <caret line="162" column="86" selection-start-line="162" selection-start-column="86" selection-end-line="162" selection-end-column="86" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="e#980#981#0" expanded="true" />
@@ -973,81 +897,121 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/auto_tester/base_functions/Linear_solver.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="238">
-          <caret line="21" column="34" selection-start-line="21" selection-start-column="34" selection-end-line="21" selection-end-column="34" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/auto_tester/base_functions/Square_two_solver.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="578">
-          <caret line="41" column="25" selection-start-line="41" selection-start-column="22" selection-end-line="41" selection-end-column="25" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/auto_tester/norms/Relative_error.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="374">
-          <caret line="24" column="9" selection-start-line="24" selection-start-column="9" selection-end-line="24" selection-end-column="9" />
+        <state relative-caret-position="272">
+          <caret line="16" selection-start-line="16" selection-end-line="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/auto_tester/base_functions/Square_root_solver.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="170">
+          <caret line="10" column="40" selection-start-line="10" selection-start-column="40" selection-end-line="10" selection-end-column="40" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/auto_tester/models/SingleTest.java">
+    <entry file="file://$PROJECT_DIR$/src/auto_tester/test_functions/Square_root_test.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="34">
-          <caret line="2" column="25" selection-start-line="2" selection-start-column="25" selection-end-line="2" selection-end-column="25" />
+        <state relative-caret-position="323">
+          <caret line="19" column="1" selection-start-line="19" selection-start-column="1" selection-end-line="19" selection-end-column="1" />
           <folding>
-            <element signature="e#94#95#0" expanded="true" />
-            <element signature="e#138#139#0" expanded="true" />
-            <element signature="e#194#195#0" expanded="true" />
-            <element signature="e#248#249#0" expanded="true" />
-            <element signature="e#286#287#0" expanded="true" />
-            <element signature="e#327#328#0" expanded="true" />
+            <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/auto_tester/test_functions/Square_two_test.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="408">
-          <caret line="27" column="24" selection-start-line="27" selection-start-column="24" selection-end-line="27" selection-end-column="24" />
+        <state relative-caret-position="221">
+          <caret line="13" lean-forward="true" selection-start-line="13" selection-end-line="19" selection-end-column="84" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/auto_tester/test_functions/Sum_Test.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="187">
+          <caret line="11" column="24" lean-forward="true" selection-start-line="11" selection-start-column="24" selection-end-line="11" selection-end-column="24" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/auto_tester/data_parser/Reader.java">
+    <entry file="file://$PROJECT_DIR$/src/auto_tester/base_functions/Square_two_solver.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="43" column="40" selection-start-line="43" selection-start-column="40" selection-end-line="43" selection-end-column="40" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+        <state relative-caret-position="17">
+          <caret line="52" column="50" lean-forward="true" selection-start-line="52" selection-start-column="50" selection-end-line="52" selection-end-column="50" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/auto_tester/data_parser/Saver.java">
+    <entry file="file://$PROJECT_DIR$/src/auto_tester/GlobalConfig.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="29" column="33" selection-start-line="29" selection-start-column="33" selection-end-line="29" selection-end-column="33" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+        <state relative-caret-position="204">
+          <caret line="12" column="30" selection-start-line="12" selection-start-column="30" selection-end-line="12" selection-end-column="30" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/auto_tester/base_functions/Sum_solver.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="374">
+          <caret line="29" column="22" selection-start-line="29" selection-start-column="22" selection-end-line="29" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/auto_tester/data_generation/EquationType.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="204">
+          <caret line="12" column="4" selection-start-line="12" selection-start-column="4" selection-end-line="12" selection-end-column="4" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/auto_tester/data_generation/Generator.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="206">
-          <caret line="182" column="27" selection-start-line="182" selection-start-column="27" selection-end-line="182" selection-end-column="27" />
+        <state relative-caret-position="2635">
+          <caret line="177" column="23" selection-start-line="177" selection-start-column="16" selection-end-line="177" selection-end-column="23" />
           <folding>
             <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/auto_tester/data_generation/GenerateData.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2822">
+          <caret line="170" column="28" selection-start-line="170" selection-start-column="28" selection-end-line="170" selection-end-column="28" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/auto_tester/data_parser/Saver.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="714">
+          <caret line="42" selection-start-line="42" selection-end-line="42" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/auto_tester/Main.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="680">
+          <caret line="40" column="7" selection-start-line="40" selection-start-column="7" selection-end-line="40" selection-end-column="7" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/auto_tester/data_generation/ValueBag.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="85">
+          <caret line="116" column="7" lean-forward="true" selection-start-line="116" selection-start-column="7" selection-end-line="116" selection-end-column="7" />
+          <folding>
+            <element signature="method#getQuadraticValue#0;class#ValueBag#0" />
           </folding>
         </state>
       </provider>

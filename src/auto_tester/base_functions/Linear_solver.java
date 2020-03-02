@@ -18,6 +18,8 @@ public class Linear_solver implements IBaseFunction {
 
     @Override
     public List<Double> runBase(List<Double> params) {
+
+        System.out.println("Paramètres de la fonction à tester : "+params);
         ArrayList<Double> result = new ArrayList<>();
         if(Math.abs(params.get(0))<GlobalConfig.DEFAULT_TOLERANCE){
         
@@ -32,9 +34,11 @@ public class Linear_solver implements IBaseFunction {
         }
         else{
         
-        double res= params.get(1)/params.get(0);
+        double res= -params.get(1)/params.get(0);
         result.add(res);
         }
+
+
 
         
         return result;

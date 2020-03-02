@@ -11,8 +11,12 @@ package auto_tester.data_generation;
  *
  * @author suuynyuy
  * @version 1.0
+ *
  */
 public class ValueBag {
+    public static Double MAX_VALUE=1.0E300,MIN_VALUE=-1.0E300;
+
+
     public static Double getValue(String key, EquationType type){
         switch (type){
             case LINEAR:
@@ -73,9 +77,9 @@ public class ValueBag {
             case 'e':
                 return -2d;
             case 'f':
-                return -10E100;
+                return MIN_VALUE;
             case 'g':
-                return 10E100;
+                return MAX_VALUE;
         }
         return 0d;
     }
@@ -99,9 +103,9 @@ public class ValueBag {
             case 'e':
                 return -2d;
             case 'f':
-                return -10E100;
+                return MIN_VALUE;
             case 'g':
-                return 10E100;
+                return MAX_VALUE;
         }
         return 0d;
     }
@@ -124,9 +128,9 @@ public class ValueBag {
             case 'e':
                 return -2d;
             case 'f':
-                return -10E100;
+                return MIN_VALUE;
             case 'g':
-                return 10E100;
+                return MAX_VALUE;
         }
         return 0d;
     }
@@ -149,9 +153,9 @@ public class ValueBag {
             case 'e':
                 return -2d;
             case 'f':
-                return -10E300;
+                return MIN_VALUE;
             case 'g':
-                return 10E300;
+                return MAX_VALUE;
         }
         return 0d;
     }
