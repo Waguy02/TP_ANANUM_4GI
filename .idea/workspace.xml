@@ -1,197 +1,27 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
-  <component name="BookmarkManager">
-    <bookmark url="file://$PROJECT_DIR$/src/auto_tester/interfaces/INorm.java" line="8" mnemonic="1" />
-  </component>
   <component name="ChangeListManager">
     <list default="true" id="77ae64ca-3a76-4283-ac77-ce7ae13268db" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/libs/apache_poi.zip" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/libs/apache_poi/activation-1.1.1.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/libs/apache_poi/commons-codec-1.12.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/libs/apache_poi/commons-collections4-4.3.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/libs/apache_poi/commons-compress-1.18.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/libs/apache_poi/commons-logging-1.2.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/libs/apache_poi/commons-math3-3.6.1.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/libs/apache_poi/curvesapi-1.06.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/libs/apache_poi/jaxb-api-2.3.0.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/libs/apache_poi/jaxb-core-2.3.0.1.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/libs/apache_poi/jaxb-impl-2.3.0.1.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/libs/apache_poi/junit-4.12.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/libs/apache_poi/log4j-1.2.17.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/libs/apache_poi/poi-4.1.0.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/libs/apache_poi/poi-examples-4.1.0.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/libs/apache_poi/poi-excelant-4.1.0.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/libs/apache_poi/poi-ooxml-4.1.0.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/libs/apache_poi/poi-ooxml-schemas-4.1.0.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/libs/apache_poi/poi-scratchpad-4.1.0.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/libs/apache_poi/xmlbeans-3.1.0.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/TP_ANANUM/auto_tester/GlobalConfig.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/TP_ANANUM/auto_tester/Main.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/TP_ANANUM/auto_tester/base_functions/Square_two_solver.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/TP_ANANUM/auto_tester/interfaces/IBaseFunction.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/TP_ANANUM/auto_tester/interfaces/INorm.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/TP_ANANUM/auto_tester/interfaces/ITestFunction.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/TP_ANANUM/auto_tester/models/GlobalTest.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/TP_ANANUM/auto_tester/models/SingleTest.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/TP_ANANUM/auto_tester/models/TestData.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/TP_ANANUM/auto_tester/norms/Relative_error.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/TP_ANANUM/auto_tester/test_functions/Square_two_test.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/auto_tester/Main.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/auto_tester/interfaces/INorm.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/finiteMethods/graphics/Generator.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/finiteMethods/graphics/Graph.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/finiteMethods/graphics/GraphicDisplay.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/finiteMethods/graphics/SamplePoint.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/finiteMethods/graphics/SampleSegment.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/finiteMethods/interfaces/Point.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/finiteMethods/interfaces/Segment.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/auto_tester/Tools.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/auto_tester/Tools.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/auto_tester/data_parser/Reader.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/auto_tester/data_parser/Reader.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/auto_tester/data_parser/Saver.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/auto_tester/data_parser/Saver.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/TP_ANANUM/auto_tester/data_parser/Saver.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/TP_ANANUM/auto_tester/data_parser/Saver.class" afterDir="false" />
     </list>
-    <ignored path="$PROJECT_DIR$/out/" />
-    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
-    <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
-  <component name="FileEditorManager">
-    <leaf>
-      <file leaf-file-name="Square_two_solver.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/auto_tester/base_functions/Square_two_solver.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="255">
-              <caret line="15" column="22" selection-start-line="15" selection-start-column="22" selection-end-line="15" selection-end-column="22" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Relative_error.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/auto_tester/norms/Relative_error.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="153">
-              <caret line="9" column="16" selection-start-line="9" selection-start-column="16" selection-end-line="9" selection-end-column="16" />
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#219#220#0" expanded="true" />
-                <element signature="e#246#247#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Main.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/auto_tester/Main.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="177">
-              <caret line="19" column="22" selection-start-line="19" selection-start-column="22" selection-end-line="19" selection-end-column="22" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Reader.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/auto_tester/data_parser/Reader.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="466">
-              <caret line="36" lean-forward="true" selection-start-line="36" selection-end-line="36" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Tools.java" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/auto_tester/Tools.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="330">
-              <caret line="52" column="17" selection-start-line="52" selection-start-column="17" selection-end-line="52" selection-end-column="17" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="String.java" pinned="false" current-in-tab="false">
-        <entry file="jar://C:/Program Files (x86)/Java/jdk1.8.0_66/src.zip!/java/lang/String.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="180">
-              <caret line="2328" column="25" selection-start-line="2328" selection-start-column="20" selection-end-line="2328" selection-end-column="25" />
-              <folding>
-                <element signature="e#94598#94599#0" expanded="true" />
-                <element signature="e#94636#94637#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="GlobalTest.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/auto_tester/models/GlobalTest.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="245">
-              <caret line="16" column="55" selection-start-line="16" selection-start-column="55" selection-end-line="16" selection-end-column="55" />
-              <folding>
-                <element signature="e#267#268#0" expanded="true" />
-                <element signature="e#295#296#0" expanded="true" />
-                <element signature="e#352#353#0" expanded="true" />
-                <element signature="e#386#387#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Saver.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/auto_tester/data_parser/Saver.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="289">
-              <caret line="17" column="13" lean-forward="true" selection-start-line="17" selection-start-column="13" selection-end-line="17" selection-end-column="13" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="GlobalConfig.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/auto_tester/GlobalConfig.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="119">
-              <caret line="7" column="71" selection-start-line="7" selection-start-column="71" selection-end-line="7" selection-end-column="71" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="SingleTest.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/auto_tester/models/SingleTest.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="354">
-              <caret line="35" column="44" selection-start-line="35" selection-start-column="44" selection-end-line="35" selection-end-column="44" />
-              <folding>
-                <element signature="e#94#95#0" expanded="true" />
-                <element signature="e#138#139#0" expanded="true" />
-                <element signature="e#194#195#0" expanded="true" />
-                <element signature="e#248#249#0" expanded="true" />
-                <element signature="e#285#286#0" expanded="true" />
-                <element signature="e#326#327#0" expanded="true" />
-                <element signature="e#375#376#0" expanded="true" />
-                <element signature="e#423#424#0" expanded="true" />
-                <element signature="e#170#171#0" expanded="true" />
-                <element signature="e#224#225#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-    </leaf>
-  </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Interface" />
+        <option value="JavaFXApplication" />
         <option value="Class" />
       </list>
     </option>
@@ -223,42 +53,11 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="IdeDocumentHistory">
-    <option name="CHANGED_PATHS">
-      <list>
-        <option value="$PROJECT_DIR$/src/auto_tester/test_functions.java" />
-        <option value="$PROJECT_DIR$/src/auto_tester/test_functions/Square_two.java" />
-        <option value="$PROJECT_DIR$/src/auto_tester/models/TestResult.java" />
-        <option value="$PROJECT_DIR$/src/auto_tester/test_functions/Square_two_test.java" />
-        <option value="$PROJECT_DIR$/src/auto_tester/interfaces/INorm.java" />
-        <option value="$PROJECT_DIR$/src/auto_tester/interfaces/IBaseFunction.java" />
-        <option value="$PROJECT_DIR$/src/auto_tester/models/Test.java" />
-        <option value="$PROJECT_DIR$/src/auto_tester/interfaces/ITestFunction.java" />
-        <option value="$PROJECT_DIR$/src/auto_tester/data_parser/Tools.java" />
-        <option value="$PROJECT_DIR$/src/auto_tester/Main.java" />
-        <option value="$PROJECT_DIR$/src/auto_tester/base_functions/Square_two_solver.java" />
-        <option value="$PROJECT_DIR$/src/auto_tester/norms/Relative_error.java" />
-        <option value="$PROJECT_DIR$/src/auto_tester/GlobalConfig.java" />
-        <option value="$PROJECT_DIR$/src/auto_tester/models/GlobalTest.java" />
-        <option value="$PROJECT_DIR$/src/auto_tester/models/TestData.java" />
-        <option value="$PROJECT_DIR$/src/auto_tester/models/SingleTest.java" />
-        <option value="$PROJECT_DIR$/src/auto_tester/data_parser/Saver.java" />
-        <option value="$PROJECT_DIR$/src/auto_tester/data_parser/Reader.java" />
-        <option value="$PROJECT_DIR$/src/auto_tester/Tools.java" />
-      </list>
-    </option>
-  </component>
   <component name="JsBuildToolGruntFileManager" detection-done="true" sorting="DEFINITION_ORDER" />
   <component name="JsBuildToolPackageJson" detection-done="true" sorting="DEFINITION_ORDER" />
   <component name="JsGulpfileManager">
     <detection-done>true</detection-done>
     <sorting>DEFINITION_ORDER</sorting>
-  </component>
-  <component name="MavenProjectNavigator">
-    <treeState>
-      <expand />
-      <select />
-    </treeState>
   </component>
   <component name="NodePackageJsonFileManager">
     <packageJsonPaths />
@@ -267,64 +66,14 @@
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <ConfirmationsSetting value="2" id="Add" />
   </component>
-  <component name="ProjectView">
-    <navigator proportions="" version="1">
-      <foldersAlwaysOnTop value="true" />
-    </navigator>
-    <panes>
-      <pane id="PackagesPane" />
-      <pane id="ProjectPane">
-        <subPane>
-          <expand>
-            <path>
-              <item name="TP_ANANUM" type="b2602c69:ProjectViewProjectNode" />
-              <item name="TP_GROUPE" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="TP_ANANUM" type="b2602c69:ProjectViewProjectNode" />
-              <item name="TP_GROUPE" type="462c0819:PsiDirectoryNode" />
-              <item name="out" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="TP_ANANUM" type="b2602c69:ProjectViewProjectNode" />
-              <item name="TP_GROUPE" type="462c0819:PsiDirectoryNode" />
-              <item name="out" type="462c0819:PsiDirectoryNode" />
-              <item name="production" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="TP_ANANUM" type="b2602c69:ProjectViewProjectNode" />
-              <item name="TP_GROUPE" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="TP_ANANUM" type="b2602c69:ProjectViewProjectNode" />
-              <item name="TP_GROUPE" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="auto_tester" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="TP_ANANUM" type="b2602c69:ProjectViewProjectNode" />
-              <item name="TP_GROUPE" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="auto_tester" type="462c0819:PsiDirectoryNode" />
-              <item name="base_functions" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="TP_ANANUM" type="b2602c69:ProjectViewProjectNode" />
-              <item name="TP_GROUPE" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="auto_tester" type="462c0819:PsiDirectoryNode" />
-              <item name="data_parser" type="462c0819:PsiDirectoryNode" />
-            </path>
-          </expand>
-          <select />
-        </subPane>
-      </pane>
-      <pane id="Scope" />
-      <pane id="AndroidView" />
-    </panes>
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+    <option name="showMembers" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/libs/apache_poi/xmlbeans-3.1.0.jar!/" />
@@ -334,19 +83,7 @@
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.20229885" />
   </component>
-  <component name="RunDashboard">
-    <option name="ruleStates">
-      <list>
-        <RuleState>
-          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
-        </RuleState>
-        <RuleState>
-          <option name="name" value="StatusDashboardGroupingRule" />
-        </RuleState>
-      </list>
-    </option>
-  </component>
-  <component name="RunManager" selected="Application.GenerateData">
+  <component name="RunManager" selected="Application.GraphicDisplay">
     <configuration name="GenerateData" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="auto_tester.data_generation.GenerateData" />
       <module name="TP_ANANUM" />
@@ -354,6 +91,20 @@
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="auto_tester.data_generation.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="GraphicDisplay" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="finiteMethods.graphics.GraphicDisplay" />
+      <module name="TP_ANANUM" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="finiteMethods.graphics.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -399,6 +150,7 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.GraphicDisplay" />
         <item itemvalue="Application.GenerateData" />
         <item itemvalue="Application.Main" />
       </list>
@@ -431,44 +183,8 @@
   <component name="TimeTrackingManager">
     <option name="totallyTimeSpent" value="22451000" />
   </component>
-  <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
-    <editor active="true" />
-    <layout>
-      <window_info anchor="bottom" id="TODO" order="6" />
-      <window_info anchor="bottom" id="Messages" weight="0.32897604" />
-      <window_info anchor="right" id="Palette&#9;" order="7" />
-      <window_info id="Image Layers" order="5" />
-      <window_info anchor="right" id="Capture Analysis" order="3" />
-      <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
-      <window_info anchor="right" x="0" y="0" width="434" height="856" id="Documentation" side_tool="true" weight="0.32995737" />
-      <window_info anchor="right" id="Maven Projects" order="6" weight="0.32995737" />
-      <window_info anchor="bottom" id="Database Changes" order="7" show_stripe_button="false" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.32897604" />
-      <window_info anchor="bottom" id="Version Control" order="9" />
-      <window_info anchor="bottom" id="Terminal" order="8" weight="0.32897604" />
-      <window_info id="Capture Tool" order="3" />
-      <window_info id="Designer" order="2" />
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.2553305" />
-      <window_info anchor="right" id="Database" order="5" />
-      <window_info anchor="bottom" id="Find" order="1" weight="0.32897604" />
-      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
-      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
-      <window_info anchor="right" id="Theme Preview" order="4" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
-      <window_info id="Favorites" order="4" side_tool="true" />
-      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
-      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
-      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
-      <window_info anchor="bottom" id="Message" order="0" />
-      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
-    </layout>
-  </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
-  </component>
-  <component name="VcsContentAnnotationSettings">
-    <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="PROJET DE GROUPE INITIALISE" />
@@ -476,226 +192,50 @@
     <option name="LAST_COMMIT_MESSAGE" value="Interfaces prêtes" />
   </component>
   <component name="WindowStateProjectService">
+    <state x="511" y="105" width="374" height="592" key="#com.intellij.ide.util.MemberChooser" timestamp="1591474897215">
+      <screen x="41" y="27" width="1325" height="741" />
+    </state>
+    <state x="511" y="105" width="374" height="592" key="#com.intellij.ide.util.MemberChooser/41.27.1325.741@41.27.1325.741" timestamp="1591474897215" />
+    <state width="1279" height="106" key="GridCell.Tab.0.bottom" timestamp="1591478928627">
+      <screen x="41" y="27" width="1325" height="741" />
+    </state>
+    <state width="1279" height="106" key="GridCell.Tab.0.bottom/41.27.1325.741@41.27.1325.741" timestamp="1591478928627" />
+    <state width="1271" height="172" key="GridCell.Tab.0.bottom/49.27.1317.741@49.27.1317.741" timestamp="1582963738769" />
+    <state width="1279" height="106" key="GridCell.Tab.0.center" timestamp="1591478928627">
+      <screen x="41" y="27" width="1325" height="741" />
+    </state>
+    <state width="1279" height="106" key="GridCell.Tab.0.center/41.27.1325.741@41.27.1325.741" timestamp="1591478928627" />
+    <state width="1271" height="172" key="GridCell.Tab.0.center/49.27.1317.741@49.27.1317.741" timestamp="1582963738767" />
+    <state width="1279" height="106" key="GridCell.Tab.0.left" timestamp="1591478928626">
+      <screen x="41" y="27" width="1325" height="741" />
+    </state>
+    <state width="1279" height="106" key="GridCell.Tab.0.left/41.27.1325.741@41.27.1325.741" timestamp="1591478928626" />
+    <state width="1271" height="172" key="GridCell.Tab.0.left/49.27.1317.741@49.27.1317.741" timestamp="1582963738766" />
+    <state width="1279" height="106" key="GridCell.Tab.0.right" timestamp="1591478928627">
+      <screen x="41" y="27" width="1325" height="741" />
+    </state>
+    <state width="1279" height="106" key="GridCell.Tab.0.right/41.27.1325.741@41.27.1325.741" timestamp="1591478928627" />
+    <state width="1271" height="172" key="GridCell.Tab.0.right/49.27.1317.741@49.27.1317.741" timestamp="1582963738767" />
     <state x="363" y="225" key="com.intellij.ide.util.TipDialog" timestamp="1582963466106">
       <screen x="49" y="27" width="1317" height="741" />
     </state>
     <state x="363" y="225" key="com.intellij.ide.util.TipDialog/49.27.1317.741@49.27.1317.741" timestamp="1582963466106" />
-  </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <option name="time" value="3" />
-    </breakpoint-manager>
-  </component>
-  <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/auto_tester/test_functions.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="7" lean-forward="true" selection-start-line="7" selection-end-line="7" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/auto_tester/base_functions/BaseFunctions.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="4" lean-forward="true" selection-start-line="4" selection-end-line="4" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/auto_tester/test_functions/Square_two_test.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="10" column="23" selection-start-line="10" selection-start-column="23" selection-end-line="10" selection-end-column="23" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#227#228#0" expanded="true" />
-            <element signature="e#254#255#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/auto_tester/interfaces/INorm.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
-          <caret line="8" column="16" selection-start-line="8" selection-start-column="16" selection-end-line="8" selection-end-column="16" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/auto_tester/interfaces/ITestFunction.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="340">
-          <caret line="20" column="27" selection-start-line="20" selection-start-column="27" selection-end-line="20" selection-end-column="27" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/auto_tester/interfaces/IBaseFunction.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="31" lean-forward="true" selection-start-column="31" selection-end-column="31" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/auto_tester/norms/Relative_error.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
-          <caret line="9" column="16" selection-start-line="9" selection-start-column="16" selection-end-line="9" selection-end-column="16" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#219#220#0" expanded="true" />
-            <element signature="e#246#247#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/auto_tester/GlobalConfig.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="7" column="71" selection-start-line="7" selection-start-column="71" selection-end-line="7" selection-end-column="71" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/auto_tester/Main.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="177">
-          <caret line="19" column="22" selection-start-line="19" selection-start-column="22" selection-end-line="19" selection-end-column="22" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/auto_tester/models/GlobalTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="245">
-          <caret line="16" column="55" selection-start-line="16" selection-start-column="55" selection-end-line="16" selection-end-column="55" />
-          <folding>
-            <element signature="e#267#268#0" expanded="true" />
-            <element signature="e#295#296#0" expanded="true" />
-            <element signature="e#352#353#0" expanded="true" />
-            <element signature="e#386#387#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/auto_tester/base_functions/Square_two_solver.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="15" column="22" selection-start-line="15" selection-start-column="22" selection-end-line="15" selection-end-column="22" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/auto_tester/models/SingleTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="354">
-          <caret line="35" column="44" selection-start-line="35" selection-start-column="44" selection-end-line="35" selection-end-column="44" />
-          <folding>
-            <element signature="e#94#95#0" expanded="true" />
-            <element signature="e#138#139#0" expanded="true" />
-            <element signature="e#194#195#0" expanded="true" />
-            <element signature="e#248#249#0" expanded="true" />
-            <element signature="e#285#286#0" expanded="true" />
-            <element signature="e#326#327#0" expanded="true" />
-            <element signature="e#375#376#0" expanded="true" />
-            <element signature="e#423#424#0" expanded="true" />
-            <element signature="e#170#171#0" expanded="true" />
-            <element signature="e#224#225#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/auto_tester/data_parser/Saver.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="289">
-          <caret line="17" column="13" lean-forward="true" selection-start-line="17" selection-start-column="13" selection-end-line="17" selection-end-column="13" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/auto_tester/data_parser/Reader.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="466">
-          <caret line="36" lean-forward="true" selection-start-line="36" selection-end-line="36" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/auto_tester/models/TestData.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="272">
-          <caret line="133" column="105" selection-start-line="133" selection-start-column="105" selection-end-line="133" selection-end-column="105" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#721#722#0" expanded="true" />
-            <element signature="e#752#753#0" expanded="true" />
-            <element signature="e#800#801#0" expanded="true" />
-            <element signature="e#840#841#0" expanded="true" />
-            <element signature="e#883#884#0" expanded="true" />
-            <element signature="e#916#917#0" expanded="true" />
-            <element signature="e#974#975#0" expanded="true" />
-            <element signature="e#1018#1019#0" expanded="true" />
-            <element signature="e#1061#1062#0" expanded="true" />
-            <element signature="e#1100#1101#0" expanded="true" />
-            <element signature="e#1164#1165#0" expanded="true" />
-            <element signature="e#1220#1221#0" expanded="true" />
-            <element signature="e#1267#1268#0" expanded="true" />
-            <element signature="e#1303#1304#0" expanded="true" />
-            <element signature="e#1368#1369#0" expanded="true" />
-            <element signature="e#1418#1419#0" expanded="true" />
-            <element signature="e#1458#1459#0" expanded="true" />
-            <element signature="e#1494#1495#0" expanded="true" />
-            <element signature="e#1552#1553#0" expanded="true" />
-            <element signature="e#1602#1603#0" expanded="true" />
-            <element signature="e#1645#1646#0" expanded="true" />
-            <element signature="e#1684#1685#0" expanded="true" />
-            <element signature="e#1748#1749#0" expanded="true" />
-            <element signature="e#1804#1805#0" expanded="true" />
-            <element signature="e#1851#1852#0" expanded="true" />
-            <element signature="e#1887#1888#0" expanded="true" />
-            <element signature="e#1952#1953#0" expanded="true" />
-            <element signature="e#2002#2003#0" expanded="true" />
-            <element signature="e#2038#2039#0" expanded="true" />
-            <element signature="e#2070#2071#0" expanded="true" />
-            <element signature="e#2120#2121#0" expanded="true" />
-            <element signature="e#2162#2163#0" expanded="true" />
-            <element signature="e#2205#2206#0" expanded="true" />
-            <element signature="e#2244#2245#0" expanded="true" />
-            <element signature="e#2308#2309#0" expanded="true" />
-            <element signature="e#2364#2365#0" expanded="true" />
-            <element signature="e#2403#2404#0" expanded="true" />
-            <element signature="e#2439#2440#0" expanded="true" />
-            <element signature="e#2496#2497#0" expanded="true" />
-            <element signature="e#2546#2547#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://C:/Program Files (x86)/Java/jdk1.8.0_66/src.zip!/java/lang/String.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="2328" column="25" selection-start-line="2328" selection-start-column="20" selection-end-line="2328" selection-end-column="25" />
-          <folding>
-            <element signature="e#94598#94599#0" expanded="true" />
-            <element signature="e#94636#94637#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/auto_tester/Tools.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="330">
-          <caret line="52" column="17" selection-start-line="52" selection-start-column="17" selection-end-line="52" selection-end-column="17" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
+    <state x="141" y="127" width="463" height="541" key="dock-window-1" timestamp="1591470840609">
+      <screen x="41" y="27" width="1325" height="741" />
+    </state>
+    <state x="141" y="127" width="463" height="541" key="dock-window-1/41.27.1325.741@41.27.1325.741" timestamp="1591470840609" />
+    <state x="141" y="127" width="1125" height="541" key="dock-window-2" timestamp="1591478905926">
+      <screen x="41" y="27" width="1325" height="741" />
+    </state>
+    <state x="141" y="127" width="1125" height="541" key="dock-window-2/41.27.1325.741@41.27.1325.741" timestamp="1591478905926" />
+    <state x="141" y="127" width="1125" height="541" key="dock-window-3" timestamp="1591478905926">
+      <screen x="41" y="27" width="1325" height="741" />
+    </state>
+    <state x="141" y="127" width="1125" height="541" key="dock-window-3/41.27.1325.741@41.27.1325.741" timestamp="1591478905926" />
+    <state x="367" y="40" width="670" height="676" key="search.everywhere.popup" timestamp="1591477013324">
+      <screen x="41" y="27" width="1325" height="741" />
+    </state>
+    <state x="367" y="40" width="670" height="676" key="search.everywhere.popup/41.27.1325.741@41.27.1325.741" timestamp="1591477013324" />
   </component>
   <component name="masterDetails">
     <states>
