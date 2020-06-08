@@ -93,6 +93,14 @@ public class Diff2D_schema implements IFiniteDiff {
     @Override
     public void build_A() {
         this.A=new BaseMatrice(n-1,m-1);
+
+
+
+
+
+
+
+
     }
 
     @Override
@@ -102,11 +110,18 @@ public class Diff2D_schema implements IFiniteDiff {
 
     @Override
     public void print_schema() {
+        System.out.println("DIFF2_SCHEMA");
+        System.out.println( " MESH :" + this.mesh.toString());
+
+        System.out.println("\n A =" + this.A.toString() + " \n\n  X = " + this.X.toString() + "\n\n B = " + this.B.toString());
+
 
     }
 
     @Override
     public void visualize(double inf, double max) {
 
+        double bounds[] = {inf, max};
+        this.visualizer.show(this.interpoler.interpolate(this.makePoints()), bounds);
     }
 }
