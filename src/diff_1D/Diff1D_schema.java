@@ -24,9 +24,16 @@ public class Diff1D_schema {
     private IGraphic visualizer ;
 
 
+    private Interpolation1D interpoler;
+
+
+
+
     public IGraphic getVisualizer() {
         return visualizer;
     }
+
+
 
     public void setVisualizer(IGraphic visualizer) {
         this.visualizer = visualizer;
@@ -131,16 +138,20 @@ public class Diff1D_schema {
 
 
 
-    public Diff1D_schema(Integer n, Base1DFunction f, double u_0, double u_1,ISolveMethod solve_method) {
+    public Diff1D_schema(Integer n, Base1DFunction f, double u_0, double u_1,ISolveMethod solve_method,IGraphic visualizer,Interpolation1D interpoler) {
         this.n = n;
         this.f = f;
         this.u_0 = u_0;
         this.u_1 = u_1;
+        this.visualizer=visualizer;
+        this.interpoler=interpoler;
+        this.solve_method=solve_method;
+
+
         this.init_mesh();
         this.build_A();
-
         this.build_B();
-        this.solve_method=solve_method;
+
 
     }
 

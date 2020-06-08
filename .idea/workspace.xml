@@ -4,48 +4,19 @@
     <bookmark url="file://$PROJECT_DIR$/src/auto_tester/interfaces/INorm.java" line="19" mnemonic="1" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="77ae64ca-3a76-4283-ac77-ce7ae13268db" name="Default" comment="Difference fini 1D (package diff_1D) initialisé.&#10;&#10;* Caleb: Réalise l'implémentation de tes fonctions graphiques conformément à l'interface IGraphic et ensuite procéder aux tests &#10;&#10;&#10;*Blondeau:  J'ai modifié le code de base de tes fonctions Solveur en les associant aux interfaces IMatrice , IVector et ISolverMethod. Daigne teste tes fonctions. &#10;   A propos de ISolverMethod : La fonction de run cette interface prend en parametère (une IMatrice A et un IVector B ainsi que Double[] de parametres  ( dépendamment de la méthode). Bien vouloir te réferer à la classe à Gauss_sedeil pour les détails.&#10;   &#10;   &#10;   * Nna : Ton code est tout simplement inutilisable; &#10;   &#10;   *Tedonze : Tes fonctions sont attendues dans le package base_functions (Tu vas te referer à la fonction SquarePolynome que j'ai implémentée)">
-      <change afterPath="$PROJECT_DIR$/REPARTITION DES TACHES.docx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/libs/colt-1.1.0.tar.gz" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/libs/colt-1.2.0.jar.zip" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/libs/colt-1.2.0.jar/colt-1.2.0.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/TP_ANANUM/Lagrange.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/TP_ANANUM/diff_1D/Main.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/TP_ANANUM/diff_1D/base_functions/SquarePolynome.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/TP_ANANUM/diff_1D/interfaces/Base1DFunction.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/TP_ANANUM/diff_1D/interfaces/IMatrice.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/TP_ANANUM/diff_1D/interfaces/IVector.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/TP_ANANUM/diff_1D/interpolation/Lagrange.zip" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/TP_ANANUM/diff_1D/lesSolvers.rar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/TP_ANANUM/diff_1D/matrice/BaseMatrice.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/TP_ANANUM/diff_1D/matrice/BaseVector.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/TP_ANANUM/diff_1D/matrice/ColtMatrice.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/TP_ANANUM/diff_1D/solver/Diff1D_schema.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/TP_ANANUM/diff_1D/solver/Gauss_seidel.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/TP_ANANUM/diff_1D/solver/Jacobi.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/TP_ANANUM/diff_1D/solver/LU_decomposition.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/diff_1D/Diff1D_schema.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/diff_1D/Main.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/diff_1D/base_functions/SquarePolynome.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/diff_1D/interfaces/Base1DFunction.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/diff_1D/interfaces/IGraphic.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/diff_1D/interfaces/IMatrice.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/diff_1D/interfaces/ISolveMethod.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/diff_1D/interfaces/IVector.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/diff_1D/interpolation/Lagrange.zip" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/diff_1D/interpolation/lagrange/Lagrange.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/diff_1D/lesSolvers.rar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/diff_1D/matrice/BaseMatrice.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/diff_1D/matrice/BaseVector.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/diff_1D/matrice/ColtMatrice.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/diff_1D/solver/Gauss_seidel.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/diff_1D/solver/Jacobi.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/diff_1D/solver/LU_decomposition.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/activation_1_1_1.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/activation_1_1_1.xml" afterDir="false" />
+    <list default="true" id="77ae64ca-3a76-4283-ac77-ce7ae13268db" name="Default" comment="">
+      <change afterPath="$PROJECT_DIR$/src/diff_1D/interfaces/Interpolation1D.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/diff_1D/interpolation/PIL.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/TP_ANANUM/auto_tester/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/TP_ANANUM/auto_tester/Main.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/auto_tester/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/auto_tester/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/auto_tester/models/TestData.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/auto_tester/models/TestData.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/TP_ANANUM/diff_1D/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/TP_ANANUM/diff_1D/Main.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/TP_ANANUM/diff_1D/interfaces/IVector.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/TP_ANANUM/diff_1D/interfaces/IVector.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/TP_ANANUM/diff_1D/matrice/BaseVector.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/TP_ANANUM/diff_1D/matrice/BaseVector.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/TP_ANANUM/diff_1D/solver/Gauss_seidel.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/TP_ANANUM/diff_1D/solver/Gauss_seidel.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/TP_ANANUM/diff_1D/solver/Jacobi.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/TP_ANANUM/diff_1D/solver/Jacobi.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/TP_ANANUM/diff_1D/solver/LU_decomposition.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/TP_ANANUM/diff_1D/solver/LU_decomposition.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/diff_1D/Diff1D_schema.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/diff_1D/Diff1D_schema.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/diff_1D/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/diff_1D/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/diff_1D/interfaces/ISolveMethod.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/diff_1D/interfaces/ISolveMethod.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="B:\Docs\ENSP\4GI\Semestre2\Analyse Numérique 2\TP_GROUPE\.idea\shelf/" />
@@ -75,8 +46,8 @@
       <file leaf-file-name="Main.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/diff_1D/Main.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="204">
-              <caret line="12" column="104" selection-start-line="12" selection-start-column="104" selection-end-line="12" selection-end-column="104" />
+            <state relative-caret-position="221">
+              <caret line="13" column="107" selection-start-line="13" selection-start-column="107" selection-end-line="13" selection-end-column="107" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -84,15 +55,61 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Gauss_seidel.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/diff_1D/solver/Gauss_seidel.java">
+      <file leaf-file-name="LU_decomposition.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/diff_1D/solver/LU_decomposition.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="136">
-              <caret line="8" column="13" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
+            <state relative-caret-position="395">
+              <caret line="66" selection-start-line="66" selection-end-line="66" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="method#solver_GaussSeidel#0;class#Gauss_seidel#0" />
-                <element signature="method#norme#0;class#Gauss_seidel#0" />
+                <element signature="e#2218#2219#0" expanded="true" />
+                <element signature="e#2272#2273#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Lagrange.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/diff_1D/interpolation/lagrange/Lagrange.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="68">
+              <caret line="4" column="13" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="13" />
+              <folding>
+                <element signature="method#main#0;class#Lagrange#0" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="PIL.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/diff_1D/interpolation/PIL.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="423">
+              <caret line="25" column="42" selection-start-line="25" selection-start-column="42" selection-end-line="25" selection-end-column="42" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Interpolation1D.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/diff_1D/interfaces/Interpolation1D.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="238">
+              <caret line="14" column="59" selection-start-line="14" selection-start-column="59" selection-end-line="14" selection-end-column="59" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="BaseMatrice.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/diff_1D/matrice/BaseMatrice.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="238">
+              <caret line="14" selection-start-line="14" selection-end-line="14" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#298#299#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -101,17 +118,8 @@
       <file leaf-file-name="IGraphic.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/diff_1D/interfaces/IGraphic.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="102">
-              <caret line="6" column="110" selection-start-line="6" selection-start-column="110" selection-end-line="6" selection-end-column="110" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Lagrange.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/diff_1D/interpolation/lagrange/Lagrange.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="85">
-              <caret line="7" column="37" lean-forward="true" selection-start-line="7" selection-start-column="37" selection-end-line="7" selection-end-column="37" />
+            <state relative-caret-position="204">
+              <caret line="12" lean-forward="true" selection-start-line="12" selection-end-line="12" />
             </state>
           </provider>
         </entry>
@@ -119,14 +127,16 @@
       <file leaf-file-name="Diff1D_schema.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/diff_1D/Diff1D_schema.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="465">
-              <caret line="136" column="39" selection-start-line="136" selection-start-column="39" selection-end-line="136" selection-end-column="39" />
+            <state relative-caret-position="1029">
+              <caret line="209" column="8" lean-forward="true" selection-start-line="209" selection-start-column="8" selection-end-line="209" selection-end-column="8" />
               <folding>
+                <element signature="e#416#417#0" expanded="true" />
+                <element signature="e#449#450#0" expanded="true" />
+                <element signature="e#503#504#0" expanded="true" />
+                <element signature="e#547#548#0" expanded="true" />
                 <element signature="method#init_mesh#0;class#Diff1D_schema#0" />
                 <element signature="method#build_A#0;class#Diff1D_schema#0" />
-                <element signature="method#init_X#0;class#Diff1D_schema#0" />
                 <element signature="method#build_B#0;class#Diff1D_schema#0" />
-                <element signature="method#print_schema#0;class#Diff1D_schema#0" />
               </folding>
             </state>
           </provider>
@@ -135,33 +145,8 @@
       <file leaf-file-name="ISolveMethod.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/diff_1D/interfaces/ISolveMethod.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="68">
-              <caret line="4" column="47" selection-start-line="4" selection-start-column="47" selection-end-line="4" selection-end-column="47" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="IVector.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/diff_1D/interfaces/IVector.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="102">
-              <caret line="6" column="14" selection-start-line="6" selection-start-column="14" selection-end-line="6" selection-end-column="14" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="BaseVector.java" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/diff_1D/matrice/BaseVector.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="255">
-              <caret line="19" column="14" selection-start-line="19" selection-start-column="14" selection-end-line="19" selection-end-column="14" />
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#436#437#0" expanded="true" />
-                <element signature="e#477#478#0" expanded="true" />
-                <element signature="e#600#601#0" expanded="true" />
-                <element signature="e#645#646#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="289">
+              <caret line="17" column="93" selection-start-line="17" selection-start-column="93" selection-end-line="17" selection-end-column="93" />
             </state>
           </provider>
         </entry>
@@ -175,22 +160,13 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="IMatrice.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/diff_1D/interfaces/IMatrice.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="119">
-              <caret line="7" selection-start-line="7" selection-end-line="7" selection-end-column="25" />
-            </state>
-          </provider>
-        </entry>
-      </file>
     </leaf>
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Interface" />
         <option value="Class" />
+        <option value="Interface" />
       </list>
     </option>
   </component>
@@ -256,9 +232,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/auto_tester/test_functions/Square_two.java" />
-        <option value="$PROJECT_DIR$/src/auto_tester/models/TestResult.java" />
-        <option value="$PROJECT_DIR$/src/auto_tester/models/Test.java" />
         <option value="$PROJECT_DIR$/src/auto_tester/data_parser/Tools.java" />
         <option value="$PROJECT_DIR$/src/auto_tester/models/SingleTest.java" />
         <option value="$PROJECT_DIR$/src/auto_tester/interfaces/INorm.java" />
@@ -292,21 +265,24 @@
         <option value="$PROJECT_DIR$/src/diff_1D/matrice/ColtMatrice.java" />
         <option value="$PROJECT_DIR$/src/diff_1D/matrice/Vector.java" />
         <option value="$PROJECT_DIR$/src/diff_1D/solver/Jacobi.java" />
-        <option value="$PROJECT_DIR$/src/diff_1D/solver/LU_decomposition.java" />
         <option value="$PROJECT_DIR$/src/diff_1D/interfaces/IBaseFunction.java" />
         <option value="$PROJECT_DIR$/src/diff_1D/interfaces/Base1DFunction.java" />
         <option value="$PROJECT_DIR$/src/diff_1D/matrice/BaseMatrice.java" />
-        <option value="$PROJECT_DIR$/src/diff_1D/interfaces/IMatrice.java" />
         <option value="$PROJECT_DIR$/src/diff_1D/base_functions/SquarePolynome.java" />
         <option value="$PROJECT_DIR$/src/diff_1D/solver/Diff1D_schema.java" />
-        <option value="$PROJECT_DIR$/src/diff_1D/Diff1D_schema.java" />
-        <option value="$PROJECT_DIR$/src/diff_1D/interfaces/IGraphic.java" />
-        <option value="$PROJECT_DIR$/src/diff_1D/interfaces/ISolveMethod.java" />
-        <option value="$PROJECT_DIR$/src/diff_1D/interfaces/IVector.java" />
-        <option value="$PROJECT_DIR$/src/diff_1D/solver/Gauss_seidel.java" />
-        <option value="$PROJECT_DIR$/src/diff_1D/Main.java" />
         <option value="$PROJECT_DIR$/src/diff_1D/interpolation/lagrange/Lagrange.java" />
         <option value="$PROJECT_DIR$/src/diff_1D/matrice/BaseVector.java" />
+        <option value="$PROJECT_DIR$/src/diff_1D/interfaces/IVector.java" />
+        <option value="$PROJECT_DIR$/src/diff_1D/interfaces/IMatrice.java" />
+        <option value="$PROJECT_DIR$/src/diff_1D/interfaces/IGraphic.java" />
+        <option value="$PROJECT_DIR$/src/diff_1D/solver/Gauss_seidel.java" />
+        <option value="$PROJECT_DIR$/src/diff_1D/solver/LU_decomposition.java" />
+        <option value="$PROJECT_DIR$/src/diff_1D/interfaces/ISolveMethod.java" />
+        <option value="$PROJECT_DIR$/src/diff_1D/Main.java" />
+        <option value="$PROJECT_DIR$/src/diff_1D/interfaces/Interpolation.java" />
+        <option value="$PROJECT_DIR$/src/diff_1D/interfaces/Interpolation1D.java" />
+        <option value="$PROJECT_DIR$/src/diff_1D/Diff1D_schema.java" />
+        <option value="$PROJECT_DIR$/src/diff_1D/interpolation/PIL.java" />
       </list>
     </option>
   </component>
@@ -374,6 +350,13 @@
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="diff_1D" type="462c0819:PsiDirectoryNode" />
               <item name="interfaces" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="TP_ANANUM" type="b2602c69:ProjectViewProjectNode" />
+              <item name="TP_GROUPE" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="diff_1D" type="462c0819:PsiDirectoryNode" />
+              <item name="interpolation" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="TP_ANANUM" type="b2602c69:ProjectViewProjectNode" />
@@ -539,7 +522,7 @@
       <workItem from="1583162001898" duration="6400000" />
       <workItem from="1583330388167" duration="1136000" />
       <workItem from="1583411619856" duration="597000" />
-      <workItem from="1591605254995" duration="8561000" />
+      <workItem from="1591605254995" duration="12697000" />
     </task>
     <task id="LOCAL-00001" summary="Interfaces prêtes">
       <created>1582786091146</created>
@@ -548,18 +531,32 @@
       <option name="project" value="LOCAL" />
       <updated>1582786091146</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Difference fini 1D (package diff_1D) initialisé.&#10;&#10;* Caleb: Réalise l'implémentation de tes fonctions graphiques conformément à l'interface IGraphic et ensuite procéder aux tests &#10;&#10;&#10;*Blondeau:  J'ai modifié le code de base de tes fonctions Solveur en les associant aux interfaces IMatrice , IVector et ISolverMethod. Daigne teste tes fonctions. &#10;   A propos de ISolverMethod : La fonction de run cette interface prend en parametère (une IMatrice A et un IVector B ainsi que Double[] de parametres  ( dépendamment de la méthode). Bien vouloir te réferer à la classe à Gauss_sedeil pour les détails.&#10;   &#10;   &#10;   * Nna : Ton code est tout simplement inutilisable; &#10;   &#10;   *Tedonze : Tes fonctions sont attendues dans le package base_functions (Tu vas te referer à la fonction SquarePolynome que j'ai implémentée)">
+      <created>1591613849951</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1591613849951</updated>
+    </task>
+    <task id="LOCAL-00003" summary="Difference fini 1D (package diff_1D) initialisé.&#10;&#10;* Caleb: Réalise l'implémentation de tes fonctions graphiques conformément à l'interface IGraphic et ensuite procéder aux tests &#10;&#10;&#10;*Blondeau:  J'ai modifié le code de base de tes fonctions Solveur en les associant aux interfaces IMatrice , IVector et ISolverMethod. Daigne teste tes fonctions. &#10;   A propos de ISolverMethod : La fonction de run cette interface prend en parametère (une IMatrice A et un IVector B ainsi que Double[] de parametres  ( dépendamment de la méthode). Bien vouloir te réferer à la classe à Gauss_sedeil pour les détails.&#10;   &#10;   &#10;   * Nna : Ton code est tout simplement inutilisable; &#10;   &#10;   *Tedonze : Tes fonctions sont attendues dans le package base_functions (Tu vas te referer à la fonction SquarePolynome que j'ai implémentée)">
+      <created>1591617225788</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1591617225788</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="76702000" />
+    <option name="totallyTimeSpent" value="80838000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1048" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info anchor="bottom" id="TODO" order="6" />
-      <window_info active="true" anchor="bottom" id="Messages" order="7" visible="true" weight="0.3286026" />
+      <window_info anchor="bottom" id="Messages" order="7" weight="0.3286026" />
       <window_info anchor="right" id="Palette&#9;" order="7" />
       <window_info id="Image Layers" order="5" />
       <window_info anchor="right" id="Capture Analysis" order="3" />
@@ -571,7 +568,7 @@
       <window_info anchor="bottom" id="Terminal" order="8" weight="0.32897604" />
       <window_info id="Capture Tool" order="3" />
       <window_info id="Designer" order="2" />
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.13432837" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.13432837" />
       <window_info anchor="right" id="Database" order="5" weight="0.32995737" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.3286026" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
@@ -651,7 +648,7 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-method">
           <url>file://$PROJECT_DIR$/src/diff_1D/Diff1D_schema.java</url>
-          <line>187</line>
+          <line>209</line>
           <properties class="diff_1D.Diff1D_schema" method="init_X">
             <option name="EMULATED" value="true" />
           </properties>
@@ -662,17 +659,6 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/auto_tester/Tools.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="476">
-          <caret line="30" column="27" lean-forward="true" selection-start-line="30" selection-start-column="27" selection-end-line="30" selection-end-column="27" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/auto_tester/test_functions.java" />
     <entry file="file://$PROJECT_DIR$/src/auto_tester/base_functions/BaseFunctions.java" />
     <entry file="jar://C:/Program Files (x86)/Java/jdk1.8.0_66/src.zip!/java/lang/String.java">
       <provider selected="true" editor-type-id="text-editor">
@@ -941,45 +927,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/diff_1D/solver/Jacobi.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="475">
-          <caret line="28" column="37" selection-start-line="28" selection-start-column="37" selection-end-line="28" selection-end-column="37" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/auto_tester/interfaces/IBaseFunction.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="238">
           <caret line="24" column="1" lean-forward="true" selection-start-line="24" selection-start-column="1" selection-end-line="24" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/diff_1D/solver/LU_decomposition.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
-          <caret line="8" selection-start-line="8" selection-end-line="8" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="method#solver_LU#0;class#LU_decomposition#0" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/diff_1D/matrice/BaseMatrice.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
-          <caret line="5" column="38" selection-start-line="5" selection-start-column="38" selection-end-line="5" selection-end-column="38" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#452#453#0" expanded="true" />
-            <element signature="e#518#519#0" expanded="true" />
-            <element signature="e#538#539#0" expanded="true" />
-            <element signature="e#589#590#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -994,6 +945,20 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/diff_1D/interfaces/IVector.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="4" column="30" selection-start-line="4" selection-start-column="30" selection-end-line="4" selection-end-column="30" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/diff_1D/interfaces/IMatrice.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="85">
+          <caret line="5" column="43" selection-start-line="5" selection-start-column="43" selection-end-line="5" selection-end-column="43" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/diff_1D/interfaces/Base1DFunction.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="136">
@@ -1001,45 +966,28 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/diff_1D/interfaces/IMatrice.java">
+    <entry file="file://$PROJECT_DIR$/src/diff_1D/interfaces/IGraphic.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="7" selection-start-line="7" selection-end-line="7" selection-end-column="25" />
+        <state relative-caret-position="204">
+          <caret line="12" lean-forward="true" selection-start-line="12" selection-end-line="12" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/diff_1D/Diff1D_schema.java">
+    <entry file="file://$PROJECT_DIR$/src/diff_1D/matrice/BaseMatrice.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="465">
-          <caret line="136" column="39" selection-start-line="136" selection-start-column="39" selection-end-line="136" selection-end-column="39" />
+        <state relative-caret-position="238">
+          <caret line="14" selection-start-line="14" selection-end-line="14" />
           <folding>
-            <element signature="method#init_mesh#0;class#Diff1D_schema#0" />
-            <element signature="method#build_A#0;class#Diff1D_schema#0" />
-            <element signature="method#init_X#0;class#Diff1D_schema#0" />
-            <element signature="method#build_B#0;class#Diff1D_schema#0" />
-            <element signature="method#print_schema#0;class#Diff1D_schema#0" />
+            <element signature="imports" expanded="true" />
+            <element signature="e#298#299#0" expanded="true" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/diff_1D/interfaces/ISolveMethod.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="4" column="47" selection-start-line="4" selection-start-column="47" selection-end-line="4" selection-end-column="47" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/diff_1D/interfaces/IVector.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
-          <caret line="6" column="14" selection-start-line="6" selection-start-column="14" selection-end-line="6" selection-end-column="14" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/diff_1D/solver/Gauss_seidel.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
-          <caret line="8" column="13" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
+        <state relative-caret-position="476">
+          <caret line="82" column="35" lean-forward="true" selection-start-line="82" selection-start-column="35" selection-end-line="82" selection-end-column="35" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="method#solver_GaussSeidel#0;class#Gauss_seidel#0" />
@@ -1048,40 +996,98 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/diff_1D/Main.java">
+    <entry file="file://$PROJECT_DIR$/src/diff_1D/solver/Jacobi.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="204">
-          <caret line="12" column="104" selection-start-line="12" selection-start-column="104" selection-end-line="12" selection-end-column="104" />
+        <state relative-caret-position="475">
+          <caret line="28" column="37" selection-start-line="28" selection-start-column="37" selection-end-line="28" selection-end-column="37" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/diff_1D/interfaces/IGraphic.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
-          <caret line="6" column="110" selection-start-line="6" selection-start-column="110" selection-end-line="6" selection-end-column="110" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/diff_1D/interpolation/lagrange/Lagrange.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
-          <caret line="7" column="37" lean-forward="true" selection-start-line="7" selection-start-column="37" selection-end-line="7" selection-end-column="37" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/diff_1D/matrice/BaseVector.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="19" column="14" selection-start-line="19" selection-start-column="14" selection-end-line="19" selection-end-column="14" />
+        <state relative-caret-position="442">
+          <caret line="32" lean-forward="true" selection-start-line="32" selection-end-line="32" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="e#436#437#0" expanded="true" />
             <element signature="e#477#478#0" expanded="true" />
             <element signature="e#600#601#0" expanded="true" />
             <element signature="e#645#646#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/diff_1D/interfaces/ISolveMethod.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="289">
+          <caret line="17" column="93" selection-start-line="17" selection-start-column="93" selection-end-line="17" selection-end-column="93" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/diff_1D/interfaces/Interpolation1D.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="238">
+          <caret line="14" column="59" selection-start-line="14" selection-start-column="59" selection-end-line="14" selection-end-column="59" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/diff_1D/Main.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="221">
+          <caret line="13" column="107" selection-start-line="13" selection-start-column="107" selection-end-line="13" selection-end-column="107" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/diff_1D/interpolation/lagrange/Lagrange.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="4" column="13" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="13" />
+          <folding>
+            <element signature="method#main#0;class#Lagrange#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/diff_1D/solver/LU_decomposition.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="395">
+          <caret line="66" selection-start-line="66" selection-end-line="66" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#2218#2219#0" expanded="true" />
+            <element signature="e#2272#2273#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/diff_1D/Diff1D_schema.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1029">
+          <caret line="209" column="8" lean-forward="true" selection-start-line="209" selection-start-column="8" selection-end-line="209" selection-end-column="8" />
+          <folding>
+            <element signature="e#416#417#0" expanded="true" />
+            <element signature="e#449#450#0" expanded="true" />
+            <element signature="e#503#504#0" expanded="true" />
+            <element signature="e#547#548#0" expanded="true" />
+            <element signature="method#init_mesh#0;class#Diff1D_schema#0" />
+            <element signature="method#build_A#0;class#Diff1D_schema#0" />
+            <element signature="method#build_B#0;class#Diff1D_schema#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/diff_1D/interpolation/PIL.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="423">
+          <caret line="25" column="42" selection-start-line="25" selection-start-column="42" selection-end-line="25" selection-end-column="42" />
+          <folding>
+            <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
