@@ -1,9 +1,6 @@
 package diff_1D;
 
-import diff_1D.interfaces.Base1DFunction;
-import diff_1D.interfaces.IMatrice;
-import diff_1D.interfaces.ISolveMethod;
-import diff_1D.interfaces.IVector;
+import diff_1D.interfaces.*;
 import diff_1D.matrice.BaseMatrice;
 import diff_1D.matrice.BaseVector;
 
@@ -22,9 +19,18 @@ public class Diff1D_schema {
 
     private BaseVector mesh;
 
-
     private ISolveMethod solve_method;
 
+    private IGraphic visualizer ;
+
+
+    public IGraphic getVisualizer() {
+        return visualizer;
+    }
+
+    public void setVisualizer(IGraphic visualizer) {
+        this.visualizer = visualizer;
+    }
 
     public Integer getN() {
         return n;
@@ -139,6 +145,11 @@ public class Diff1D_schema {
     }
 
 
+
+    public void solve(){
+
+        this.X=this.solve_method.solve(this.A,this.B,null);
+    }
 
 
     public void init_mesh(){

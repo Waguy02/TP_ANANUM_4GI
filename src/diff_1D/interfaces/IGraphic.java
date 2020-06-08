@@ -1,5 +1,9 @@
 package diff_1D.interfaces;
 
+
+/***
+ * Interface de représenation graphique des fonctions
+ */
 public interface IGraphic {
 
     public void show(Base1DFunction function,double[] bounds);

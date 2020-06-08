@@ -16,7 +16,9 @@ public class Gauss_seidel implements ISolveMethod {
 
         IVector X_res = new BaseVector(taille);
 
-        if(X_0==null){for(int i=0; i<taille; i++){
+        if(X_0==null){
+            X_0=new BaseVector(taille);
+            for(int i=0; i<taille; i++){
             X_0.set(i,0.0);
         }}
 

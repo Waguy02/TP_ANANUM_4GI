@@ -12,7 +12,7 @@ public class Main {
 
         Diff1D_schema test_schema=new Diff1D_schema(10,new SquarePolynome(1,5,6),2,3,new Gauss_seidel());
 
-
+        test_schema.solve();
         test_schema.print_schema();
     }
 }

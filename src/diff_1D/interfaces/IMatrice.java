@@ -1,5 +1,10 @@
 package diff_1D.interfaces;
 
+
+/**
+ *
+ * Interface de réprésentation des matrices
+ */
 public interface IMatrice {
 
 public double get(int row_ind, int col_ind);

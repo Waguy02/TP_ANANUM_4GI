@@ -2,11 +2,12 @@ package diff_1D.solver;
 
 
 import diff_1D.interfaces.IMatrice;
+import diff_1D.interfaces.ISolveMethod;
 import diff_1D.interfaces.IVector;
 import diff_1D.matrice.BaseMatrice;
 import diff_1D.matrice.BaseVector;
 
-public class LU_decomposition {
+public class LU_decomposition implements ISolveMethod {
 
 
 
@@ -82,4 +83,8 @@ public class LU_decomposition {
 
     }
 
+    @Override
+    public IVector solve(IMatrice A, IVector B, Double[] solve_parameters) {
+        return solver_LU(A,B.getLength(),null);
+    }
 }
