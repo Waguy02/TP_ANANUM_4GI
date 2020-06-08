@@ -10,4 +10,11 @@ public interface IVector {
 
     public int getLength();
     public String toString();
+
+
+
+
+    public IVector diff(IVector X_2);
+
+
 }

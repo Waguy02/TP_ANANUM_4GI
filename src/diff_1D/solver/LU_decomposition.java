@@ -64,6 +64,7 @@ public class LU_decomposition implements ISolveMethod {
             for(int j = 0; j<i; j++){
                 sum+=L.get(i,j) *Z.get(j);
             }
+
             Z.set(i,b.get(i)-sum);        }
 
         // calcul de X_res avex UX_res=Z
@@ -85,6 +86,6 @@ public class LU_decomposition implements ISolveMethod {
 
     @Override
     public IVector solve(IMatrice A, IVector B, Double[] solve_parameters) {
-        return solver_LU(A,B.getLength(),null);
+        return solver_LU(A,B.getLength(),B);
     }
 }

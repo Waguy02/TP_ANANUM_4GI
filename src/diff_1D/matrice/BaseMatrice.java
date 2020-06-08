@@ -2,6 +2,7 @@ package diff_1D.matrice;
 
 import cern.colt.matrix.impl.DenseDoubleMatrix2D;
 import diff_1D.interfaces.IMatrice;
+import diff_1D.interfaces.IVector;
 
 public class BaseMatrice implements IMatrice {
 
@@ -43,7 +44,33 @@ public class BaseMatrice implements IMatrice {
         return values.viewDice().toString();
     }
 
+    @Override
+    public IMatrice prod( IMatrice B) {
+        return null;
+    }
 
+    @Override
+    public IVector prod( IVector X) {
+        IVector result=new BaseVector(X.getLength());
+
+        for(int i=0;i<this.getNRows();i++){
+
+            double current=0;
+
+            for(int j=0;j<X.getLength();j++){
+                current+=this.get(i,j)*X.get(j);
+            }
+            result.set(i,current);
+
+        }
+
+
+
+
+
+        return  result;
+
+    }
 
 
 }

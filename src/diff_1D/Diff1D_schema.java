@@ -247,6 +247,20 @@ public class Diff1D_schema {
     }
 
 
+    /**
+     *
+     * @return AX-B
+     */
+    public IVector schema_diff(){
+
+        this.A=new BaseMatrice(this.A.getNRows(),this.A.getNCols());
+
+
+
+        IVector diff=this.getA().prod(this.X).diff(this.getB());
+        return diff;
+    }
+
 
 
 

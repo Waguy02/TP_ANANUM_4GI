@@ -24,4 +24,13 @@ public void set(int row_ind, int col_ind,double value);
 
 
 public String toString();
+
+
+
+
+
+public IMatrice prod(IMatrice B);
+
+public IVector prod(IVector X);
+
 }

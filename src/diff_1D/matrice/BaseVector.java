@@ -1,5 +1,6 @@
 package diff_1D.matrice;
 
+import cern.colt.matrix.DoubleMatrix1DProcedure;
 import cern.colt.matrix.impl.DenseDoubleMatrix1D;
 import diff_1D.interfaces.IVector;
 
@@ -28,5 +29,16 @@ public class BaseVector implements IVector {
 
     public String toString(){
         return this.values.toString();
+    }
+
+    @Override
+    public IVector diff( IVector X_2) {
+
+        BaseVector result=new BaseVector(this.getLength());
+        for(int i=0;i<this.getLength();i++){
+            result.set(i,this.get(i)-X_2.get(i));
+        }
+
+    return result;
     }
 }
