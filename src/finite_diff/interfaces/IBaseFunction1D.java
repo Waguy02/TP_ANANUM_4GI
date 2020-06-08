@@ -1,6 +1,6 @@
 package finite_diff.interfaces;
 
-public interface BaseFunction1D {
+public interface IBaseFunction1D extends IBaseFunction {
 
 
 

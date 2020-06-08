@@ -15,5 +15,5 @@ public interface Interpolation1D {
      * @param points les couples(x_i,yi): Une matrice (2*n)
      * @return Une fonction 1D correpondant à la fcontion d'interpolation
      */
-    public BaseFunction1D interpolate(IMatrice points);
+    public IBaseFunction1D interpolate(IMatrice points);
 }

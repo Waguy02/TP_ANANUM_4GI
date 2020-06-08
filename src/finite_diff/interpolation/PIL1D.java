@@ -1,12 +1,12 @@
 package finite_diff.interpolation;
 
-import finite_diff.interfaces.BaseFunction1D;
+import finite_diff.interfaces.IBaseFunction1D;
 import finite_diff.interfaces.IMatrice;
 import finite_diff.interfaces.IVector;
 import finite_diff.interfaces.Interpolation1D;
 import finite_diff.matrice.BaseVector;
 
-public class PIL1D implements Interpolation1D ,BaseFunction1D {
+public class PIL1D implements Interpolation1D ,IBaseFunction1D {
 
 
         private IVector coefs;
@@ -18,7 +18,7 @@ public class PIL1D implements Interpolation1D ,BaseFunction1D {
      * @return
      */
     @Override
-    public BaseFunction1D interpolate(IMatrice points) {
+    public IBaseFunction1D interpolate(IMatrice points) {
 
         this.coefs=new BaseVector(points.getNCols());
         /**

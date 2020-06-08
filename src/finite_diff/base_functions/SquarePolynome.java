@@ -1,8 +1,8 @@
 package finite_diff.base_functions;
 
-import finite_diff.interfaces.BaseFunction1D;
+import finite_diff.interfaces.IBaseFunction1D;
 
-public class SquarePolynome implements BaseFunction1D {
+public class SquarePolynome implements IBaseFunction1D {
 
     double a,b,c;
 
