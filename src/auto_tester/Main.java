@@ -1,11 +1,15 @@
 package auto_tester;
 
+import auto_tester.base_functions.Square_root_solver;
+import auto_tester.base_functions.Square_two_solver;
 import auto_tester.data_generation.EquationType;
 import auto_tester.data_generation.GenerateData;
 import auto_tester.data_generation.Generator;
 import auto_tester.data_parser.Reader;
 import auto_tester.data_parser.Saver;
 import auto_tester.models.GlobalTest;
+
+import java.util.ArrayList;
 
 public class Main {
 
@@ -71,7 +75,7 @@ GenerateData.main(args);
 
 
 globalTest.execute_all();
-   Saver.save(globalTest);
+           Saver.save(globalTest);
 
 
 }

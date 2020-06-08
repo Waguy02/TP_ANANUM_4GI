@@ -163,7 +163,7 @@ public class TestData {
                 System.out.println("Resultat de la fonction à tester : " +base_value);
                 this.test_function.setParams(this.input_data);
                 List<Double> test_value=this.test_function.runTest(base_value);
-            System.out.println("Resultat de la fonction de  test : "+test_value);
+                System.out.println("Resultat de la fonction de  test : "+test_value);
                 Double norm_value=this.norm_function.run(test_value,expect_result);
                 System.out.println("RA : "+this.expect_result);
 
