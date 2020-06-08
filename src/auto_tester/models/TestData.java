@@ -16,13 +16,13 @@ public class TestData {
 
 
     private String scenario;
-    private List<Number> input_data;
+    private List<Double> input_data;
     private String base_function_id;
     private IBaseFunction base_function;
-    private Number expect_result;
+    private List<Double> expect_result;
     private String test_function_id;
     private ITestFunction test_function;
-    private Number tolerance;
+    private Double tolerance;
     private String norm_function_id;
     private INorm norm_function;
 
@@ -34,11 +34,11 @@ public class TestData {
         this.scenario = scenario;
     }
 
-    public List<Number> getInput_data() {
+    public List<Double> getInput_data() {
         return input_data;
     }
 
-    public void setInput_data(List<Number> input_data) {
+    public void setInput_data(List<Double> input_data) {
         this.input_data = input_data;
     }
 
@@ -58,11 +58,11 @@ public class TestData {
         this.base_function = base_function;
     }
 
-    public Number getExpect_result() {
+    public List<Double> getExpect_result() {
         return expect_result;
     }
 
-    public void setExpect_result(Number expect_result) {
+    public void setExpect_result(List<Double> expect_result) {
         this.expect_result = expect_result;
     }
 
@@ -82,11 +82,11 @@ public class TestData {
         this.test_function = test_function;
     }
 
-    public Number getTolerance() {
+    public Double getTolerance() {
         return tolerance;
     }
 
-    public void setTolerance(Number tolerance) {
+    public void setTolerance(Double tolerance) {
         this.tolerance = tolerance;
     }
 
@@ -110,7 +110,7 @@ public class TestData {
 
 
     }
-    public TestData(String scenario, List<Number> input_data, String base_function_id, String test_function_id, Number expect_result) {
+    public TestData(String scenario, List<Double> input_data, String base_function_id, String test_function_id,List<Double> expect_result) {
         this.scenario = scenario;
         this.input_data = input_data;
         this.base_function_id = base_function_id;
@@ -123,7 +123,7 @@ public class TestData {
 
         String base_functions_path="auto_tester.base_functions"+SEPARATOR_POINT+this.base_function_id;
 
-        Class arg[]={Number.class};
+        Class arg[]={List.class};
         Class baseFunctionClass=Class.forName(base_functions_path);
         this.base_function=(IBaseFunction)baseFunctionClass.newInstance();
 
@@ -132,7 +132,7 @@ public class TestData {
         public void parseTestFunction()throws Exception {
 
             String test_functions_path="auto_tester.test_functions"+SEPARATOR_POINT+this.test_function_id;
-            Class arg[]={Number.class};
+            Class arg[]={List.class};
             Class testFunctionClass=Class.forName(test_functions_path);
             this.test_function=(ITestFunction)testFunctionClass.newInstance() ;
 
@@ -143,7 +143,7 @@ public class TestData {
 
 
             String norm_functions_path="auto_tester.norms"+SEPARATOR_POINT+this.norm_function_id;
-            Class arg[]={Number.class};
+            Class arg[]={List.class,List.class};
             Class normFunctionClass=Class.forName(norm_functions_path);
             this.norm_function=(INorm)normFunctionClass.newInstance();
 
@@ -156,29 +156,19 @@ public class TestData {
 
 
         public boolean runTest() throws Exception {
-                List<Number> base_value=this.base_function.runBase(this.input_data);
-
-                List<Number> test_value=this.test_function.runTest(base_value);
 
 
-                Number norm_value=this.norm_function.run(base_value,test_value);
+                List<Double> base_value=this.base_function.runBase(this.input_data);
+
+                System.out.println("Resultat de la fonction à tester : " +base_value);
+                this.test_function.setParams(this.input_data);
+                List<Double> test_value=this.test_function.runTest(base_value);
+                System.out.println("Resultat de la fonction de  test : "+test_value);
+                Double norm_value=this.norm_function.run(test_value,expect_result);
+                System.out.println("RA : "+this.expect_result);
 
 
-
-                return (norm_value.longValue()<this.tolerance.longValue());
-
-
-
-
-
-
-
-
-
-
-
-
-
+                return (norm_value.longValue()<this.tolerance);
 
 
         }

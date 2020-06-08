@@ -41,7 +41,7 @@ public class Reader {
 
 
         Sheet sheet=workbook.getSheetAt(0);
-
+        sheet.setDefaultColumnWidth(20);
         int nbRow =sheet.getLastRowNum();
 
 
@@ -72,7 +72,7 @@ return result;
 
         }
         else {
-            result.setExpect_result(Double.valueOf(row.getCell(6).getStringCellValue()));
+            result.setExpect_result(Tools.parseInputData(row.getCell(6).getStringCellValue()));
         }
         try {
             result.parse();

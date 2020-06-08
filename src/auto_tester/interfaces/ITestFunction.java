@@ -1,5 +1,6 @@
 package auto_tester.interfaces;
 
+import java.util.ArrayList;
 import java.util.List;
 
 /***
@@ -11,6 +12,7 @@ import java.util.List;
 public interface ITestFunction {
 
 
+    ArrayList<Double> params=new ArrayList<>();
     /***
      *
      * @param outputs : Un vecteur de nombre correspondant aux résultats de la fonction de test
@@ -18,10 +20,18 @@ public interface ITestFunction {
      * @return Le résultat de la fonction de test comme vecteur
      *         Ce résultat est multidimensionnel lorsqu'elle la fonction  à tester retourne elle aussi un résultat multidimensionnel
      */
-    public List<Number> runTest(List<Number> outputs);
+    public List<Double> runTest(List<Double> outputs);
 
 
+        public default void setParams(List<Double> paramList){
+        params.clear();
+            for(Double param:paramList){
 
+                params.add(param);
+            }
+
+
+        }
 
 
 }

@@ -1,6 +1,8 @@
 package auto_tester.data_generation;
 
+import java.util.ArrayList;
 import java.util.HashMap;
+import java.util.List;
 
 /**
  * This class represents a single test case. It contains all the data needed for each test
@@ -15,7 +17,7 @@ public class Scenario {
     private String g;//Test Function
     private String n;//Error function
     private Double tol;//Tolerance value
-    private Double ra=1d;//Expected value
+    private List<Double> ra= new ArrayList<Double>();//Expected value
 
     public Scenario(Integer id){
         sc = "scenario"+id.toString();
@@ -83,13 +85,15 @@ public class Scenario {
         this.tol = tol;
     }
 
-    public Double getRa() {
+    public List<Double> getRa() {
         return ra;
     }
 
-    public void setRa(Double ra) {
+    public void setRa(List<Double> ra) {
         this.ra = ra;
     }
+
+
 
     @Override
     public String toString() {

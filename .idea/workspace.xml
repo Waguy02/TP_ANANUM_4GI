@@ -28,27 +28,59 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>Function</find>
-      <find>Funcion</find>
-      <find>Number[]</find>
-      <find>norm</find>
-      <find>runBase</find>
-      <find>.parse</find>
-      <find>e.getM</find>
-      <find>parse()</find>
-      <find>;</find>
-      <find>e.get</find>
-      <find>donn</find>
-      <find>read</find>
-      <find>parse</find>
-      <find>split</find>
+      <find>-11</find>
+      <find>==0</find>
+      <find>if(.*)&lt;GlobalConfig.</find>
+      <find>Glob</find>
+      <find>Global</find>
+      <find>norme</find>
+      <find>dis</find>
+      <find>FAUX</find>
+      <find>Sheet</find>
+      <find>Résul</find>
+      <find>.auto</find>
+      <find>n(100);</find>
+      <find>)&lt;0</find>
+      <find>Empty error</find>
+      <find>params</find>
+      <find>Linear_test</find>
+      <find>generate</find>
+      <find>createSce</find>
+      <find>saveSce</find>
+      <find>SquareRoot</find>
+      <find>jenny</find>
+      <find>parsee</find>
+      <find>Matrice</find>
+      <find>X_0[i]</find>
+      <find>X_0[i]=</find>
+      <find>double[][]</find>
+      <find>double[]</find>
+      <find>new double[n]</find>
+      <find>mesh_size</find>
+      <find>f_function</find>
     </findStrings>
     <replaceStrings>
       <replace>Fun</replace>
       <replace>List&lt;Number&gt;</replace>
       <replace>solve</replace>
       <replace>Function</replace>
+      <replace />
+      <replace>Double</replace>
+      <replace>&lt;GlobalConfig.DEFAULT_TOLERANCE</replace>
+      <replace>if(Mat</replace>
+      <replace>10E100</replace>
+      <replace>Empty_error</replace>
+      <replace>)&lt;scenario.getTol()</replace>
+      <replace>X_0</replace>
+      <replace>IMatrice</replace>
+      <replace>IVector</replace>
+      <replace>new BaseVector(n)</replace>
+      <replace>n</replace>
+      <replace>f</replace>
     </replaceStrings>
+    <dirStrings>
+      <dir />
+    </dirStrings>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -61,6 +93,12 @@
   </component>
   <component name="NodePackageJsonFileManager">
     <packageJsonPaths />
+  </component>
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="x" value="481" />
+    <option name="y" value="-17" />
+    <option name="width" value="974" />
+    <option name="height" value="1047" />
   </component>
   <component name="ProjectId" id="1YTP0ahP3KVHgjsaIySFTAzIUOH" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
@@ -76,12 +114,18 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/libs/apache_poi/xmlbeans-3.1.0.jar!/" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/libs/colt-1.2.0.jar/colt-1.2.0.jar!/" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="project.structure.last.edited" value="Libraries" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.20229885" />
+    <property name="run.code.analysis.last.selected.profile" value="pProject Default" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="diff_1D.matrice" />
+    </key>
   </component>
   <component name="RunManager" selected="Application.GraphicDisplay">
     <configuration name="GenerateData" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
@@ -94,9 +138,17 @@
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
+    </configuration>
+    <configuration name="Main (1)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="diff_1D.Main" />
+      <module name="TP_ANANUM" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="diff_1D.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
     </configuration>
     <configuration name="GraphicDisplay" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="finiteMethods.graphics.GraphicDisplay" />
@@ -122,37 +174,68 @@
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
     </configuration>
     <configuration default="true" type="Application" factoryName="Application">
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <method v="2">
+      <method>
         <option name="Make" enabled="true" />
       </method>
     </configuration>
     <configuration default="true" type="JUnit" factoryName="JUnit">
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="METHOD_NAME" />
       <option name="TEST_OBJECT" value="class" />
+      <option name="VM_PARAMETERS" />
+      <option name="PARAMETERS" />
       <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
-      <method v="2">
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <patterns />
+      <method>
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration default="true" type="TestNG">
+    <configuration default="true" type="TestNG" factoryName="TestNG">
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="SUITE_NAME" />
+      <option name="PACKAGE_NAME" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="METHOD_NAME" />
+      <option name="GROUP_NAME" />
       <option name="TEST_OBJECT" value="CLASS" />
+      <option name="VM_PARAMETERS" />
+      <option name="PARAMETERS" />
       <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
+      <option name="OUTPUT_DIRECTORY" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <option name="USE_DEFAULT_REPORTERS" value="false" />
+      <option name="PROPERTIES_FILE" />
       <properties />
       <listeners />
-      <method v="2">
+      <method>
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <list>
+      <item itemvalue="Application.GenerateData" />
+      <item itemvalue="Application.Main" />
+      <item itemvalue="Application.Main (1)" />
+    </list>
     <recent_temporary>
       <list>
         <item itemvalue="Application.GraphicDisplay" />
         <item itemvalue="Application.GenerateData" />
         <item itemvalue="Application.Main" />
+        <item itemvalue="Application.GenerateData" />
       </list>
     </recent_temporary>
   </component>
@@ -168,7 +251,14 @@
       <updated>1582558965594</updated>
       <workItem from="1582558969539" duration="1826000" />
       <workItem from="1582730217516" duration="310000" />
-      <workItem from="1582732565577" duration="20315000" />
+      <workItem from="1582732565577" duration="23690000" />
+      <workItem from="1582978712111" duration="3678000" />
+      <workItem from="1583060958679" duration="243000" />
+      <workItem from="1583099364611" duration="13923000" />
+      <workItem from="1583162001898" duration="6400000" />
+      <workItem from="1583330388167" duration="1136000" />
+      <workItem from="1583411619856" duration="597000" />
+      <workItem from="1591605254995" duration="8561000" />
     </task>
     <task id="LOCAL-00001" summary="Interfaces prêtes">
       <created>1582786091146</created>
@@ -181,7 +271,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="22451000" />
+    <option name="totallyTimeSpent" value="76702000" />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
@@ -189,7 +279,8 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="PROJET DE GROUPE INITIALISE" />
     <MESSAGE value="Interfaces prêtes" />
-    <option name="LAST_COMMIT_MESSAGE" value="Interfaces prêtes" />
+    <MESSAGE value="Difference fini 1D (package diff_1D) initialisé.&#10;&#10;* Caleb: Réalise l'implémentation de tes fonctions graphiques conformément à l'interface IGraphic et ensuite procéder aux tests &#10;&#10;&#10;*Blondeau:  J'ai modifié le code de base de tes fonctions Solveur en les associant aux interfaces IMatrice , IVector et ISolverMethod. Daigne teste tes fonctions. &#10;   A propos de ISolverMethod : La fonction de run cette interface prend en parametère (une IMatrice A et un IVector B ainsi que Double[] de parametres  ( dépendamment de la méthode). Bien vouloir te réferer à la classe à Gauss_sedeil pour les détails.&#10;   &#10;   &#10;   * Nna : Ton code est tout simplement inutilisable; &#10;   &#10;   *Tedonze : Tes fonctions sont attendues dans le package base_functions (Tu vas te referer à la fonction SquarePolynome que j'ai implémentée)" />
+    <option name="LAST_COMMIT_MESSAGE" value="Difference fini 1D (package diff_1D) initialisé.&#10;&#10;* Caleb: Réalise l'implémentation de tes fonctions graphiques conformément à l'interface IGraphic et ensuite procéder aux tests &#10;&#10;&#10;*Blondeau:  J'ai modifié le code de base de tes fonctions Solveur en les associant aux interfaces IMatrice , IVector et ISolverMethod. Daigne teste tes fonctions. &#10;   A propos de ISolverMethod : La fonction de run cette interface prend en parametère (une IMatrice A et un IVector B ainsi que Double[] de parametres  ( dépendamment de la méthode). Bien vouloir te réferer à la classe à Gauss_sedeil pour les détails.&#10;   &#10;   &#10;   * Nna : Ton code est tout simplement inutilisable; &#10;   &#10;   *Tedonze : Tes fonctions sont attendues dans le package base_functions (Tu vas te referer à la fonction SquarePolynome que j'ai implémentée)" />
   </component>
   <component name="WindowStateProjectService">
     <state x="511" y="105" width="374" height="592" key="#com.intellij.ide.util.MemberChooser" timestamp="1591474897215">
@@ -293,7 +384,6 @@
             <option name="proportions">
               <list>
                 <option value="0.20229885" />
-                <option value="0.6" />
               </list>
             </option>
           </splitter-proportions>
