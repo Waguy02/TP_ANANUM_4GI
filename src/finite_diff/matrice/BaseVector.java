@@ -1,8 +1,7 @@
-package diff_1D.matrice;
+package finite_diff.matrice;
 
-import cern.colt.matrix.DoubleMatrix1DProcedure;
 import cern.colt.matrix.impl.DenseDoubleMatrix1D;
-import diff_1D.interfaces.IVector;
+import finite_diff.interfaces.IVector;
 
 public class BaseVector implements IVector {
     private DenseDoubleMatrix1D values;

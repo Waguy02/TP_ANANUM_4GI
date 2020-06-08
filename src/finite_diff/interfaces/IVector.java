@@ -1,4 +1,4 @@
-package diff_1D.interfaces;
+package finite_diff.interfaces;
 
 /**
  *

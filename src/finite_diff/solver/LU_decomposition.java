@@ -1,11 +1,11 @@
-package diff_1D.solver;
+package finite_diff.solver;
 
 
-import diff_1D.interfaces.IMatrice;
-import diff_1D.interfaces.ISolveMethod;
-import diff_1D.interfaces.IVector;
-import diff_1D.matrice.BaseMatrice;
-import diff_1D.matrice.BaseVector;
+import finite_diff.interfaces.IMatrice;
+import finite_diff.interfaces.ISolveMethod;
+import finite_diff.interfaces.IVector;
+import finite_diff.matrice.BaseMatrice;
+import finite_diff.matrice.BaseVector;
 
 public class LU_decomposition implements ISolveMethod {
 

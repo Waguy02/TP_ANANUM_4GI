@@ -1,4 +1,4 @@
-package diff_1D.interfaces;
+package finite_diff.interfaces;
 
 
 /**
@@ -15,5 +15,5 @@ public interface Interpolation1D {
      * @param points les couples(x_i,yi): Une matrice (2*n)
      * @return Une fonction 1D correpondant à la fcontion d'interpolation
      */
-    public Base1DFunction interpolate(IMatrice points);
+    public BaseFunction1D interpolate(IMatrice points);
 }

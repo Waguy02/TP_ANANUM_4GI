@@ -1,8 +1,8 @@
-package diff_1D.matrice;
+package finite_diff.matrice;
 
 import cern.colt.matrix.impl.DenseDoubleMatrix2D;
-import diff_1D.interfaces.IMatrice;
-import diff_1D.interfaces.IVector;
+import finite_diff.interfaces.IMatrice;
+import finite_diff.interfaces.IVector;
 
 public class BaseMatrice implements IMatrice {
 

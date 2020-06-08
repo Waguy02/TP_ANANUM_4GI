@@ -1,10 +1,10 @@
-package diff_1D.solver;
+package finite_diff.solver;
 
 
-import diff_1D.interfaces.IMatrice;
-import diff_1D.interfaces.ISolveMethod;
-import diff_1D.interfaces.IVector;
-import diff_1D.matrice.BaseVector;
+import finite_diff.interfaces.IMatrice;
+import finite_diff.interfaces.ISolveMethod;
+import finite_diff.interfaces.IVector;
+import finite_diff.matrice.BaseVector;
 
 public class Gauss_seidel implements ISolveMethod {
 
@@ -80,13 +80,16 @@ public class Gauss_seidel implements ISolveMethod {
              if(parameters.length>1)tol=parameters[1].intValue();
 
         }
-        int taille=B.getLength()+2;
+        int taille=B.getLength();
 
 
 
         return  solver_GaussSeidel(A,taille,N,B,tol,null);
 
     }
+
+
+
 }
 
 
