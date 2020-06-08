@@ -4,6 +4,7 @@ import diff_1D.interfaces.Base1DFunction;
 import diff_1D.interfaces.IMatrice;
 import diff_1D.interfaces.IVector;
 import diff_1D.interfaces.Interpolation1D;
+import diff_1D.matrice.BaseVector;
 
 public class PIL implements Interpolation1D ,Base1DFunction{
 
@@ -19,6 +20,7 @@ public class PIL implements Interpolation1D ,Base1DFunction{
     @Override
     public Base1DFunction interpolate(IMatrice points) {
 
+        this.coefs=new BaseVector(points.getNCols());
         /**
          *
          *

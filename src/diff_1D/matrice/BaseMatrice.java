@@ -22,6 +22,16 @@ public class BaseMatrice implements IMatrice {
 
     }
 
+    @Override
+    public int getNCols() {
+        return values.columns();
+    }
+
+    @Override
+    public int getNRows() {
+        return values.rows();
+    }
+
     public BaseMatrice(int n,int m){
         this.values=new DenseDoubleMatrix2D(n,m);
     }
