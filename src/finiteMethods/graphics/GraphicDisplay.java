@@ -14,8 +14,9 @@ public class GraphicDisplay extends Application {
 
     @Override
     public void start(Stage primaryStage) {
-        Graph graph = new Graph(this.graphSize);
-        graph.plotPointSegments(Generator.generateSquares(0,1,1000), Color.CHOCOLATE);
+        Graph graph = new Graph(this.graphSize,-1.0,1.0);
+        //graph.plotPointSegments(Generator.generateSquares(0,1,1000));
+        graph.plotPointSegments(Generator.generateInverseSquares(-1,1,1000));
 
         StackPane pane = new StackPane();
         pane.getChildren().add(graph);

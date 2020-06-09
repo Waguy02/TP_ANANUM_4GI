@@ -1,15 +1,16 @@
 package finiteMethods.interfaces;
 
 import javafx.scene.paint.Color;
-import javafx.scene.shape.Line;
 
+/**
+ * This class represents the line linking two points on
+ * on the graph. That is (x1,y1)-(x2,y2)
+ */
 public interface Segment {
-    public static final Color LINE_COLOR= Color.AQUA;
+    public static final Color LINE_COLOR= Color.TOMATO;
 
     public void setStart(Point start);
     public Point getStart();
     public void setEnd(Point end);
     public Point getEnd();
-    public Line getPlot(Double scale);
-    public Line getPlot(Double scale, Color lineColor);
 }

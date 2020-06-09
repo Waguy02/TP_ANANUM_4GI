@@ -28,23 +28,4 @@ public class SampleSegment implements Segment {
     public Point getEnd() {
         return this.end;
     }
-
-    @Override
-    public Line getPlot(Double scale) {
-        return this.getPlot(scale, Segment.LINE_COLOR);
-    }
-
-    @Override
-    public Line getPlot(Double scale, Color lineColor) {
-        Line line = new Line();
-        line.setStartX(start.getX()/scale);
-        line.setStartY((1/scale)-(start.getY()/scale));
-        line.setEndX(end.getX()/scale);
-        line.setEndY((1/scale)-(end.getY()/scale));
-        line.setStroke(lineColor);
-        line.setStrokeWidth(2.5);
-        System.out.println(this.start.getX()/scale);
-
-        return line;
-    }
 }

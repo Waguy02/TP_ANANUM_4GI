@@ -1,8 +1,10 @@
 package finiteMethods.interfaces;
 
 import javafx.scene.paint.Color;
-import javafx.scene.shape.Rectangle;
 
+/**
+ * This class represents an (x,y) point on the grid.
+ */
 public interface Point {
     public static final Color RECTANGLE_COLOR = Color.GREEN;
 
@@ -10,6 +12,4 @@ public interface Point {
     public void setY(Double y);
     public Double getX();
     public Double getY();
-    public Rectangle getPlot(Double scale);
-    public Rectangle getPlot(Double scale, Color lineColor);
 }
