@@ -1,5 +1,6 @@
 package finiteMethods.graphics;
 
+import diff_1D.interfaces.Base1DFunction;
 import javafx.application.Application;
 import javafx.scene.Scene;
 import javafx.scene.layout.StackPane;
@@ -14,9 +15,13 @@ public class GraphicDisplay extends Application {
 
     @Override
     public void start(Stage primaryStage) {
-        Graph graph = new Graph(this.graphSize,-1.0,1.0);
-        //graph.plotPointSegments(Generator.generateSquares(0,1,1000));
-        graph.plotPointSegments(Generator.generateInverseSquares(-1,1,1000));
+        Graph graph = new Graph(this.graphSize);
+        graph.show((new Base1DFunction() {
+            @Override
+            public double run(double x) {
+                return Math.ceil(x);
+            }
+        }), new double[]{-1.0, 1.0});
 
         StackPane pane = new StackPane();
         pane.getChildren().add(graph);

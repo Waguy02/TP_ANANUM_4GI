@@ -3,22 +3,8 @@
   <component name="ChangeListManager">
     <list default="true" id="77ae64ca-3a76-4283-ac77-ce7ae13268db" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/TP_ANANUM/Lagrange.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/TP_ANANUM/auto_tester/data_generation/Scenario.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/TP_ANANUM/auto_tester/data_generation/Scenario.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/TP_ANANUM/diff_1D/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/TP_ANANUM/diff_1D/Main.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/TP_ANANUM/diff_1D/interfaces/IVector.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/TP_ANANUM/diff_1D/interfaces/IVector.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/TP_ANANUM/diff_1D/matrice/BaseVector.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/TP_ANANUM/diff_1D/matrice/BaseVector.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/TP_ANANUM/diff_1D/solver/Diff1D_schema.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/TP_ANANUM/diff_1D/solver/Gauss_seidel.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/TP_ANANUM/diff_1D/solver/Gauss_seidel.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/TP_ANANUM/diff_1D/solver/Jacobi.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/TP_ANANUM/diff_1D/solver/Jacobi.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/TP_ANANUM/finiteMethods/graphics/Graph.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/TP_ANANUM/finiteMethods/graphics/Graph.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/finiteMethods/graphics/Generator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/finiteMethods/graphics/Generator.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/finiteMethods/graphics/Graph.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/finiteMethods/graphics/Graph.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/finiteMethods/graphics/GraphicDisplay.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/finiteMethods/graphics/GraphicDisplay.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/finiteMethods/graphics/SamplePoint.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/finiteMethods/graphics/SamplePoint.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/finiteMethods/graphics/SampleSegment.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/finiteMethods/graphics/SampleSegment.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/finiteMethods/interfaces/Point.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/finiteMethods/interfaces/Point.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/finiteMethods/interfaces/Segment.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/finiteMethods/interfaces/Segment.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -275,26 +261,26 @@
     <option name="LAST_COMMIT_MESSAGE" value="Difference fini 1D (package diff_1D) initialisé.&#10;&#10;* Caleb: Réalise l'implémentation de tes fonctions graphiques conformément à l'interface IGraphic et ensuite procéder aux tests &#10;&#10;&#10;*Blondeau:  J'ai modifié le code de base de tes fonctions Solveur en les associant aux interfaces IMatrice , IVector et ISolverMethod. Daigne teste tes fonctions. &#10;   A propos de ISolverMethod : La fonction de run cette interface prend en parametère (une IMatrice A et un IVector B ainsi que Double[] de parametres  ( dépendamment de la méthode). Bien vouloir te réferer à la classe à Gauss_sedeil pour les détails.&#10;   &#10;   &#10;   * Nna : Ton code est tout simplement inutilisable; &#10;   &#10;   *Tedonze : Tes fonctions sont attendues dans le package base_functions (Tu vas te referer à la fonction SquarePolynome que j'ai implémentée)" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="511" y="105" width="374" height="592" key="#com.intellij.ide.util.MemberChooser" timestamp="1591474897215">
+    <state x="511" y="105" width="374" height="592" key="#com.intellij.ide.util.MemberChooser" timestamp="1592028028070">
       <screen x="41" y="27" width="1325" height="741" />
     </state>
-    <state x="511" y="105" width="374" height="592" key="#com.intellij.ide.util.MemberChooser/41.27.1325.741@41.27.1325.741" timestamp="1591474897215" />
-    <state width="1279" height="106" key="GridCell.Tab.0.bottom" timestamp="1591710736555">
+    <state x="511" y="105" width="374" height="592" key="#com.intellij.ide.util.MemberChooser/41.27.1325.741@41.27.1325.741" timestamp="1592028028070" />
+    <state width="1279" height="169" key="GridCell.Tab.0.bottom" timestamp="1592030959530">
       <screen x="41" y="27" width="1325" height="741" />
     </state>
-    <state width="1279" height="106" key="GridCell.Tab.0.bottom/41.27.1325.741@41.27.1325.741" timestamp="1591710736555" />
-    <state width="1279" height="106" key="GridCell.Tab.0.center" timestamp="1591710736554">
+    <state width="1279" height="169" key="GridCell.Tab.0.bottom/41.27.1325.741@41.27.1325.741" timestamp="1592030959530" />
+    <state width="1279" height="169" key="GridCell.Tab.0.center" timestamp="1592030959529">
       <screen x="41" y="27" width="1325" height="741" />
     </state>
-    <state width="1279" height="106" key="GridCell.Tab.0.center/41.27.1325.741@41.27.1325.741" timestamp="1591710736554" />
-    <state width="1279" height="106" key="GridCell.Tab.0.left" timestamp="1591710736554">
+    <state width="1279" height="169" key="GridCell.Tab.0.center/41.27.1325.741@41.27.1325.741" timestamp="1592030959529" />
+    <state width="1279" height="169" key="GridCell.Tab.0.left" timestamp="1592030959529">
       <screen x="41" y="27" width="1325" height="741" />
     </state>
-    <state width="1279" height="106" key="GridCell.Tab.0.left/41.27.1325.741@41.27.1325.741" timestamp="1591710736554" />
-    <state width="1279" height="106" key="GridCell.Tab.0.right" timestamp="1591710736555">
+    <state width="1279" height="169" key="GridCell.Tab.0.left/41.27.1325.741@41.27.1325.741" timestamp="1592030959529" />
+    <state width="1279" height="169" key="GridCell.Tab.0.right" timestamp="1592030959529">
       <screen x="41" y="27" width="1325" height="741" />
     </state>
-    <state width="1279" height="106" key="GridCell.Tab.0.right/41.27.1325.741@41.27.1325.741" timestamp="1591710736555" />
+    <state width="1279" height="169" key="GridCell.Tab.0.right/41.27.1325.741@41.27.1325.741" timestamp="1592030959529" />
     <state x="141" y="127" width="463" height="541" key="dock-window-1" timestamp="1591470840609">
       <screen x="41" y="27" width="1325" height="741" />
     </state>
@@ -311,17 +297,6 @@
       <screen x="41" y="27" width="1325" height="741" />
     </state>
     <state x="367" y="40" width="670" height="676" key="search.everywhere.popup/41.27.1325.741@41.27.1325.741" timestamp="1591477013324" />
-  </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/finiteMethods/graphics/Graph.java</url>
-          <line>35</line>
-          <option name="timeStamp" value="2" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
   </component>
   <component name="masterDetails">
     <states>
