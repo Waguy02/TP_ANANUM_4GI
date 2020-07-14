@@ -1,4 +1,4 @@
-package finite_diff.interfaces;
+package Finite_diff_and_vol.interfaces;
 
 
 /**
@@ -26,6 +26,8 @@ public void set(int row_ind, int col_ind,double value);
 public String toString();
 
 
+
+public double[] getCol(int index);
 
 
 

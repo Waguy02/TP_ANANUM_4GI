@@ -1,6 +1,6 @@
-package finite_diff.base_functions;
+package Finite_diff_and_vol.base_functions;
 
-import finite_diff.interfaces.IBaseFunction1D;
+import Finite_diff_and_vol.interfaces.IBaseFunction1D;
 
 public class SquarePolynome implements IBaseFunction1D {
 

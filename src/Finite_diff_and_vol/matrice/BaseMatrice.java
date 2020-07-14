@@ -1,8 +1,8 @@
-package finite_diff.matrice;
+package Finite_diff_and_vol.matrice;
 
 import cern.colt.matrix.impl.DenseDoubleMatrix2D;
-import finite_diff.interfaces.IMatrice;
-import finite_diff.interfaces.IVector;
+import Finite_diff_and_vol.interfaces.IMatrice;
+import Finite_diff_and_vol.interfaces.IVector;
 
 public class BaseMatrice implements IMatrice {
 
@@ -42,6 +42,15 @@ public class BaseMatrice implements IMatrice {
 
     public String toString(){
         return values.viewDice().toString();
+    }
+
+    @Override
+    public double[] getCol(int index) {
+        double[] res=new double[this.getNCols()];
+        for (int i=0;i<this.getNCols();i++){
+            res[i]=this.get(i,index);
+        }
+        return res;
     }
 
     @Override

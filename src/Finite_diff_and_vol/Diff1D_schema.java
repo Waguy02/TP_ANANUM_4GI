@@ -1,8 +1,8 @@
-package finite_diff;
+package Finite_diff_and_vol;
 
-import finite_diff.interfaces.*;
-import finite_diff.matrice.BaseMatrice;
-import finite_diff.matrice.BaseVector;
+import Finite_diff_and_vol.interfaces.*;
+import Finite_diff_and_vol.matrice.BaseMatrice;
+import Finite_diff_and_vol.matrice.BaseVector;
 
 
 /***

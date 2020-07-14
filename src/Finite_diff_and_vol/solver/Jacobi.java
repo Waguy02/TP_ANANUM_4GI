@@ -1,10 +1,10 @@
-package finite_diff.solver;
+package Finite_diff_and_vol.solver;
 
 
-import finite_diff.interfaces.IMatrice;
-import finite_diff.interfaces.ISolveMethod;
-import finite_diff.interfaces.IVector;
-import finite_diff.matrice.BaseVector;
+import Finite_diff_and_vol.interfaces.IMatrice;
+import Finite_diff_and_vol.interfaces.ISolveMethod;
+import Finite_diff_and_vol.interfaces.IVector;
+import Finite_diff_and_vol.matrice.BaseVector;
 
 public class Jacobi implements ISolveMethod {
 

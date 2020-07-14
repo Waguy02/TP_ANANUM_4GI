@@ -1,12 +1,14 @@
-package finite_diff.interpolation;
+package Finite_diff_and_vol.interpolation;
 
-import finite_diff.interfaces.IBaseFunction1D;
-import finite_diff.interfaces.IMatrice;
-import finite_diff.interfaces.IVector;
-import finite_diff.interfaces.Interpolation1D;
-import finite_diff.matrice.BaseVector;
+import Finite_diff_and_vol.interfaces.IBaseFunction1D;
+import Finite_diff_and_vol.interfaces.IMatrice;
+import Finite_diff_and_vol.interfaces.IVector;
+import Finite_diff_and_vol.interfaces.Interpolation1D;
+import Finite_diff_and_vol.matrice.BaseVector;
+import java.math.*;
+import org.apache.commons.math3.analysis.polynomials.PolynomialFunctionLagrangeForm;
 
-public class PIL1D implements Interpolation1D ,IBaseFunction1D {
+public class PIL1D implements Interpolation1D  {
 
 
         private IVector coefs;
@@ -30,8 +32,29 @@ public class PIL1D implements Interpolation1D ,IBaseFunction1D {
          */
 
 
-        return this;
+        double[] X=points.getCol(0),Y=points.getCol(1);
 
+
+        PolynomialFunctionLagrangeForm pol = new PolynomialFunctionLagrangeForm( X , Y );
+
+        double [] P = pol.getCoefficients();
+
+
+
+
+        return new IBaseFunction1D() {
+            @Override
+            public double run(double x) {
+                double result=0;
+
+                for(int i=0;i<coefs.getLength();i++){
+
+                    result+=coefs.get(i)*Math.pow(x,i);
+
+                }
+                return  result;
+            }
+        };
 
     }
 
@@ -39,6 +62,7 @@ public class PIL1D implements Interpolation1D ,IBaseFunction1D {
 
 
 
+/*
     @Override
     public double run(double x) {
         double result=0;
@@ -49,5 +73,5 @@ public class PIL1D implements Interpolation1D ,IBaseFunction1D {
 
         }
     return result;
-    }
+    }*/
 }

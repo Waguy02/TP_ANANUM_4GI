@@ -1,10 +1,10 @@
-package finite_diff;
+package Finite_diff_and_vol;
 
-import finite_diff.base_functions.SquarePolynome;
-import finite_diff.graphic.ZeroGraphic;
-import finite_diff.interfaces.IFiniteDiff;
-import finite_diff.interpolation.PIL1D;
-import finite_diff.solver.Gauss_seidel;
+import Finite_diff_and_vol.base_functions.SquarePolynome;
+import Finite_diff_and_vol.graphic.ZeroGraphic;
+import Finite_diff_and_vol.interfaces.IFiniteDiff;
+import Finite_diff_and_vol.interpolation.PIL1D;
+import Finite_diff_and_vol.solver.Gauss_seidel;
 
 public class Main {
 

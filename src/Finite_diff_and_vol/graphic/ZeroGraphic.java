@@ -1,11 +1,12 @@
-package finite_diff.graphic;
+package Finite_diff_and_vol.graphic;
 
-import finite_diff.interfaces.IBaseFunction1D;
-import finite_diff.interfaces.IGraphic;
+import Finite_diff_and_vol.interfaces.IBaseFunction;
+import Finite_diff_and_vol.interfaces.IBaseFunction1D;
+import Finite_diff_and_vol.interfaces.IGraphic;
 
 public class ZeroGraphic implements IGraphic {
     @Override
-    public void show(IBaseFunction1D function, double[] bounds) {
+    public void show(IBaseFunction function, double[] bounds) {
         System.out.println("Not yet implemented");
     }
 }

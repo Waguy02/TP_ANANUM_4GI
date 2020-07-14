@@ -1,4 +1,4 @@
-package finite_diff.interfaces;
+package Finite_diff_and_vol.interfaces;
 
 public interface IBaseFunction2D extends  IBaseFunction {
 
