@@ -5,19 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="77ae64ca-3a76-4283-ac77-ce7ae13268db" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/src/finite_diff/interfaces/IBaseFunction.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/finite_diff/interfaces/IBaseFunction2D.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/finite_diff/interfaces/Interpolation2D.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/finite_diff/Diff2D_schema.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/finite_diff/Diff2D_schema.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/finite_diff/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/finite_diff/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/finite_diff/base_functions/SquarePolynome.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/finite_diff/base_functions/SquarePolynome.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/finite_diff/graphic/ZeroGraphic.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/finite_diff/graphic/ZeroGraphic.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/finite_diff/interfaces/BaseFunction1D.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/finite_diff/interfaces/IBaseFunction1D.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/finite_diff/interfaces/BaseFunction2D.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/finite_diff/interfaces/IFiniteDiff.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/finite_diff/interfaces/IGraphic.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/finite_diff/interfaces/IGraphic.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/finite_diff/interfaces/Interpolation1D.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/finite_diff/interfaces/Interpolation1D.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/finite_diff/interpolation/PIL1D.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/finite_diff/interpolation/PIL1D.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="B:\Docs\ENSP\4GI\Semestre2\Analyse Numérique 2\TP_GROUPE\.idea\shelf/" />
@@ -56,8 +44,8 @@
       <file leaf-file-name="Diff1D_schema.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/finite_diff/Diff1D_schema.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="281">
-              <caret line="121" column="21" selection-start-line="121" selection-start-column="16" selection-end-line="121" selection-end-column="21" />
+            <state relative-caret-position="311">
+              <caret line="172" column="85" lean-forward="true" selection-start-line="170" selection-end-line="172" selection-end-column="85" />
             </state>
           </provider>
         </entry>
@@ -74,12 +62,35 @@
       <file leaf-file-name="Diff2D_schema.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/finite_diff/Diff2D_schema.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="788">
-              <caret line="94" column="40" selection-start-line="94" selection-start-column="40" selection-end-line="94" selection-end-column="40" />
+            <state relative-caret-position="2074">
+              <caret line="124" column="85" selection-start-line="124" selection-start-column="85" selection-end-line="124" selection-end-column="85" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#1785#1786#0" expanded="true" />
-                <element signature="e#1824#1825#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="BaseVector.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/finite_diff/matrice/BaseVector.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="85">
+              <caret line="5" column="38" lean-forward="true" selection-start-line="5" selection-start-column="38" selection-end-line="5" selection-end-column="38" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="BaseMatrice.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/finite_diff/matrice/BaseMatrice.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="255">
+              <caret line="15" selection-start-line="15" selection-end-line="15" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#345#346#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -88,8 +99,8 @@
       <file leaf-file-name="Main.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/finite_diff/Main.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="272">
-              <caret line="16" selection-start-line="16" selection-end-line="16" />
+            <state>
+              <caret column="20" lean-forward="true" selection-start-column="20" selection-end-column="20" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -109,7 +120,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>createSce</find>
       <find>saveSce</find>
       <find>SquareRoot</find>
       <find>jenny</find>
@@ -139,6 +149,7 @@
       <find>init_mes</find>
       <find>Matrice A</find>
       <find>build</find>
+      <find>this.Vi</find>
     </findStrings>
     <replaceStrings>
       <replace>Fun</replace>
@@ -279,7 +290,14 @@
               <item name="TP_GROUPE" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="finite_diff" type="462c0819:PsiDirectoryNode" />
-              <item name="interfaces" type="462c0819:PsiDirectoryNode" />
+              <item name="matrice" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="TP_ANANUM" type="b2602c69:ProjectViewProjectNode" />
+              <item name="TP_GROUPE" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="finite_diff" type="462c0819:PsiDirectoryNode" />
+              <item name="solver" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -435,7 +453,7 @@
       <workItem from="1583330388167" duration="1136000" />
       <workItem from="1583411619856" duration="597000" />
       <workItem from="1591605254995" duration="23011000" />
-      <workItem from="1591642205584" duration="4239000" />
+      <workItem from="1591642205584" duration="7201000" />
     </task>
     <task id="LOCAL-00001" summary="Interfaces prêtes">
       <created>1582786091146</created>
@@ -486,11 +504,18 @@
       <option name="project" value="LOCAL" />
       <updated>1591629813980</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="Diff2D initialized&#10;&#10;&#10;This reverts commit cd42c895de48a0a3e49eda3531285f5ac298d49c.">
+      <created>1591647737701</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1591647737701</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="95391000" />
+    <option name="totallyTimeSpent" value="98353000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
@@ -500,7 +525,7 @@
       <window_info anchor="right" id="Palette&#9;" order="7" />
       <window_info id="Image Layers" order="5" />
       <window_info anchor="right" id="Capture Analysis" order="3" />
-      <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
+      <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" weight="0.32900432" />
       <window_info anchor="right" id="Maven Projects" order="8" side_tool="true" weight="0.32995737" />
       <window_info anchor="bottom" id="Database Changes" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="9" weight="0.3286026" />
@@ -566,7 +591,8 @@
     <MESSAGE value="Difference fini 1D (package diff_1D) initialisé.&#10;&#10;* Caleb: Réalise l'implémentation de tes fonctions graphiques conformément à l'interface IGraphic et ensuite procéder aux tests &#10;&#10;&#10;*Blondeau:  J'ai modifié le code de base de tes fonctions Solveur en les associant aux interfaces IMatrice , IVector et ISolverMethod. Daigne teste tes fonctions. &#10;   A propos de ISolverMethod : La fonction de run cette interface prend en parametère (une IMatrice A et un IVector B ainsi que Double[] de parametres  ( dépendamment de la méthode). Bien vouloir te réferer à la classe à Gauss_sedeil pour les détails.&#10;   &#10;   &#10;   * Nna : Ton code est tout simplement inutilisable; &#10;   &#10;   *Tedonze : Tes fonctions sont attendues dans le package base_functions (Tu vas te referer à la fonction SquarePolynome que j'ai implémentée)" />
     <MESSAGE value="Nna  : Tu complètes le fichier PIL.java  de la ligne 21 à 28. Bien lire les commentaires" />
     <MESSAGE value="Update 1D and 2D suffixes" />
-    <option name="LAST_COMMIT_MESSAGE" value="Update 1D and 2D suffixes" />
+    <MESSAGE value="Diff2D initialized&#10;&#10;&#10;This reverts commit cd42c895de48a0a3e49eda3531285f5ac298d49c." />
+    <option name="LAST_COMMIT_MESSAGE" value="Diff2D initialized&#10;&#10;&#10;This reverts commit cd42c895de48a0a3e49eda3531285f5ac298d49c." />
   </component>
   <component name="WindowStateProjectService">
     <state x="363" y="225" key="com.intellij.ide.util.TipDialog" />
@@ -814,27 +840,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/finite_diff/matrice/BaseMatrice.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="15" selection-start-line="15" selection-end-line="15" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#333#334#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/finite_diff/matrice/BaseVector.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
-          <caret line="5" column="38" lean-forward="true" selection-start-line="5" selection-start-column="38" selection-end-line="5" selection-end-column="38" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/finite_diff/solver/Gauss_seidel.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="628">
@@ -930,16 +935,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/finite_diff/Main.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="272">
-          <caret line="16" selection-start-line="16" selection-end-line="16" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/finite_diff/interpolation/PIL2D.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="34">
@@ -947,21 +942,50 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/finite_diff/matrice/BaseVector.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="85">
+          <caret line="5" column="38" lean-forward="true" selection-start-line="5" selection-start-column="38" selection-end-line="5" selection-end-column="38" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/finite_diff/matrice/BaseMatrice.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="15" selection-start-line="15" selection-end-line="15" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#345#346#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/finite_diff/Main.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="20" lean-forward="true" selection-start-column="20" selection-end-column="20" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/finite_diff/Diff1D_schema.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="281">
-          <caret line="121" column="21" selection-start-line="121" selection-start-column="16" selection-end-line="121" selection-end-column="21" />
+        <state relative-caret-position="311">
+          <caret line="172" column="85" lean-forward="true" selection-start-line="170" selection-end-line="172" selection-end-column="85" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/finite_diff/Diff2D_schema.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="788">
-          <caret line="94" column="40" selection-start-line="94" selection-start-column="40" selection-end-line="94" selection-end-column="40" />
+        <state relative-caret-position="2074">
+          <caret line="124" column="85" selection-start-line="124" selection-start-column="85" selection-end-line="124" selection-end-column="85" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#1785#1786#0" expanded="true" />
-            <element signature="e#1824#1825#0" expanded="true" />
           </folding>
         </state>
       </provider>
