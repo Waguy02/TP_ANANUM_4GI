@@ -14,7 +14,17 @@ public class PIL1D implements Interpolation1D  {
         private IVector coefs;
 
 
+    @Override
+    public IVector getCoefs() {
+        return coefs;
+    }
+
+    public void setCoefs(IVector coefs) {
+        this.coefs = coefs;
+    }
+
     /***
+
      *
      * @param points les couples(x_i,yi): Une matrice (2*n)
      * @return
@@ -22,7 +32,7 @@ public class PIL1D implements Interpolation1D  {
     @Override
     public IBaseFunction1D interpolate(IMatrice points) {
 
-        this.coefs=new BaseVector(points.getNCols());
+        this.coefs=new BaseVector(points.getNRows());
         /**
          *
          *
@@ -34,12 +44,14 @@ public class PIL1D implements Interpolation1D  {
 
         double[] X=points.getCol(0),Y=points.getCol(1);
 
-
+;
         PolynomialFunctionLagrangeForm pol = new PolynomialFunctionLagrangeForm( X , Y );
 
         double [] P = pol.getCoefficients();
 
-
+        for(int i=0;i<P.length;i++){
+            coefs.set(i,P[i]);
+        }
 
 
         return new IBaseFunction1D() {

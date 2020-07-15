@@ -27,7 +27,7 @@ public String toString();
 
 
 
-public double[] getCol(int index);
+public double[]     getCol(int index);
 
 
 

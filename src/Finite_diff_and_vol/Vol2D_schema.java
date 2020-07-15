@@ -3,12 +3,7 @@ package Finite_diff_and_vol;
 import Finite_diff_and_vol.interfaces.*;
 import Finite_diff_and_vol.matrice.BaseMatrice;
 
-
-/**
- *
- * Résolution de l'équation "Laplacien(U) =-f dans [0,1]*[0,1}"
- */
-public class Diff2D_schema implements IFiniteDiff {
+public class Vol2D_schema implements IFiniteVol {
 
     private Integer n,m;
     private double h,k;
@@ -28,7 +23,7 @@ public class Diff2D_schema implements IFiniteDiff {
     private IVector B;
 
 
-    public Diff2D_schema(Integer n,Integer m, IBaseFunction2D f, IMatrice bound_values, ISolveMethod solve_method, IGraphic visualizer, Interpolation2D interpoler) {
+    public Vol2D_schema(Integer n,Integer m, IBaseFunction2D f, IMatrice bound_values, ISolveMethod solve_method, IGraphic visualizer, Interpolation2D interpoler) {
         this.n = n;
         this.m=m;
 
@@ -82,8 +77,8 @@ public class Diff2D_schema implements IFiniteDiff {
 
         for (int i = 1; i < n; i++) {
             for(int j=1;i<m;i++){
-            this.mesh.set(i,j,this.h*i+this.k*j);
-        }
+                this.mesh.set(i,j,this.h*i+this.k*j);
+            }
         }
 
 

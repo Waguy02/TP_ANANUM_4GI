@@ -46,8 +46,8 @@ public class BaseMatrice implements IMatrice {
 
     @Override
     public double[] getCol(int index) {
-        double[] res=new double[this.getNCols()];
-        for (int i=0;i<this.getNCols();i++){
+        double[] res=new double[this.getNRows()];
+        for (int i=0;i<this.getNRows();i++){
             res[i]=this.get(i,index);
         }
         return res;

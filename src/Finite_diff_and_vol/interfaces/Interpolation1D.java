@@ -16,4 +16,6 @@ public interface Interpolation1D {
      * @return Une fonction 1D correpondant à la fcontion d'interpolation
      */
     public IBaseFunction1D interpolate(IMatrice points);
+
+    public IVector getCoefs();
 }
